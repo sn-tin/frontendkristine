@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $family;
+}
+
+main {
+    background-color: $dark-color;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+#sidebar {
+    text-align: center;
+    color: $white;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+    .display-img {
+        width: 190px;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+    .name {
+        font-size: clamp(1.25rem, 2.5vw, 2rem);
+        text-transform: uppercase;
+        font-weight: $extra-bold-weight;
+    }
+    .short-description {
+        width: 80%;
+        font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+        font-weight: $medium-weight;
+        opacity: 0.8;
+        margin: auto;
+    }
+}
+
+.list-of-links {
+    font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+    margin: 100px 0;
+    a {
+        display: block;
+        color: $white;
+        font-weight: $bold-weight;
+        padding: 5px;
+        text-decoration: none;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.project-link {
+    margin: 8px;
+}
+
+.active-link {
+    width: 25rem;
+    color: $dark-color;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 5px;
+    a {
+        color: $dark-color;
+    }
+}
+
+.about-me-link, .contact-link {
+    @extend .project-link;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 35px;
+}
+
+#projects {
+    background-color: $light-gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 100%;
+    margin: 30px 30px 30px 0;
+    border-radius: 30px;
+}
+
+.title-text {
+    font-size: $header-title;
+    font-weight: $extra-bold-weight;
+    text-transform: uppercase;
+}
+
+.buttons {
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 40px auto;
+    p {
+        font-size: clamp(0.5rem, 2.5vw, 0.9rem);
+        padding: 10px 30px;
+        text-transform: uppercase;
+    }
+}
+
+.active-button {
+    color: $white;
+    font-weight: $bold-weight;
+    background-color: hsl(257, 14%, 38%);
+    border-radius: 30px;
+}
+
+.list-of-projects {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    text-align: left;
+    margin: 15px;
+    width: 320px;
+    padding: 20px;
+    background-color: $cards-color;
+    border-radius: 20px;
+    .card-title {
+        font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+        font-weight: $bold-weight;
+    }
+    .card-subtitle {
+        font-size: 1rem;
+        font-weight: $regular-weight;
+    }
+    .card-text {
+        p, h4 {
+            @extend .card-subtitle;
+        }
+        h4 {
+            font-weight: $bold-weight;
+        }
+    }
+    .links {
+        text-align: center;
+    }
+    .card-link {
+        color: $black;
+        font-size: 1rem;
+        font-weight: $bold-weight;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 2px solid black;
+        margin: 0 20px;
+        &:hover {
+            color: hsl(0, 0%, 25%);
+            border-bottom: 2px solid hsl(0, 0%, 25%);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+    }
+    #projects {
+        height: 100%;
+    }
+
+    .project-link {
+        width: 100%;
+        span {
+            display: none;
+        }
+    }
+}

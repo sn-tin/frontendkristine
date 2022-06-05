@@ -1,0 +1,23 @@
+// Font Styles
+$family: 'Inter', sans-serif;
+$body-font-size: 1rem;
+$regular-weight: 400;
+$medium-weight: 500;
+$semi-bold-weight: 600;
+$bold-weight: 700;
+$extra-bold-weight: 800;
+$header-title: clamp(1.75rem, 2.5vw, 3rem); // font sizes for Project, About and Contact
+
+// Colors
+$dark-color: hsl(257, 18%, 23%);
+$light-gray: hsl(0, 8%, 95%);
+$cards-color: hsl(256, 16%, 87%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+
+
+// Font-sizes
+// $name-size: clamp(1.25rem, 2.5vw, 2rem);
+// $description-size: clamp(0.75rem, 2.5vw, 1.25rem);
+// 
+

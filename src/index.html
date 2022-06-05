@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.scss">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/cb51308546.js" crossorigin="anonymous"></script>
+
+    <title>Frontend Kristine</title>
+</head>
+<body>
+
+    <main>
+        <section class="d-flex flex-lg-row flex-column">
+            <!-- Sidebar -->
+            <div class="d-flex flex-column" id="sidebar">
+                <img class="display-img" src="./images/tin-profile.png" alt="Kristine's memoji display picture">
+                <div class="user-info">
+                    <h1 class="name">Kristine de Jesus</h1>
+                    <p class="short-description">a frontend developer based in the Philippines.</p>
+                </div>
+
+                <div class="list-of-links d-flex flex-lg-column flex-row">
+                    <div class="project-link active-link">
+                        <a href="./index.html">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Projects</span>
+                        </a>
+                    </div>
+                    <div class="about-me-link">
+                        <a href="./pages/about-me.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>About Me</span>
+                        </a>
+                    </div>
+                    <div class="contact-link">
+                        <a href="./pages/contact.html">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <footer>Designed and Developed by Kristine</footer>
+            </div>
+            <!-- End of Sidebar -->
+
+            <!-- Projects -->
+            <div class="d-flex flex-column" id="projects">
+                <h1 class="title-text m-0">Projects</h1>
+                <div class="buttons d-flex flex-row">
+                    <p class="mb-0 active-button">Personal Projects</p>
+                    <p class="mb-0">Frontendmentor Challenges</p>
+                </div>
+                <div class="d-flex list-of-projects">
+                    <!-- Personal Project 1 -->
+                    <div class="card" id="portfolio-card">
+                        <div class="card-body">
+                          <h2 class="card-title">Portfolio</h2>
+                          <h3 class="card-subtitle my-2">Designed and Developed</h3>
+                          <div class="card-text">
+                            <h4>Tools:</h4>
+                            <p>HTML, Sass, Bootstrap 5, jQuery, Github, Git</p>
+                          </div>
+                          <div class="links">
+                            <a href="#" class="card-link">Code</a>
+                            <a href="#" class="card-link">Demo</a>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- End of Personal Project 1 -->
+
+                    <!-- Personal Project 2 -->
+                    <div class="card" id="rps-card">
+                        <div class="card-body">
+                          <h2 class="card-title">Rock, Paper, Scissors</h2>
+                          <h3 class="card-subtitle my-2">Designed and Developed</h3>
+                          <div class="card-text">
+                            <h4>Tools:</h4>
+                            <p>HTML, Sass, Vanilla Javascript, Github, Git</p>
+                          </div>
+                          <div class="links">
+                            <a href="#" class="card-link">Code</a>
+                            <a href="#" class="card-link">Demo</a>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- End of Personal Project 2 -->
+
+                    <!-- Personal Project 3 -->
+                    <div class="card" id="eas-card">
+                        <div class="card-body">
+                          <h2 class="card-title">Etch-A-Sketch</h2>
+                          <h3 class="card-subtitle my-2">Designed and Developed</h3>
+                          <div class="card-text">
+                            <h4>Tools:</h4>
+                            <p>HTML, Sass, Vanilla Javascript, Github, Git</p>
+                          </div>
+                          <div class="links">
+                            <a href="#" class="card-link">Code</a>
+                            <a href="#" class="card-link">Demo</a>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- End of Personal Project 3 -->
+
+                    <!-- Personal Project 4 -->
+                    <div class="card" id="calc-card">
+                        <div class="card-body">
+                          <h2 class="card-title">Calculator</h2>
+                          <h3 class="card-subtitle my-2">Designed and Developed</h3>
+                          <div class="card-text">
+                            <h4>Tools:</h4>
+                            <p>HTML, Sass, Bootstrap 5, Vanilla Javascript, Github, Git</p>
+                          </div>
+                          <div class="links">
+                            <a href="#" class="card-link">Code</a>
+                            <a href="#" class="card-link">Demo</a>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- End of Personal Project 4 -->
+                </div>
+                <!-- End of List of Projects -->
+            </div>
+            <!-- End of Projects -->
+        </section>
+    </main>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
