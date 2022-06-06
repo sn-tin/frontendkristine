@@ -5,170 +5,196 @@
   font-family: "Inter", sans-serif;
 }
 
-main {
+body {
   background-color: hsl(257deg, 18%, 23%);
 }
 
 section {
-  width: 100%;
-  height: 100vh;
+  margin: 80px auto;
   align-items: center;
-  position: relative;
+  justify-content: center;
 }
 
 #sidebar {
   text-align: center;
   color: hsl(0deg, 0%, 100%);
-  width: 500px;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  padding: 30px;
-}
-#sidebar .display-img {
-  width: 190px;
-  border-radius: 50%;
-  margin-bottom: 40px;
 }
 #sidebar .name {
-  font-size: clamp(1.25rem, 2.5vw, 2rem);
   text-transform: uppercase;
   font-weight: 800;
 }
 #sidebar .short-description {
-  width: 80%;
-  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
-  font-weight: 500;
-  opacity: 0.8;
-  margin: auto;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  width: max(300px, 50%);
+  margin: 0 auto;
+}
+
+.display-img {
+  width: 120px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
 }
 
 .list-of-links {
-  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
-  margin: 100px 0;
+  margin: 30px auto 20px;
 }
 .list-of-links a {
   display: block;
   color: hsl(0deg, 0%, 100%);
-  font-weight: 700;
-  padding: 5px;
   text-decoration: none;
+  margin: 0 10px;
+  padding: 20px;
 }
-.list-of-links a i {
-  margin-right: 5px;
-}
-
-.project-link, .about-me-link, .contact-link {
-  margin: 8px;
-}
-
-.active-link {
-  width: 25rem;
+.list-of-links a:hover {
   color: hsl(257deg, 18%, 23%);
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
-  padding: 5px;
+}
+.list-of-links span {
+  display: none;
+}
+
+.active-link {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
 }
 .active-link a {
   color: hsl(257deg, 18%, 23%);
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 35px;
-}
-
 #projects {
   background-color: hsl(0deg, 8%, 95%);
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 95vh;
-  width: 100%;
-  margin: 30px 30px 30px 0;
+  padding: 50px 20px;
+  margin: 0 30px;
   border-radius: 30px;
 }
 
 .title-text {
-  font-size: clamp(1.75rem, 2.5vw, 3rem);
-  font-weight: 800;
   text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(1.75rem, 2.5vw, 3rem);
 }
 
 .buttons {
-  border: 2px solid black;
+  margin: 30px auto;
+  border: 1px solid #000000;
   border-radius: 30px;
-  margin: 40px auto;
 }
 .buttons p {
-  font-size: clamp(0.5rem, 2.5vw, 0.9rem);
-  padding: 10px 30px;
   text-transform: uppercase;
+  font-size: clamp(0.4rem, 2.5vw, 0.75rem);
+  padding: 10px;
 }
 
 .active-button {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
-  background-color: hsl(257deg, 14%, 38%);
+  background-color: #5C5470;
   border-radius: 30px;
 }
 
-.list-of-projects {
+.personal-projects, .frontendmentor {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.card {
-  text-align: left;
-  margin: 15px;
-  width: 320px;
-  padding: 20px;
-  background-color: hsl(256deg, 16%, 87%);
-  border-radius: 20px;
-}
-.card .card-title {
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
-  font-weight: 700;
-}
-.card .card-subtitle, .card .card-text p, .card .card-text h4 {
-  font-size: 1rem;
-  font-weight: 400;
-}
-.card .card-text h4 {
-  font-weight: 700;
-}
-.card .links {
-  text-align: center;
-}
-.card .card-link {
-  color: hsl(0deg, 0%, 0%);
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  border-bottom: 2px solid black;
-  margin: 0 20px;
-}
-.card .card-link:hover {
-  color: hsl(0deg, 0%, 25%);
-  border-bottom: 2px solid hsl(0deg, 0%, 25%);
+.frontendmentor {
+  display: none !important;
 }
 
-@media screen and (max-width: 768px) {
+.card {
+  text-align: left;
+  width: 300px;
+  margin: 30px 0;
+  background-color: hsl(256deg, 16%, 87%);
+  border: 0;
+  border-radius: 0 20px 20px 20px;
+  padding: 15px;
+  position: relative;
+}
+.card::before {
+  content: url("/card-top.1c207861.svg");
+  position: absolute;
+  top: -29px;
+  left: 0;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+}
+
+.card-subtitle, .card-link, .card-text h4, .card-text p {
+  text-transform: uppercase;
+  font-size: clamp(0.688rem, 2.5vw, 0.75rem);
+  opacity: 0.8;
+}
+
+.card-text h4, .card-text p {
+  opacity: 1;
+}
+.card-text h4 {
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.card-link {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  margin: 0 20px;
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    align-items: unset;
+    justify-content: unset;
+  }
   #sidebar {
-    width: 100%;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  .list-of-links {
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  .list-of-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+  }
+  .list-of-links span {
+    display: block;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
   }
   #projects {
-    height: 100%;
-  }
-  .project-link, .about-me-link, .contact-link {
     width: 100%;
+    margin: 0 30px 0 0;
+    padding: 80px 0;
   }
-  .project-link span, .about-me-link span, .contact-link span {
-    display: none;
+  .list-of-projects {
+    margin: 30px auto;
+  }
+  .card {
+    margin: 30px;
   }
 }
 
