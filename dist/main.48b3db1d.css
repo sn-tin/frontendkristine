@@ -225,5 +225,15 @@ section {
     margin: 30px;
   }
 }
+.list-of-information {
+  text-align: left;
+  flex-wrap: wrap;
+  margin: 50px 150px;
+}
+
+.profile, .strength-weakness, .hobbies, .tools-i-use {
+  width: 40%;
+  margin: 10px;
+}
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
