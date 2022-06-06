@@ -6,11 +6,13 @@
 }
 
 body {
+  font-size: 16px;
   background-color: hsl(257deg, 18%, 23%);
 }
 
 section {
   margin: 80px auto;
+  padding: 30px 0;
   align-items: center;
   justify-content: center;
 }
@@ -62,7 +64,7 @@ section {
   color: hsl(257deg, 18%, 23%);
 }
 
-#projects {
+#projects, #about-me, #contact {
   background-color: hsl(0deg, 8%, 95%);
   text-align: center;
   padding: 50px 20px;
@@ -80,6 +82,7 @@ section {
   margin: 30px auto;
   border: 1px solid #000000;
   border-radius: 30px;
+  cursor: pointer;
 }
 .buttons p {
   text-transform: uppercase;
@@ -112,6 +115,7 @@ section {
   border: 0;
   border-radius: 0 20px 20px 20px;
   padding: 15px;
+  box-shadow: 3px 3px 10px hsl(0deg, 0%, 65%);
   position: relative;
 }
 .card::before {
@@ -152,10 +156,29 @@ section {
   margin: 0 20px;
 }
 
-@media screen and (min-width: 900px) {
+.scroll-top {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 800;
+  margin-top: 30px;
+}
+.scroll-top:hover {
+  color: hsl(0deg, 0%, 39%);
+}
+
+@media screen and (min-width: 720px) {
+  .card {
+    margin: 30px 10px;
+  }
+  .scroll-top {
+    display: none;
+  }
+}
+@media screen and (min-width: 915px) {
   section {
     align-items: unset;
     justify-content: unset;
+    margin: 0 auto;
   }
   #sidebar {
     width: 500px;
@@ -189,6 +212,9 @@ section {
     width: 100%;
     margin: 0 30px 0 0;
     padding: 80px 0;
+  }
+  .buttons p {
+    padding: 10px 25px;
   }
   .list-of-projects {
     margin: 30px auto;
