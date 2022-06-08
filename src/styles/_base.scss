@@ -26,7 +26,7 @@ section {
     }
     .short-description {
         font-size: clamp(1rem, 2.5vw, 1.25rem);
-        width: max(300px, 50%);
+        width: 300px;
         margin: 0 auto;
     }
 }
@@ -70,9 +70,10 @@ section {
         align-items: unset;
         justify-content: unset;
         margin: 0 auto;
+        height: 100vh;
     }
     #sidebar {
-        width: 500px;
+        width: 35%;
         align-items: center;
         justify-content: center;
         padding: 0 50px;
