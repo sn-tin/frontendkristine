@@ -1,4 +1,4 @@
-// Font Styles
+/* Font Styles */
 $family: 'Inter', sans-serif;
 $body-font-size: 1rem;
 $regular-weight: 400;
@@ -8,16 +8,63 @@ $bold-weight: 700;
 $extra-bold-weight: 800;
 $header-title: clamp(1.75rem, 2.5vw, 3rem); // font sizes for Project, About and Contact
 
-// Colors
+/* Colors */
 $dark-color: hsl(257, 18%, 23%);
 $light-gray: hsl(0, 5%, 98%);
 $cards-color: hsl(256, 16%, 87%);
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 
+/* Margin bottom for list-of-information's children */
+@mixin sections-margin {
+    @for $i from 0 through 3 {
+        &:nth-child(#{$i + 1}) {
+            margin: 0 0 30px 0;
+        }
+    }
+}
 
-// Font-sizes
-// $name-size: clamp(1.25rem, 2.5vw, 2rem);
-// $description-size: clamp(0.75rem, 2.5vw, 1.25rem);
-// 
-
+/* Attributes for each child of list-of-tools */
+@mixin tool-icons($height, $bg-size) {
+    @for $i from 1 through 8 {
+        &:nth-child(#{$i}){
+            height: $height;
+            background: {
+                size: $bg-size;
+                repeat: no-repeat;
+            };
+            @if $i == 1 {
+                grid-area: logo1;
+                background-image: url("../images/html5-brands.svg");
+            }
+            @if $i == 2 {
+                grid-area: logo2;
+                background-image: url("../images/css3-alt-brands.svg");
+            } 
+            @if $i == 3 {
+                grid-area: logo3;
+                background-image: url("../images/bootstrap-brands.svg");
+            } 
+            @if $i == 4 {
+                grid-area: logo4;
+                background-image: url("../images/sass-brands.svg");
+            } 
+            @if $i == 5 {
+                grid-area: logo5;
+                background-image: url("../images/js-square-brands.svg");
+            } 
+            @if $i == 6 {
+                grid-area: logo6;
+                background-image: url("../images/git-alt-brands.svg");
+            } 
+            @if $i == 7{
+                grid-area: logo7; 
+                background-image: url("../images/jquery-wordmark.svg");
+            } 
+            @if $i == 8 {
+                grid-area: logo8;
+                background-image: url("../images/figma-brands.svg");
+            }
+        }
+    }
+}

@@ -1,3 +1,7 @@
+/* Font Styles */
+/* Colors */
+/* Margin bottom for list-of-information's children */
+/* Attributes for each child of list-of-tools */
 * {
   margin: 0;
   padding: 0;
@@ -238,14 +242,22 @@ section {
   font-size: clamp(0.938rem, 2.5vw, 1.125rem);
 }
 
-.profile, .strength-weakness, .hobbies, .tool-i-use {
-  margin: 0 0 30px 0;
-}
-
 .list-of-information {
   text-align: left;
   flex-wrap: wrap;
   margin: 30px 0;
+}
+.list-of-information:nth-child(1) {
+  margin: 0 0 30px 0;
+}
+.list-of-information:nth-child(2) {
+  margin: 0 0 30px 0;
+}
+.list-of-information:nth-child(3) {
+  margin: 0 0 30px 0;
+}
+.list-of-information:nth-child(4) {
+  margin: 0 0 30px 0;
 }
 
 .profile-content p {
@@ -257,7 +269,7 @@ section {
   text-align: center;
   font-size: clamp(1.375rem, 2.5vw, 2rem);
   font-weight: 600;
-  margin: 0 0 30px 0;
+  margin: 0 30px 0;
 }
 
 hr {
@@ -269,42 +281,65 @@ hr {
 .list-of-tools {
   width: 50%;
   display: grid;
-  grid-template-areas: "tool-1 tool-2 tool-3" "tool-4 tool-5 tool-6" "tool-7 tool-8 .";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "logo1 logo2 logo3" "logo4 logo5 logo6" "logo7 logo8 .";
 }
-
-.fa-html5 {
-  grid-area: "tool-1";
+.list-of-tools:nth-child(1) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo1;
+  background-image: url("/html5-brands.04fd7e9d.svg");
 }
-.fa-html5::before {
-  width: 300px;
+.list-of-tools:nth-child(2) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo2;
+  background-image: url("/css3-alt-brands.ebe8db37.svg");
 }
-
-.fa-css3-alt {
-  grid-area: "tool-2";
+.list-of-tools:nth-child(3) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo3;
+  background-image: url("/bootstrap-brands.7c16862e.svg");
 }
-
-.fa-bootstrap {
-  grid-area: "tool-3";
+.list-of-tools:nth-child(4) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo4;
+  background-image: url("/sass-brands.c5790db0.svg");
 }
-
-.fa-sass {
-  grid-area: "tool-4";
+.list-of-tools:nth-child(5) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo5;
+  background-image: url("/js-square-brands.f5a700cf.svg");
 }
-
-.fa-js-square {
-  grid-area: "tool-5";
+.list-of-tools:nth-child(6) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo6;
+  background-image: url("/git-alt-brands.d949e9d7.svg");
 }
-
-.fa-git-alt {
-  grid-area: "tool-6";
+.list-of-tools:nth-child(7) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo7;
+  background-image: url("/jquery-wordmark.cb8d4cc0.svg");
 }
-
-.jquery-logo {
-  grid-area: "tool-7";
-}
-
-.fa-figma {
-  grid-area: "tool-8";
+.list-of-tools:nth-child(8) {
+  height: 50px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  grid-area: logo8;
+  background-image: url("/figma-brands.d340c015.svg");
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

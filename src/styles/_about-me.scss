@@ -6,20 +6,16 @@
     }
 }
 
-.profile, .strength-weakness, .hobbies, .tool-i-use {
-    margin: 0 0 30px 0;
-}
+// .profile, .strength-weakness, .hobbies, .tool-i-use {
+//     margin: 0 0 30px 0;
+// }
 
 .list-of-information {
     text-align: left;
     flex-wrap: wrap;
     margin: 30px 0;
+    @include sections-margin; // not working
 }
-
-// .profile, .strength-weakness, .hobbies, .tools-i-use {
-//     width: 40%;
-//     margin: 10px ;
-// }
 
 .profile-content {
     p {
@@ -32,58 +28,23 @@
     text-align: center;
     font-size: clamp(1.375rem, 2.5vw, 2rem);
     font-weight: $semi-bold-weight;
-    margin: 0 0 30px 0;
+    margin: 0 30px 0;
 }
 
 hr {
     width: 38px;
     margin: 20px auto;
     border-top: 3px solid black;
-    // &:not([size]) {
-    //     height: 1px;
-    // }
 }
 
 .list-of-tools {
     width: 50%;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-    "tool-1 tool-2 tool-3"
-    "tool-4 tool-5 tool-6"
-    "tool-7 tool-8 .";
-}
-
-.fa-html5 {
-    grid-area: "tool-1";
-    &::before {
-        width: 300px;
-    }
-}
-
-.fa-css3-alt {
-    grid-area: "tool-2";
-}
-
-.fa-bootstrap {
-    grid-area: "tool-3";
-}
-
-.fa-sass {
-    grid-area: "tool-4";
-}
-
-.fa-js-square {
-    grid-area: "tool-5";
-}
-
-.fa-git-alt {
-    grid-area: "tool-6";
-}
-
-.jquery-logo {
-    grid-area: "tool-7";
-}
-
-.fa-figma {
-    grid-area: "tool-8";
+        "logo1 logo2 logo3"
+        "logo4 logo5 logo6"
+        "logo7 logo8 .";
+    @include tool-icons(50px, 50px);
 }
