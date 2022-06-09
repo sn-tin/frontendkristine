@@ -15,15 +15,35 @@ $cards-color: hsl(256, 16%, 87%);
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 
+/* Grid for about me subtopics */
+@mixin area() {
+    @for $i from 1 through 4 {
+        :nth-child(#{$i}){
+            @if $i == 1 {
+                grid-area: topic1;
+            }
+            @if $i == 2 {
+                grid-area: topic2;
+            }
+            @if $i == 3 {
+                grid-area: topic3;
+            }
+            @if $i == 4 {
+                grid-area: topic4;
+            }
+        }
+    }
+}
+
 /* Attributes for each child of list-of-tools */
-@mixin tool-icons($height, $bg-size) {
+@mixin tool-icons($height, $bg-size, $xpos, $ypos) {
     @for $i from 1 through 8 {
         :nth-child(#{$i}){
             height: $height;
             background: {
                 size: $bg-size;
                 repeat: no-repeat;
-                position: center center
+                position: $xpos $ypos;
             };
             @if $i == 1 {
                 grid-area: logo1;

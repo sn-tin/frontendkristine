@@ -1,5 +1,6 @@
 /* Font Styles */
 /* Colors */
+/* Grid for about me subtopics */
 /* Attributes for each child of list-of-tools */
 * {
   margin: 0;
@@ -110,7 +111,7 @@ section {
   background-color: hsl(0deg, 5%, 98%);
   text-align: center;
   padding: 50px 20px;
-  margin: 0 30px;
+  margin: 0 15px;
   border-radius: 30px;
 }
 
@@ -218,26 +219,21 @@ section {
   }
 }
 @media screen and (min-width: 915px) {
-  #projects {
+  #projects, #about-me, #contact {
     width: 100%;
     margin: 0 30px 0 0;
-    padding: 80px 0;
+    padding: 80px 100px;
     overflow: scroll;
   }
   .buttons p {
     padding: 10px 25px;
   }
   .list-of-projects {
-    padding: 0 100px;
     margin: 30px auto;
   }
   .card {
     margin: 30px;
   }
-}
-#about-me {
-  justify-content: center;
-  align-items: center;
 }
 #about-me p, #about-me span, #about-me li {
   font-size: clamp(0.938rem, 2.5vw, 1.125rem);
@@ -249,8 +245,23 @@ section {
 
 .list-of-information {
   text-align: left;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "topic1" "topic4" "topic2" "topic3";
   margin: 30px 0;
+}
+.list-of-information :nth-child(1) {
+  grid-area: topic1;
+}
+.list-of-information :nth-child(2) {
+  grid-area: topic2;
+}
+.list-of-information :nth-child(3) {
+  grid-area: topic3;
+}
+.list-of-information :nth-child(4) {
+  grid-area: topic4;
 }
 
 .profile-content p {
@@ -262,7 +273,6 @@ section {
   text-align: center;
   font-size: clamp(1.375rem, 2.5vw, 2rem);
   font-weight: 600;
-  margin: 0 30px 0;
 }
 
 hr {
@@ -346,6 +356,94 @@ hr {
   grid-area: logo8;
   background-size: 25px;
   background-image: url("/figma-brands.d340c015.svg");
+}
+
+@media screen and (min-width: 930px) {
+  .sub-topics {
+    width: 50%;
+    padding: 20px 50px 0;
+  }
+  .sub-topics h2 {
+    text-align: left;
+    margin: 0;
+  }
+  hr {
+    width: 38px;
+    margin: 20px 0;
+    border-top: 3px solid black;
+  }
+  .list-of-tools {
+    margin: 0;
+    padding: 15px 0;
+    grid-template-columns: repeat(3, 90px);
+  }
+  .list-of-tools :nth-child(1) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo1;
+    background-image: url("/html5-brands.04fd7e9d.svg");
+  }
+  .list-of-tools :nth-child(2) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo2;
+    background-image: url("/css3-alt-brands.ebe8db37.svg");
+  }
+  .list-of-tools :nth-child(3) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo3;
+    background-size: 50px;
+    background-image: url("/bootstrap-brands.7c16862e.svg");
+  }
+  .list-of-tools :nth-child(4) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo4;
+    background-image: url("/sass-brands.c5790db0.svg");
+  }
+  .list-of-tools :nth-child(5) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo5;
+    background-image: url("/js-square-brands.f5a700cf.svg");
+  }
+  .list-of-tools :nth-child(6) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo6;
+    background-image: url("/git-alt-brands.d949e9d7.svg");
+  }
+  .list-of-tools :nth-child(7) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo7;
+    background-size: 100px;
+    background-image: url("/jquery-wordmark.cb8d4cc0.svg");
+  }
+  .list-of-tools :nth-child(8) {
+    height: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-area: logo8;
+    background-size: 25px;
+    background-image: url("/figma-brands.d340c015.svg");
+  }
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
