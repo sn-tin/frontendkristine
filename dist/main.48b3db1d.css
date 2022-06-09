@@ -222,7 +222,7 @@ section {
   #projects, #about-me, #contact {
     width: 100%;
     margin: 0 30px 0 0;
-    padding: 80px 100px;
+    padding: 80px 100px 0;
     overflow: scroll;
   }
   .buttons p {
