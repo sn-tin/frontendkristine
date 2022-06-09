@@ -15,15 +15,6 @@ $cards-color: hsl(256, 16%, 87%);
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 
-/* Margin bottom for list-of-information's children */
-// @mixin sections-margin {
-//     @for $i from 1 through 3 {
-//         :nth-child(#{$i}) {
-//             margin: 0 0 30px 0;
-//         }
-//     }
-// }
-
 /* Attributes for each child of list-of-tools */
 @mixin tool-icons($height, $bg-size) {
     @for $i from 1 through 8 {
@@ -71,7 +62,7 @@ $white: hsl(0, 0%, 100%);
             @if $i == 8 {
                 grid-area: logo8;
                 background: {
-                    size: 30px;
+                    size: 25px;
                     image: url("../images/figma-brands.svg");
                 }
             }

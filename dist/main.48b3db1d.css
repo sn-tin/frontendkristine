@@ -1,6 +1,5 @@
 /* Font Styles */
 /* Colors */
-/* Margin bottom for list-of-information's children */
 /* Attributes for each child of list-of-tools */
 * {
   margin: 0;
@@ -200,6 +199,7 @@ section {
 }
 
 .scroll-top {
+  text-align: center;
   text-decoration: none;
   color: hsl(0deg, 0%, 0%);
   font-weight: 800;
@@ -343,7 +343,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center center;
   grid-area: logo8;
-  background-size: 30px;
+  background-size: 25px;
   background-image: url("/figma-brands.d340c015.svg");
 }
 
