@@ -1,0 +1,49 @@
+#contact {
+    text-align: center;
+    .sub-headings {
+        text-align: center;
+    }
+    .sub-topics {
+        width: 100%;
+    }
+}
+
+.contact-sub-text {
+    margin: 10px auto 0;
+    width: 40%;
+}
+
+.contact-content {
+    margin: 30px 0;
+}
+
+.contact-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contact-list {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mail, .contact-num {
+    justify-content: center;
+}
+.socials-icons {
+    a {
+        text-decoration: none;
+    }
+}
+
+.social-icon {
+    width: 30px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    hr {
+        margin: 20px auto;
+    }
+}

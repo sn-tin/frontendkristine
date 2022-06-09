@@ -34,7 +34,7 @@ $white: hsl(0, 0%, 100%);
             @if $i == 5 {
                 order: 5;
             }
-            @media  screen and (min-width: 785px) {
+            @media  screen and (min-width: 768px) {
                 @if $i == 2 {
                     order: 2;
                 }
