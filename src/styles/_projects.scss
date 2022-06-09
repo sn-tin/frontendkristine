@@ -6,7 +6,7 @@
     border-radius: 30px;
 }
 
-.title-text {
+.page-heading {
     text-transform: uppercase;
     font-weight: $extra-bold-weight;
     font-size: clamp(1.75rem, 2.5vw, 3rem);
@@ -127,6 +127,7 @@
     }
 
     .list-of-projects {
+        padding: 0 100px;
         margin: 30px auto;
     }
 
