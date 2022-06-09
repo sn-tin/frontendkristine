@@ -12,6 +12,7 @@
     text-align: left;
     flex-wrap: wrap;
     margin: 30px 0;
+    @include order;
 }
 
 .profile-content {
@@ -47,30 +48,15 @@ hr {
     @include tool-icons(50px, 35px, center, center);
 }
 
-@media  screen and (min-width: 930px) {
+@media  screen and (min-width: 768px) {
     .sub-topics {
         width: 50%;
-        padding: 20px 50px 0;
+        padding: 20px 35px 0;
         h2 {
             text-align: left;
             margin: 0;
         }
     }
-    
-    .list-of-information {
-        position: relative;
-    }
-    #tool-i-use {
-        position: absolute;
-        right: 0;
-        bottom: 20%;
-    }
-
-    // .list-of-information {
-    //     grid-template-areas: 
-    //         "topic1 topic2"
-    //         "topic3 topic4";
-    // }
 
     hr {
         width: 38px;
@@ -83,5 +69,14 @@ hr {
         padding: 15px 0;
         grid-template-columns: repeat(3, 90px);
         @include tool-icons(50px, 35px, left, center);
+    }
+}
+
+@media  screen and (min-width: 915px) and (max-width: 1110px) {
+    .sub-topics {
+        width: 100%;
+    }
+    #tool-i-use {
+        transform: translateY(0);
     }
 }

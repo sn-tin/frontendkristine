@@ -15,6 +15,40 @@ $cards-color: hsl(256, 16%, 87%);
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 
+/* Order for list-of-information children */
+@mixin order(){
+    @for $i from 1 through 5 {
+        :nth-child(#{$i}){
+            @if $i == 1 {
+                order: 1;
+            }
+            @if $i == 2 {
+                order: 3;
+            }
+            @if $i == 3 {
+                order: 4;
+            }
+            @if $i == 4 {
+                order: 2;
+            }
+            @if $i == 5 {
+                order: 5;
+            }
+            @media  screen and (min-width: 785px) {
+                @if $i == 2 {
+                    order: 2;
+                }
+                @if $i == 3 {
+                    order: 3;
+                }
+                @if $i == 4 {
+                    order: 4;
+                }
+            }
+        }
+    }
+}
+
 /* Attributes for each child of list-of-tools */
 @mixin tool-icons($height, $bg-size, $xpos, $ypos) {
     @for $i from 1 through 8 {

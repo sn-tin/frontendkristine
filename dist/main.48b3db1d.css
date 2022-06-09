@@ -1,5 +1,6 @@
 /* Font Styles */
 /* Colors */
+/* Order for list-of-information children */
 /* Attributes for each child of list-of-tools */
 * {
   margin: 0;
@@ -67,7 +68,7 @@ section {
   color: hsl(257deg, 18%, 23%);
 }
 
-@media screen and (min-width: 915px) {
+@media screen and (min-width: 999px) {
   section {
     align-items: unset;
     justify-content: unset;
@@ -247,7 +248,36 @@ section {
   flex-wrap: wrap;
   margin: 30px 0;
 }
-
+.list-of-information :nth-child(1) {
+  order: 1;
+}
+.list-of-information :nth-child(2) {
+  order: 3;
+}
+@media screen and (min-width: 785px) {
+  .list-of-information :nth-child(2) {
+    order: 2;
+  }
+}
+.list-of-information :nth-child(3) {
+  order: 4;
+}
+@media screen and (min-width: 785px) {
+  .list-of-information :nth-child(3) {
+    order: 3;
+  }
+}
+.list-of-information :nth-child(4) {
+  order: 2;
+}
+@media screen and (min-width: 785px) {
+  .list-of-information :nth-child(4) {
+    order: 4;
+  }
+}
+.list-of-information :nth-child(5) {
+  order: 5;
+}
 .profile-content p {
   text-align: justify;
   text-justify: inter-word;
@@ -342,22 +372,14 @@ hr {
   background-image: url("/figma-brands.d340c015.svg");
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 768px) {
   .sub-topics {
     width: 50%;
-    padding: 20px 50px 0;
+    padding: 20px 35px 0;
   }
   .sub-topics h2 {
     text-align: left;
     margin: 0;
-  }
-  .list-of-information {
-    position: relative;
-  }
-  #tool-i-use {
-    position: absolute;
-    right: 0;
-    bottom: 20%;
   }
   hr {
     width: 38px;
@@ -435,6 +457,14 @@ hr {
     grid-area: logo8;
     background-size: 25px;
     background-image: url("/figma-brands.d340c015.svg");
+  }
+}
+@media screen and (min-width: 915px) and (max-width: 1110px) {
+  .sub-topics {
+    width: 100%;
+  }
+  #tool-i-use {
+    transform: translateY(0);
   }
 }
 
