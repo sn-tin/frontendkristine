@@ -19,16 +19,16 @@ $('.list-of-links .pages').click(function(event){
     let targetLink = $(event.target)
     console.log(event.target)
     if(targetLink.hasClass("project-page")){
-        $(this).addClass("active-link")
-        $(".about-me-link").removeClass("active-link")
-        $(".contact-link").removeClass("active-link")
+        $(this).addClass("active-page")
+        $(".about-me-page").removeClass("active-page")
+        $(".contact-page").removeClass("active-page")
     } else if(targetLink.hasClass("about-me-page")){
-        $(this).addClass("active-link")
-        $(".project-link").removeClass("active-link")
-        $(".contact-link").removeClass("active-link")
+        $(this).addClass("active-page")
+        $(".project-page").removeClass("active-page")
+        $(".contact-page").removeClass("active-page")
     } else {
-        $(this).addClass("active-link")
-        $(".project-link").removeClass("active-link")
-        $(".about-me-link").removeClass("active-link")
+        $(this).addClass("active-page")
+        $(".project-page").removeClass("active-page")
+        $(".about-me-page").removeClass("active-page")
     }
 })

@@ -141,17 +141,17 @@ $('.list-of-links .pages').click(function (event) {
   console.log(event.target);
 
   if (targetLink.hasClass("project-page")) {
-    $(this).addClass("active-link");
-    $(".about-me-link").removeClass("active-link");
-    $(".contact-link").removeClass("active-link");
+    $(this).addClass("active-page");
+    $(".about-me-page").removeClass("active-page");
+    $(".contact-page").removeClass("active-page");
   } else if (targetLink.hasClass("about-me-page")) {
-    $(this).addClass("active-link");
-    $(".project-link").removeClass("active-link");
-    $(".contact-link").removeClass("active-link");
+    $(this).addClass("active-page");
+    $(".project-page").removeClass("active-page");
+    $(".contact-page").removeClass("active-page");
   } else {
-    $(this).addClass("active-link");
-    $(".project-link").removeClass("active-link");
-    $(".about-me-link").removeClass("active-link");
+    $(this).addClass("active-page");
+    $(".project-page").removeClass("active-page");
+    $(".about-me-page").removeClass("active-page");
   }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -182,7 +182,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42905" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45235" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

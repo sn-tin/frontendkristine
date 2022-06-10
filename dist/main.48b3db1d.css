@@ -60,11 +60,11 @@ section {
   display: none;
 }
 
-.active-link {
+.active-page {
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
 }
-.active-link a {
+.active-page a {
   color: hsl(257deg, 18%, 23%);
 }
 
