@@ -37,13 +37,13 @@ section {
     border-radius: 50%;
 }
 
-.list-of-links {
+.list-of-pages {
     margin: 30px auto 20px;
     a {
         display: block;
         color: $white;
         text-decoration: none;
-        margin: 0 10px;
+        margin: 0 auto;
         padding: 20px;
         &:hover {
             color: $dark-color;
@@ -84,7 +84,7 @@ section {
         width: 150px;
     }
 
-    .list-of-links {
+    .list-of-pages {
         align-items: center;
         justify-content: center;
         margin: 50px 0;

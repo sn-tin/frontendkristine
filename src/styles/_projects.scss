@@ -37,10 +37,6 @@
     justify-content: center;
 }
 
-.frontendmentor {
-    display: none !important;
-}
-
 .card {
     text-align: left;
     width: 300px;
@@ -101,6 +97,15 @@
     &:hover {
         color: hsl(0, 0%, 39%);
     }
+}
+
+/* To add by jQuery when clicked */
+
+.active-button {
+    color: $white;
+    font-weight: $bold-weight;
+    background-color: #5C5470;
+    border-radius: 30px;
 }
 
 @media screen and (min-width: 720px) {

@@ -41,22 +41,22 @@ section {
   border-radius: 50%;
 }
 
-.list-of-links {
+.list-of-pages {
   margin: 30px auto 20px;
 }
-.list-of-links a {
+.list-of-pages a {
   display: block;
   color: hsl(0deg, 0%, 100%);
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 auto;
   padding: 20px;
 }
-.list-of-links a:hover {
+.list-of-pages a:hover {
   color: hsl(257deg, 18%, 23%);
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
 }
-.list-of-links span {
+.list-of-pages span {
   display: none;
 }
 
@@ -85,18 +85,18 @@ section {
   .display-img {
     width: 150px;
   }
-  .list-of-links {
+  .list-of-pages {
     align-items: center;
     justify-content: center;
     margin: 50px 0;
   }
-  .list-of-links a {
+  .list-of-pages a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 25rem;
   }
-  .list-of-links span {
+  .list-of-pages span {
     display: block;
     margin-left: 15px;
     font-weight: 700;
@@ -144,10 +144,6 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.frontendmentor {
-  display: none !important;
 }
 
 .card {
@@ -208,6 +204,14 @@ section {
 }
 .scroll-top:hover {
   color: hsl(0deg, 0%, 39%);
+}
+
+/* To add by jQuery when clicked */
+.active-button {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  background-color: #5C5470;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 720px) {
