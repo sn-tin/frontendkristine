@@ -46,9 +46,10 @@ section {
         margin: 0 auto;
         padding: 20px;
         &:hover {
-            color: $dark-color;
-            background-color: $white;
-            border-radius: 10px;
+            color: #ffeeee
+
+            // background-color: $white;
+            // border-radius: 10px;
         }
     }
     span {

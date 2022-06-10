@@ -52,9 +52,7 @@ section {
   padding: 20px;
 }
 .list-of-pages a:hover {
-  color: hsl(257deg, 18%, 23%);
-  background-color: hsl(0deg, 0%, 100%);
-  border-radius: 10px;
+  color: #ffeeee;
 }
 .list-of-pages span {
   display: none;

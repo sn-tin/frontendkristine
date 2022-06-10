@@ -136,19 +136,23 @@ $('.buttons .choose-projects').click(function (event) {
     $(".personal-projects").addClass("d-none");
   }
 });
-$('.list-of-links .pages').click(function (event) {
-  var targetLink = $(event.target);
+$('list-of-pages .pages').click(function (event) {
   console.log(event.target);
+  var targetLink = $(event.target);
 
   if (targetLink.hasClass("project-page")) {
     $(this).addClass("active-page");
     $(".about-me-page").removeClass("active-page");
     $(".contact-page").removeClass("active-page");
-  } else if (targetLink.hasClass("about-me-page")) {
+  }
+
+  if (targetLink.hasClass("about-me-page")) {
     $(this).addClass("active-page");
     $(".project-page").removeClass("active-page");
     $(".contact-page").removeClass("active-page");
-  } else {
+  }
+
+  if (targetLink.hasClass("contact-page")) {
     $(this).addClass("active-page");
     $(".project-page").removeClass("active-page");
     $(".about-me-page").removeClass("active-page");
@@ -182,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45235" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46685" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

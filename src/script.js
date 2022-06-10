@@ -15,18 +15,20 @@ $('.buttons .choose-projects').click(function(event){
     }
 })
 
-$('.list-of-links .pages').click(function(event){
-    let targetLink = $(event.target)
+$('list-of-pages .pages').click(function(event){
     console.log(event.target)
+    let targetLink = $(event.target)
     if(targetLink.hasClass("project-page")){
         $(this).addClass("active-page")
         $(".about-me-page").removeClass("active-page")
         $(".contact-page").removeClass("active-page")
-    } else if(targetLink.hasClass("about-me-page")){
+    }
+    if(targetLink.hasClass("about-me-page")){
         $(this).addClass("active-page")
         $(".project-page").removeClass("active-page")
         $(".contact-page").removeClass("active-page")
-    } else {
+    }
+    if(targetLink.hasClass("contact-page")){
         $(this).addClass("active-page")
         $(".project-page").removeClass("active-page")
         $(".about-me-page").removeClass("active-page")
