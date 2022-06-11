@@ -2,6 +2,9 @@
     p, span, li {
         font-size: clamp(0.938rem, 2.5vw, 1.125rem);
     }
+    hr {
+        @include hr(20px, auto);
+    }
 }
 
 .sub-topics {
@@ -28,12 +31,6 @@
     font-weight: $semi-bold-weight;
 }
 
-hr {
-    width: 38px;
-    margin: 20px auto;
-    border-top: 3px solid black;
-}
-
 .list-of-tools {
     margin: 0 auto;
     padding: 15px 30px;
@@ -49,6 +46,15 @@ hr {
 }
 
 @media  screen and (min-width: 768px) {
+
+    #about-me {
+        hr {
+            width: 38px;
+            margin: 20px 0;
+            border-top: 3px solid black;
+        }
+    }
+
     .sub-topics {
         width: 50%;
         padding: 20px 35px 0;
@@ -56,12 +62,6 @@ hr {
             text-align: left;
             margin: 0;
         }
-    }
-
-    hr {
-        width: 38px;
-        margin: 20px 0;
-        border-top: 3px solid black;
     }
 
     #tool-i-use {

@@ -15,6 +15,13 @@ $cards-color: hsl(256, 16%, 87%);
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 
+/* Attribute for <hr> */
+@mixin hr($y, $x){
+    width: 38px;
+    margin: $y $x;
+    border-top: 3px solid black;
+}
+
 /* Order for list-of-information children */
 @mixin order(){
     @for $i from 1 through 5 {

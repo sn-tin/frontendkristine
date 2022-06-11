@@ -1,5 +1,6 @@
 /* Font Styles */
 /* Colors */
+/* Attribute for <hr> */
 /* Order for list-of-information children */
 /* Attributes for each child of list-of-tools */
 * {
@@ -237,6 +238,11 @@ section {
 #about-me p, #about-me span, #about-me li {
   font-size: clamp(0.938rem, 2.5vw, 1.125rem);
 }
+#about-me hr {
+  width: 38px;
+  margin: 20px auto;
+  border-top: 3px solid black;
+}
 
 .sub-topics {
   margin: 0 0 30px 0;
@@ -286,12 +292,6 @@ section {
   text-align: center;
   font-size: clamp(1.375rem, 2.5vw, 2rem);
   font-weight: 600;
-}
-
-hr {
-  width: 38px;
-  margin: 20px auto;
-  border-top: 3px solid black;
 }
 
 .list-of-tools {
@@ -372,6 +372,11 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  #about-me hr {
+    width: 38px;
+    margin: 20px 0;
+    border-top: 3px solid black;
+  }
   .sub-topics {
     width: 50%;
     padding: 20px 35px 0;
@@ -379,11 +384,6 @@ hr {
   .sub-topics h2 {
     text-align: left;
     margin: 0;
-  }
-  hr {
-    width: 38px;
-    margin: 20px 0;
-    border-top: 3px solid black;
   }
   #tool-i-use {
     transform: translateY(-30%);
@@ -478,10 +478,14 @@ hr {
 #contact .sub-topics {
   width: 100%;
 }
+#contact hr {
+  width: 38px;
+  margin: 20px auto;
+  border-top: 3px solid black;
+}
 
 .contact-sub-text {
   margin: 10px auto 0;
-  width: 40%;
 }
 
 .contact-content {
@@ -513,8 +517,8 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  hr {
-    margin: 20px auto;
+  .contact-sub-text {
+    width: 40%;
   }
 }
 

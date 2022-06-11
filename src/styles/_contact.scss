@@ -6,11 +6,13 @@
     .sub-topics {
         width: 100%;
     }
+    hr {
+        @include hr(20px, auto);
+    }
 }
 
 .contact-sub-text {
     margin: 10px auto 0;
-    width: 40%;
 }
 
 .contact-content {
@@ -43,7 +45,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    hr {
-        margin: 20px auto;
+    .contact-sub-text {
+        width: 40%;
     }
 }
