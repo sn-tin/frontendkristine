@@ -51,9 +51,6 @@ section {
   margin: 0 auto;
   padding: 20px;
 }
-.list-of-pages a:hover {
-  color: #ffeeee;
-}
 .list-of-pages span {
   display: none;
 }
