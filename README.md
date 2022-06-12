@@ -39,7 +39,7 @@ npm start
 ```
 
 ## Author
-- Website - [Kristine de Jesus]()
-- Github - [sn-tin]()
-- Linkedin - [Kristine de Jesus]()
+- Website - [frontendkristine](https://github.com/sn-tin/frontendkristine)
+- Github - [sn-tin](https://github.com/sn-tin)
+- Linkedin - [Kristine May de Jesus](www.linkedin.com/in/kristine-may-de-jesus)
 
