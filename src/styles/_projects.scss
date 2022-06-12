@@ -108,6 +108,10 @@
     }
 }
 
+footer p {
+    @extend .card-subtitle;
+}
+
 /* To add by jQuery when clicked */
 
 .active-button {
