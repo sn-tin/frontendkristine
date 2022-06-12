@@ -22,6 +22,18 @@ section {
   justify-content: center;
 }
 
+@media screen and (min-width: 999px) {
+  section {
+    align-items: unset;
+    justify-content: unset;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
 #sidebar {
   text-align: center;
   color: hsl(0deg, 0%, 100%);
@@ -65,12 +77,6 @@ section {
 }
 
 @media screen and (min-width: 999px) {
-  section {
-    align-items: unset;
-    justify-content: unset;
-    margin: 0 auto;
-    height: 100vh;
-  }
   #sidebar {
     width: 35%;
     align-items: center;
@@ -97,10 +103,6 @@ section {
     margin-left: 15px;
     font-weight: 700;
     font-size: 1.25rem;
-  }
-  footer {
-    position: absolute;
-    bottom: 0;
   }
 }
 #projects, #about-me, #contact {
@@ -189,6 +191,10 @@ section {
   text-decoration: none;
   border-bottom: 2px solid #000;
   margin: 0 20px;
+}
+.card-link:hover {
+  color: hsl(0deg, 0%, 25%);
+  border-bottom: 2px solid hsl(0deg, 0%, 25%);
 }
 
 .scroll-top {
