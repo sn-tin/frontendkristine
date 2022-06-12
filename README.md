@@ -39,7 +39,7 @@ npm start
 ```
 
 ## Author
-- Website - [frontendkristine](https://github.com/sn-tin/frontendkristine)
+- Website - [frontendkristine](https://frontendkristine.vercel.app/)
 - Github - [sn-tin](https://github.com/sn-tin)
 - Linkedin - [Kristine May de Jesus](www.linkedin.com/in/kristine-may-de-jesus)
 
