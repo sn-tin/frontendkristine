@@ -5735,7 +5735,7 @@
 129/home/kristine/Documents/Web Dev/kristine-portfolio/node_modules/@parcel/transformer-js/node_modules/@parcel/workers/lib/child.js1655040096707076538 0
 134/home/kristine/Documents/Web Dev/kristine-portfolio/node_modules/@parcel/bundler-default/node_modules/@parcel/utils/src/relativeUrl.js1655040097615071749 0
 91/home/kristine/Documents/Web Dev/kristine-portfolio/node_modules/lodash/fp/toSafeInteger.js1654425266625358448 0
-64/home/kristine/Documents/Web Dev/kristine-portfolio/package.json1655040138030871211 0
+64/home/kristine/Documents/Web Dev/kristine-portfolio/package.json1655040234458484046 0
 80/home/kristine/Documents/Web Dev/kristine-portfolio/node_modules/lodash/merge.js1654425266549358944 0
 95/home/kristine/Documents/Web Dev/kristine-portfolio/node_modules/http-signature/http_signing.md1654425264805369316 0
 124/home/kristine/Documents/Web Dev/kristine-portfolio/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js.map1654425264093372941 0
