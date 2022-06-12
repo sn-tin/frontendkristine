@@ -8,8 +8,8 @@ Thank you for checking out my work. This portfolio consists of projects that I'v
 ![Contact Page](screenshots/contact-page.png)
 
 ## Links
-- Solution URL: 
-- Live Site URL:
+- Solution URL: https://github.com/sn-tin/frontendkristine
+- Live Site URL: https://frontendkristine.vercel.app/
 
 ## Built with
 - Semantic HTML5 markup
