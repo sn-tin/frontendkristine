@@ -13,3 +13,8 @@ $('.buttons .choose-projects').click(function(event){
         $(".personal-projects").addClass("d-none")
     }
 })
+
+$("a[href='#scroll-top']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });

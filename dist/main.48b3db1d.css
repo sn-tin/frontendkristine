@@ -192,11 +192,16 @@ section {
 }
 
 .scroll-top {
+  width: 70%;
+  background-color: #5C5470;
   text-align: center;
   text-decoration: none;
-  color: hsl(0deg, 0%, 0%);
-  font-weight: 800;
-  margin-top: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 30px auto 0;
+  padding: 10px 0;
+  text-transform: uppercase;
 }
 .scroll-top:hover {
   color: hsl(0deg, 0%, 39%);
