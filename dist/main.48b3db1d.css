@@ -227,7 +227,7 @@ section {
   #projects, #about-me, #contact {
     width: 100%;
     margin: 0 30px 0 0;
-    padding: 80px 100px 0;
+    padding: 100px 100px 0;
     overflow: scroll;
   }
   .buttons p {
@@ -483,6 +483,9 @@ section {
 #contact .sub-topics {
   width: 100%;
 }
+#contact p {
+  font-size: clamp(0.938rem, 2.5vw, 1.125rem);
+}
 #contact hr {
   width: 38px;
   margin: 20px auto;
@@ -494,7 +497,7 @@ section {
 }
 
 .contact-content {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .contact-icon {
@@ -510,6 +513,7 @@ section {
 
 .mail, .contact-num {
   justify-content: center;
+  margin: 10px 0;
 }
 
 .socials-icons a {
