@@ -2,13 +2,10 @@
   "name": "kristine-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "targets": {
-    "main": false
-  },
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build --no-minify src/index.html"
   },
   "keywords": [],
   "author": "",
