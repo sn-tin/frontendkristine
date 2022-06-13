@@ -298,6 +298,14 @@ section {
   text-align: justify;
   text-justify: inter-word;
 }
+.profile-content a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 700;
+}
+.profile-content a:hover {
+  color: rgb(75, 74, 74);
+}
 
 .sub-headings {
   text-align: center;
