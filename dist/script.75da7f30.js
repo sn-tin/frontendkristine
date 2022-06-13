@@ -126,12 +126,12 @@ $('.buttons .choose-projects').click(function (event) {
   if (targetButton.hasClass("personalproj-btn")) {
     $(this).addClass("active-button");
     $(".personal-projects").removeClass("d-none");
-    $(".frontendmentor").addClass("d-none");
+    $(".frontendmentor, .see-more").addClass("d-none");
   }
 
   if (targetButton.hasClass("fem-btn")) {
     $(this).addClass("active-button");
-    $(".frontendmentor").removeClass("d-none");
+    $(".frontendmentor, .see-more").removeClass("d-none");
     $(".personal-projects").addClass("d-none");
   }
 });
@@ -169,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34213" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43727" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

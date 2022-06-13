@@ -58,6 +58,9 @@
 .card-title {
     font-weight: $bold-weight;
     font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card-subtitle {
     text-transform: uppercase;
@@ -92,6 +95,17 @@
     @extend .card-subtitle;
 }
 
+.see-more {
+    color: black;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: $bold-weight;
+    text-transform: uppercase;
+    margin: 30px auto;
+    &:hover {
+        color: hsl(0, 0%, 25%);
+    }
+}
+
 .scroll-top {
     width: 70%;
     background-color: #5C5470;
@@ -106,10 +120,6 @@
     &:hover {
         color: hsl(0, 0%, 39%);
     }
-}
-
-footer p {
-    @extend .card-subtitle;
 }
 
 /* To add by jQuery when clicked */
