@@ -76,6 +76,11 @@ section {
   color: hsl(257deg, 18%, 23%);
 }
 
+footer {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+
 @media screen and (min-width: 999px) {
   #sidebar {
     width: 35%;
@@ -170,7 +175,7 @@ section {
   text-overflow: ellipsis;
 }
 
-.card-subtitle, .card-link, .card-text h4, .card-text p {
+.card-subtitle, .card-link, .card-text h4, .card-text p, footer {
   text-transform: uppercase;
   font-size: clamp(0.688rem, 2.5vw, 0.75rem);
   opacity: 0.8;

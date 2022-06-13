@@ -41,6 +41,12 @@
         
 }
 
+footer {
+    color: $white;
+    text-align: center;
+    @extend .card-subtitle;
+}
+
 @media  screen and (min-width: 999px) {
     #sidebar {
         width: 35%;
