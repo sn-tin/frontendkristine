@@ -14,7 +14,7 @@ $('.buttons .choose-projects').click(function(event){
     }
 })
 
-$("a[href='#scroll-top']").click(function() {
+$("button.scroll-top").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
 });

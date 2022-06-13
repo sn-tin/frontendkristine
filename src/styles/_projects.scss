@@ -4,6 +4,12 @@
     padding: 50px 20px;
     margin: 0 15px;
     border-radius: 30px;
+    a {
+        &:hover, &:active  {
+            color: hsl(0, 0%, 25%);
+            border-bottom: 2px solid hsl(0, 0%, 25%);
+        }
+    }
 }
 
 .page-heading {
@@ -88,22 +94,14 @@
     text-decoration: none;
     border-bottom: 2px solid #000;
     margin: 0 20px;
-    &:hover {
-        color: hsl(0, 0%, 25%);
-        border-bottom: 2px solid hsl(0, 0%, 25%);
-    }
     @extend .card-subtitle;
 }
 
 .see-more {
-    color: black;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     font-weight: $bold-weight;
-    text-transform: uppercase;
     margin: 30px auto;
-    &:hover {
-        color: hsl(0, 0%, 25%);
-    }
+    @extend .card-link;
 }
 
 .scroll-top {
@@ -118,7 +116,7 @@
     padding: 10px 0;
     text-transform: uppercase;
     &:hover {
-        color: hsl(0, 0%, 39%);
+        color: $white;
     }
 }
 
@@ -161,5 +159,11 @@
 
     .card {
         margin: 30px;
+    }
+
+    .see-more {
+        &:hover {
+            color: hsl(0, 0%, 25%);
+        }
     }
 }

@@ -135,7 +135,7 @@ $('.buttons .choose-projects').click(function (event) {
     $(".personal-projects").addClass("d-none");
   }
 });
-$("a[href='#scroll-top']").click(function () {
+$("button.scroll-top").click(function () {
   $("html, body").animate({
     scrollTop: 0
   }, "slow");
@@ -169,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34307" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42963" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

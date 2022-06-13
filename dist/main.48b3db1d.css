@@ -117,6 +117,10 @@ footer {
   margin: 0 15px;
   border-radius: 30px;
 }
+#projects a:hover, #projects a:active, #about-me a:hover, #about-me a:active, #contact a:hover, #contact a:active {
+  color: hsl(0deg, 0%, 25%);
+  border-bottom: 2px solid hsl(0deg, 0%, 25%);
+}
 
 .page-heading {
   text-transform: uppercase;
@@ -175,7 +179,7 @@ footer {
   text-overflow: ellipsis;
 }
 
-.card-subtitle, .card-link, .card-text h4, .card-text p, footer {
+.card-subtitle, .card-link, .see-more, .card-text h4, .card-text p, footer {
   text-transform: uppercase;
   font-size: clamp(0.688rem, 2.5vw, 0.75rem);
   opacity: 0.8;
@@ -193,27 +197,18 @@ footer {
   justify-content: center;
 }
 
-.card-link {
+.card-link, .see-more {
   color: hsl(0deg, 0%, 0%);
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid #000;
   margin: 0 20px;
 }
-.card-link:hover {
-  color: hsl(0deg, 0%, 25%);
-  border-bottom: 2px solid hsl(0deg, 0%, 25%);
-}
 
 .see-more {
-  color: black;
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 700;
-  text-transform: uppercase;
   margin: 30px auto;
-}
-.see-more:hover {
-  color: hsl(0deg, 0%, 25%);
 }
 
 .scroll-top {
@@ -229,7 +224,7 @@ footer {
   text-transform: uppercase;
 }
 .scroll-top:hover {
-  color: hsl(0deg, 0%, 39%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 /* To add by jQuery when clicked */
@@ -263,6 +258,9 @@ footer {
   }
   .card {
     margin: 30px;
+  }
+  .see-more:hover {
+    color: hsl(0deg, 0%, 25%);
   }
 }
 #about-me p, #about-me span, #about-me li {
@@ -527,6 +525,9 @@ footer {
   width: 38px;
   margin: 20px auto;
   border-top: 3px solid black;
+}
+#contact a:hover {
+  border-bottom: none;
 }
 
 .contact-sub-text {

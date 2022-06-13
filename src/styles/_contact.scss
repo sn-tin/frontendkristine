@@ -12,6 +12,11 @@
     hr {
         @include hr(20px, auto);
     }
+    a {
+        &:hover {
+            border-bottom: none;
+        }
+    }
 }
 
 .contact-sub-text {
