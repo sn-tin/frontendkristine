@@ -305,6 +305,10 @@ section {
   font-weight: 600;
 }
 
+.list-of-hobbies span {
+  text-decoration: line-through;
+}
+
 .list-of-tools {
   margin: 0 auto;
   padding: 15px 30px;
