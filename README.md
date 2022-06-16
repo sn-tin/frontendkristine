@@ -4,8 +4,6 @@ Thank you for checking out my work. This portfolio consists of projects that I'v
 
 ## Screenshot
 ![Projects Page](screenshots/project-page.png)
-![About Me Page](screenshots/about-me-page.png)
-![Contact Page](screenshots/contact-page.png)
 
 ## Links
 - Solution URL: https://github.com/sn-tin/frontendkristine
