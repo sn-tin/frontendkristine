@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { devices, FontWeight, theme } from "../../styles";
 
-const Content = styled.section`
+const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
