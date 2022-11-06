@@ -1,25 +1,21 @@
+import { CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper } from "./Works.styles";
+
 const Cards = ({data}) => {
     const { id, img, name, date } = data;
+    const className = `work-img-${id}`
     return (
-        <div className="work-cards">
-            <div id={id} className={"work"-{id}}
-                style={
-                    {
-                        backgroundImage: {img},
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover"
-                    }
-                }
-            >
-                <div className="overlay">
-                    <button style={{textTransform: "uppercase"}}>Read More</button>
-                </div>
+        <CardsWrapper className="work-cards">
+            <div id={id} className={className} style={{position: "relative", overflow: "hidden"}}>
+                <CardImg src={img} alt={name} />
+                <Overlay className="overlay">
+                    <ReadButton>Read More</ReadButton>
+                </Overlay>
             </div>
-            <div className="name-date">
+            <DetailsWrapper className="name-date">
                 <span>{name}</span>
                 <span>{date}</span>
-            </div>
-        </div>
+            </DetailsWrapper>
+        </CardsWrapper>
     )
 }
 

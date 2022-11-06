@@ -7,7 +7,7 @@ const theme = {
         fontFam: `'Orbitron', sans-serif`
     },
     text: {
-        color: "#343434",
+        color: "#3F3F3F",
         fontFam: `'Nunito', sans-serif`
     }
 }
