@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { devices, FontWeight, theme } from "../../styles";
+import { devices, theme } from "../../styles";
 
 const Content = styled.div`
     display: flex;
@@ -12,7 +12,7 @@ const Content = styled.div`
         width: 100%;
         max-width: 909px;
         font-size: clamp(1.438rem, 5vw, 2.813rem);
-        font-weight: ${FontWeight.bold};
+        font-weight: ${theme.fontWeights.bold};
         text-align: right;
         margin: 40px 0 40px auto;
     }

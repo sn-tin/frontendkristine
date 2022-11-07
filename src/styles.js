@@ -2,6 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 const theme = {
     backgroundColor: "#E8EBE8",
+    fontWeights: {
+        regular: 400,
+        medium: 500,
+        semiBold: 600,
+        bold: 700,
+        extraBold: 800,
+        black: 900
+    },
     heading: {
         color: "#343434",
         fontFam: `'Orbitron', sans-serif`
@@ -32,15 +40,6 @@ const devices = {
     desktopL: `(min-width: ${sizes.desktop})`
 }
 
-const FontWeight = {
-    regular: 400,
-    medium: 500,
-    semiBold: 600,
-    bold: 700,
-    extraBold: 800,
-    black: 900
-}
-
 const GlobalStyle = createGlobalStyle`
 * {
     box-sizing: border-box;
@@ -67,4 +66,4 @@ p {
 `
 
 
-export { GlobalStyle, theme, devices, FontWeight };
+export { GlobalStyle, theme, devices };

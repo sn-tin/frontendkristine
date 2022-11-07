@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { devices, FontWeight, theme } from "../../styles";
+import { devices, theme } from "../../styles";
 
 const CardFlex = styled.div`
     display: flex;
@@ -43,7 +43,7 @@ const ReadButton = styled.button`
     text-transform: uppercase;
     color: ${theme.backgroundColor};
     font-size: clamp(0.5rem, 2.5vw, 1.125rem);
-    font-weight: ${FontWeight.bold};
+    font-weight: ${theme.fontWeights.bold};
     padding: 10px 15px;
     border: none;
     background-color: ${theme.heading.color};

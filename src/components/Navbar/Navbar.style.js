@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import star from '../../assets/star.svg'
 import lightStar from '../../assets/light-star.svg'
-import { theme, devices, FontWeight } from "../../styles.js"
+import { theme, devices } from "../../styles.js"
 
 const StyledNavbar = styled.div`
     display: flex;
@@ -14,7 +14,7 @@ const StyledNavbar = styled.div`
     h1 {
         font-size: clamp(1.2rem, 2.5vw, 1.563rem);
         text-transform: uppercase;
-        font-weight: ${FontWeight.extraBold};
+        font-weight: ${theme.fontWeights.extraBold};
     }
     @media screen and (${devices.laptop}) {
         padding: 100px 0 40px;
@@ -48,13 +48,13 @@ const SmallScreenNav = styled.div`
     z-index: 1;
     a, a:active, a:visited {
         color: ${theme.heading.color};
-        font: ${FontWeight.medium} 19px ${theme.heading.fontFam};
+        font: ${theme.fontWeights.medium} 19px ${theme.heading.fontFam};
         text-decoration: none;
         padding: 15px 0;
         &.active {
             color: ${theme.backgroundColor};
             background-color: ${theme.heading.color};
-            font-weight: ${FontWeight.extraBold};
+            font-weight: ${theme.fontWeights.extraBold};
             position: relative;
             &:before {
                 content: url(${lightStar});
@@ -77,7 +77,7 @@ const LargeScreenNav = styled.div`
         color: ${theme.text.color};
         font-family: ${theme.heading.fontFam};
         font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-        font-weight: ${FontWeight.medium};
+        font-weight: ${theme.fontWeights.medium};
         list-style: none;
         text-align: right;
         text-decoration: none;
