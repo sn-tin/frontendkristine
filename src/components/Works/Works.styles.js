@@ -1,23 +1,48 @@
 import styled from "styled-components";
 import { devices, theme } from "../../styles";
 
+const WorkTexts = styled.div`
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+    h1 {
+        font-size: clamp(4.063rem, 2vw, 6.25rem);
+    }
+    p {
+        width: 700px;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+`
+
 const CardFlex = styled.div`
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 30px 0;
+    gap: 20px;
     @media screen and (${devices.laptop}) {
        flex-direction: row;
+       margin: 30px 0 0;
+       gap: 40px;
     }
 `
 
 const CardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    width: 240px;
-    margin: 20px 0 0 auto;
+    width: 300px;
+    margin: 0 auto;
     border: 2px solid ${theme.heading.color};
+    @media screen and (${devices.tablet}) {
+        width: 400px;
+    }
     @media screen and (${devices.laptop}) {
         flex-direction: column;
         width: 527px;
+        position: relative;
+        left: 317px;
     }
 `
 
@@ -61,4 +86,4 @@ const DetailsWrapper = styled.div`
     z-index: 1;
 `
 
-export { CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper }
+export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper }
