@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { devices, theme } from "../../styles";
 
 const Content = styled.div`
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

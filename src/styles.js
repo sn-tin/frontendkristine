@@ -58,8 +58,8 @@ p {
   font-family: ${theme.text.fontFam};
 }
 .App {
-    width: 100%;
-    max-width: 1246px;
+    /* width: 100%;
+    max-width: 1246px; */
     padding: 0 20px;
     margin: 0 auto;
 }

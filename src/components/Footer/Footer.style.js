@@ -5,8 +5,11 @@ import { devices, theme } from "../../styles";
 
 
 const StyledFooter = styled.div`
+    width: 100%;
+    max-width: 1246px;
     display: flex;
     padding: 30px 0 50px;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     p {
