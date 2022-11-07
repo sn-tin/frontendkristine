@@ -9,7 +9,8 @@ const WorkTexts = styled.div`
         font-size: clamp(4.063rem, 2vw, 6.25rem);
     }
     p {
-        width: 700px;
+        width: 100%;
+        max-width: 700px;
         font-size: clamp(1rem, 2.5vw, 1.2rem);
     }
 `
