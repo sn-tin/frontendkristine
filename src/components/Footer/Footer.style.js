@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import star from "../../assets/star.svg"
 import { HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
 import { devices, theme } from "../../styles";
 
