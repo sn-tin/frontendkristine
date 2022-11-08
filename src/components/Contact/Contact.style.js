@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { devices, theme } from "../../styles";
+import { theme } from "../../styles";
 
 const StyledContact = styled.div`
     width: 100%;
