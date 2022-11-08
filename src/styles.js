@@ -17,7 +17,7 @@ const theme = {
     heading: {
         bigger: "clamp(5rem,10vw,13.125rem)",
         smaller: "clamp(4.063rem,2vw,6.25rem)",
-        sub: "clamp(1.875rem, 2.5vw, 2.5rem)",
+        sub: "clamp(1.6rem, 2.5vw, 2.5rem)",
         fontFam: `'Orbitron', sans-serif`
     },
     text: {

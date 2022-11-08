@@ -4,21 +4,43 @@ import { devices, theme } from "../../styles";
 const StyleAbout = styled.div`
     width: 100%;
     max-width: 1246px;
-    margin: 0 auto 30px;
+    margin: 50px auto;
     h1 {
         font-size: ${theme.heading.smaller};
+        margin-bottom: 20px;
     }
 `
 
 const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
     h2 {
-        font: ${theme.heading.sub} ${theme.heading.fontFam} ${theme.fontWeights.medium};
+        font-size: ${theme.heading.sub};
+        font-family: ${theme.heading.fontFam};
+        font-weight: ${theme.fontWeights.medium};
+        margin-bottom: 15px;
     }
-    @media screen and (${devices.desktop}) {
-        flex-direction: row;
+    p {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    @media screen and (${devices.laptop}) {
+        flex-direction: row !important;
     }
 `
 
-export { StyleAbout, AboutContent }
+const AboutPersonal = styled.div`
+    @media screen and (${devices.laptop}) {
+        width: 767px;
+    }
+`
+
+const AboutTools = styled.div`
+    @media screen and (${devices.laptop}) {
+        width: 285px;
+        text-align: right;
+    }
+`
+
+export { StyleAbout, AboutContent, AboutPersonal, AboutTools }
