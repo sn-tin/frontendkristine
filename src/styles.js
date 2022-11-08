@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: ${theme.heading.fontFam};
   text-transform: uppercase;
 }
+h2 {
+    text-transform: capitalize !important;
+}
 p {
   color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
