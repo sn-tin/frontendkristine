@@ -1,11 +1,11 @@
-import { StyleAbout } from '../About/About.styles'
+import { StyleAbout, AboutContent } from '../About/About.styles'
 
 const About = () => {
     return (
         <StyleAbout>
             <h1>About</h1>
-            <div className='about-content'>
-                <div className='personal'>
+            <AboutContent className='about-content'>
+                <div className='personal' >
                     <h2>Kristine May de Jesus</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -14,7 +14,7 @@ const About = () => {
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
                         qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='tools'>
+                <div className='tools' >
                     <h2>Tools I use</h2>
                     <p>
                     HTML, CSS, Bootstrap,
@@ -23,7 +23,7 @@ const About = () => {
                     Parcel, Git, Ubuntu
                     </p>
                 </div>
-            </div>
+            </AboutContent>
         </StyleAbout>
     )
 }
