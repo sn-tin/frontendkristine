@@ -1,4 +1,6 @@
-import { StyledContact } from './Contact.style.js'
+import { StyledContact, FlexContact } from './Contact.style.js'
+import mail from '../../assets/mail.svg'
+import phone from '../../assets/phone.svg'
 
 const Contact = () => {
     return (
@@ -7,14 +9,14 @@ const Contact = () => {
             <h2>Interested in working together?</h2>
             <p>Please don’t hesistate to reach out. I’d be glad to work with you!</p>
             <div className='contacts'>
-                <div className='email'>
-                    <img src />
+                <FlexContact className='email'>
+                    <img src={mail} alt="Mail icon"/>
                     <span>kristinemaydj.work@gmail.com</span>
-                </div>
-                <div className='number'>
-                    <img src />
+                </FlexContact>
+                <FlexContact className='number'>
+                    <img src={phone} alt="Phone icon" />
                     <span>(+63) 915 945 4515</span>
-                </div>
+                </FlexContact>
             </div>
         </StyledContact>
     )
