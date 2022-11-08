@@ -57,6 +57,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: ${theme.colors.dark};
   font-family: ${theme.heading.fontFam};
+  text-transform: uppercase;
 }
 p {
   color: ${theme.colors.fadeBlack};
