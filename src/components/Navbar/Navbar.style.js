@@ -44,18 +44,18 @@ const SmallScreenNav = styled.div`
     width: 90%;
     border: 1px solid #000000;
     text-align: center;
-    background-color: ${theme.backgroundColor};
+    background-color: ${theme.colors.grayishWhite};
     box-shadow: 5px 5px #000000;
     position: absolute;
     z-index: 1;
     a, a:active, a:visited {
-        color: ${theme.heading.color};
+        color: ${theme.colors.dark};
         font: ${theme.fontWeights.medium} 19px ${theme.heading.fontFam};
         text-decoration: none;
         padding: 15px 0;
         &.active {
-            color: ${theme.backgroundColor};
-            background-color: ${theme.heading.color};
+            color: ${theme.colors.grayishWhite};
+            background-color: ${theme.colors.dark};
             font-weight: ${theme.fontWeights.extraBold};
             position: relative;
             &:before {
@@ -76,7 +76,7 @@ const LargeScreenNav = styled.div`
     display: none;
     a {
         width: 150px;
-        color: ${theme.text.color};
+        color: ${theme.colors.fadeBlack};
         font-family: ${theme.heading.fontFam};
         font-size: clamp(0.9rem, 2.5vw, 1.1rem);
         font-weight: ${theme.fontWeights.medium};
@@ -129,7 +129,7 @@ const HeaderLine1 = styled.div`
     width: 145px;
     height: 1px;
     transform: rotate(90deg);
-    background-color: ${theme.heading.color};
+    background-color: ${theme.colors.dark};
     @media screen and (${devices.laptop}) {
         .header-line-1 {
             width: 95px;

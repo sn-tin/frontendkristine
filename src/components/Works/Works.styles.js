@@ -6,7 +6,7 @@ const WorkTexts = styled.div`
     max-width: 1246px;
     margin: 0 auto;
     h1 {
-        font-size: clamp(4.063rem, 2vw, 6.25rem);
+        font-size: ${theme.heading.smaller};
     }
     p {
         width: 100%;
@@ -35,7 +35,7 @@ const CardsWrapper = styled.div`
     flex-direction: column;
     width: 300px;
     margin: 0 auto;
-    border: 2px solid ${theme.heading.color};
+    border: 2px solid ${theme.colors.dark};
     @media screen and (${devices.tablet}) {
         width: 400px;
     }
@@ -67,21 +67,21 @@ const Overlay = styled.div`
 
 const ReadButton = styled.button`
     text-transform: uppercase;
-    color: ${theme.backgroundColor};
+    color: ${theme.colors.grayishWhite};
     font-size: clamp(0.5rem, 2.5vw, 1.125rem);
     font-weight: ${theme.fontWeights.bold};
     padding: 10px 15px;
     border: none;
-    background-color: ${theme.heading.color};
+    background-color: ${theme.colors.dark};
 `
 
 const DetailsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    color: ${theme.backgroundColor};
+    color: ${theme.colors.grayishWhite};
     font-family: ${theme.heading.fontFam};
     font-size: clamp(0.625rem, 2.5vw, 1.25rem);
-    background-color: ${theme.heading.color};
+    background-color: ${theme.colors.dark};
     padding: 10px 5px;
     position: relative;
     z-index: 1;

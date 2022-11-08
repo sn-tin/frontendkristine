@@ -1,7 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 const theme = {
-    backgroundColor: "#E8EBE8",
+    colors: {
+        grayishWhite: "#E8EBE8", 
+        dark: "#343434", 
+        fadeBlack: "#3F3F3F"
+    },
     fontWeights: {
         regular: 400,
         medium: 500,
@@ -11,11 +15,11 @@ const theme = {
         black: 900
     },
     heading: {
-        color: "#343434",
+        bigger: "clamp(5rem,10vw,13.125rem)",
+        smaller: "clamp(4.063rem,2vw,6.25rem)",
         fontFam: `'Orbitron', sans-serif`
     },
     text: {
-        color: "#3F3F3F",
         fontFam: `'Nunito', sans-serif`
     }
 }
@@ -47,14 +51,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
 }
 body {
-  background-color: ${theme.backgroundColor};
+  background-color: ${theme.colors.grayishWhite};
 }
 h1, h2, h3, h4, h5, h6 {
-  color: ${theme.heading.color};
+  color: ${theme.colors.dark};
   font-family: ${theme.heading.fontFam};
 }
 p {
-  color: ${theme.text.color};
+  color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
 }
 .App {
