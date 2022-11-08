@@ -71,6 +71,12 @@ p {
     max-width: 1246px; */
     padding: 0 20px;
     margin: 0 auto;
+    @media screen and (${devices.tablet}) and (max-width: ${sizes.laptop}) {
+        padding: 0 100px;
+    }
+    @media screen and (${devices.laptop}) {
+        padding: 0 50px;
+    }
 }
 `
 
