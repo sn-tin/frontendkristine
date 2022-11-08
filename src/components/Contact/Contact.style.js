@@ -3,7 +3,7 @@ import { theme } from "../../styles";
 
 const StyledContact = styled.div`
     width: 100%;
-    max-width: 1246px;
+    max-width: 1216px;
     margin: 0 auto;
     h1 {
         font-size: ${theme.heading.smaller};

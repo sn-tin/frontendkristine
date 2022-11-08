@@ -5,7 +5,7 @@ import { devices, theme } from "../../styles";
 
 const StyledFooter = styled.div`
     width: 100%;
-    max-width: 1246px;
+    max-width: 1216px;
     display: flex;
     padding: 30px 0 50px;
     margin: 0 auto;
