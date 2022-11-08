@@ -44,6 +44,7 @@ const FooterLines = styled(HeaderLine)`
     bottom: 4.5rem;
     right: 12rem;
     left: auto;
+    padding: 40px 0 0;
     @media screen and (${devices.laptop}) {
         bottom: 8rem;
         right: 14rem;
@@ -51,10 +52,10 @@ const FooterLines = styled(HeaderLine)`
 `
 
 const FooterLine1 = styled(HeaderLine1)`
-    left: -1.3rem;
-    top: 4rem;
+    left: -1.55rem;
+    top: 4.5rem;
     bottom: 0rem;
-    width: 72px;
+    width: 80px;
     transform: rotate(-90deg);
     /* background-color: red; */
     @media screen and (${devices.laptop}) {
@@ -66,11 +67,13 @@ const FooterLine1 = styled(HeaderLine1)`
 
 const FooterLine2 = styled(HeaderLine2)`
     width: 65rem;
+    bottom: 1.2rem;   
     /* background-color: blue; */
 `
 
 const FooterLine3 = styled(HeaderLine3)`
     left: 1.5rem;
+    bottom: 1.2rem;
     /* background-color: yellow; */
 `
 
