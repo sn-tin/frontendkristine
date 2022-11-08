@@ -10,6 +10,7 @@ const StyledContact = styled.div`
     }
     h2 {
         font-size: ${theme.heading.sub};
+        font-weight: ${theme.fontWeights.medium};
         margin: 20px 0;
     }
     p {
