@@ -87,4 +87,44 @@ const DetailsWrapper = styled.div`
     z-index: 1;
 `
 
-export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper }
+const ArticleWrapper = styled.article`
+    width: 100%;
+    max-width: 1216px;
+    margin: auto;
+`
+
+const ArticleImage = styled.img`
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center 15%;
+    border: 2px solid ${theme.colors.dark};
+    @media screen and (${devices.laptop}) {
+        height: 290px;
+    }
+`
+
+const ArticleMainText = styled.div`
+    font-family: ${theme.heading.fontFam};
+    text-align: center;
+    margin: 30px auto;
+    span {
+        color: ${theme.colors.fadeBlack};
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
+        font-weight: ${theme.fontWeights.regular};
+    }
+    h1 {
+        color: ${theme.colors.dark};
+        font-size: clamp(2.5rem, 5vw, 3.75rem);
+        font-weight: ${theme.fontWeights.black};
+        margin: 10px auto;
+    }
+    p {
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+`
+
+export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText }

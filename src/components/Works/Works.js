@@ -1,6 +1,7 @@
 import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
+import NoContext from "./NoContext";
 
 const Works = () => {
     const workCards = works.map((work) => {
@@ -18,6 +19,7 @@ const Works = () => {
             <CardFlex className="cards-flex">
                 {workCards}
             </CardFlex>
+            <NoContext />
         </section>
     )
 }
