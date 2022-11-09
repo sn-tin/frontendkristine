@@ -97,7 +97,7 @@ const ArticleImage = styled.img`
     width: 100%;
     height: 100px;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center 17%;
     border: 2px solid ${theme.colors.dark};
     @media screen and (${devices.laptop}) {
         height: 230px;
