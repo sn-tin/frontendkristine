@@ -2,6 +2,9 @@ import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
 import NoContext from "./NoContext";
+import Shortly from "./Shortly";
+import ToDo from "./ToDo";
+import RockPaperScissor from "./RockPaperScissor"
 
 const Works = () => {
     const workCards = works.map((work) => {
@@ -19,7 +22,7 @@ const Works = () => {
             <CardFlex className="cards-flex">
                 {workCards}
             </CardFlex>
-            <NoContext />
+            <RockPaperScissor />
         </section>
     )
 }
