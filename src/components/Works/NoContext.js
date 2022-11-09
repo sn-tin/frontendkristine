@@ -1,5 +1,5 @@
 import worksData from "./worksData";
-import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton } from "./Works.styles";
+import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics } from "./Works.styles";
 const NoContext = () => {
     const { img, name, date, category } = worksData[0];
     return (
@@ -14,7 +14,7 @@ const NoContext = () => {
                     <SolidButton >Demo</SolidButton >
                 </FlexButtons>
             </ArticleMainText >
-            <div>
+            <SubTopics>
                 <h2>About the project</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. 
@@ -24,8 +24,8 @@ const NoContext = () => {
                 arcu ac tortor. Natoque penatibus et magnis dis parturient montes nascetur. Aliquet porttitor lacus luctus 
                 accumsan tortor posuere ac ut. Aenean sed adipiscing diam donec adipiscing.
                 </p>
-            </div>
-            <div>
+            </SubTopics>
+            <SubTopics>
                 <h2>Process</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. 
@@ -35,8 +35,8 @@ const NoContext = () => {
                 arcu ac tortor. Natoque penatibus et magnis dis parturient montes nascetur. Aliquet porttitor lacus luctus 
                 accumsan tortor posuere ac ut. Aenean sed adipiscing diam donec adipiscing.
                 </p>
-            </div>
-            <div>
+            </SubTopics>
+            <SubTopics>
                 <h2>Result</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. 
@@ -46,7 +46,7 @@ const NoContext = () => {
                 arcu ac tortor. Natoque penatibus et magnis dis parturient montes nascetur. Aliquet porttitor lacus luctus 
                 accumsan tortor posuere ac ut. Aenean sed adipiscing diam donec adipiscing.
                 </p>
-            </div>
+            </SubTopics>
         </ArticleWrapper>
     )
 }

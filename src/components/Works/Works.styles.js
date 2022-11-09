@@ -90,7 +90,7 @@ const DetailsWrapper = styled.div`
 const ArticleWrapper = styled.article`
     width: 100%;
     max-width: 1216px;
-    margin: auto;
+    margin: 80px auto;
 `
 
 const ArticleImage = styled.img`
@@ -155,4 +155,16 @@ const SolidButton = styled(BorderButton)`
     background-color: ${theme.colors.dark};
 `
 
-export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton }
+const SubTopics = styled.div`
+    margin-top: 25px;
+    h2 {
+        font-size: clamp(1.9rem, 2.5vw, 2.5rem);
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+        text-align: justify;
+    }
+`
+
+export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
