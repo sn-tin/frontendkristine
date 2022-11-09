@@ -22,7 +22,6 @@ const Works = () => {
             <CardFlex className="cards-flex">
                 {workCards}
             </CardFlex>
-            <RockPaperScissor />
         </section>
     )
 }
