@@ -1,5 +1,5 @@
 import worksData from "./worksData";
-import { ArticleWrapper, ArticleImage, ArticleMainText } from "./Works.styles";
+import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton } from "./Works.styles";
 const NoContext = () => {
     const { img, name, date, category } = worksData[0];
     return (
@@ -9,8 +9,10 @@ const NoContext = () => {
                 <span>{category} / {date}</span>
                 <h1>{name}</h1>
                 <p>A website where users can search for, copy-paste and bookmark Filipino memes in a form of text.</p>
-                <button>Code</button>
-                <button>Demo</button>
+                <FlexButtons>
+                    <BorderButton >Code</BorderButton >
+                    <SolidButton >Demo</SolidButton >
+                </FlexButtons>
             </ArticleMainText >
             <div>
                 <h2>About the project</h2>

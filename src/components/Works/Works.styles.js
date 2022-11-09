@@ -100,7 +100,7 @@ const ArticleImage = styled.img`
     object-position: center 15%;
     border: 2px solid ${theme.colors.dark};
     @media screen and (${devices.laptop}) {
-        height: 290px;
+        height: 230px;
     }
 `
 
@@ -126,5 +126,33 @@ const ArticleMainText = styled.div`
         font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     }
 `
+const FlexButtons = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px auto;
+    @media screen and (${devices.tablet}) {
+        flex-direction: row;
+        gap: 10px;
+    }
+`
 
-export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText }
+const BorderButton = styled.button`
+    width: 100%;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-family: ${theme.heading.fontFam};
+    background-color: transparent;
+    border: 2px solid ${theme.colors.dark};
+    padding: 10px 0;
+    @media screen and (${devices.tablet}) {
+        width: 190px;
+    }
+` 
+
+const SolidButton = styled(BorderButton)`
+    color: ${theme.colors.grayishWhite};
+    background-color: ${theme.colors.dark};
+`
+
+export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton }
