@@ -68,6 +68,9 @@ const ReadButton = styled.button`
     padding: 10px 15px;
     border: none;
     background-color: ${theme.colors.dark};
+    @media screen and (${devices.laptop}) {
+        padding: 15px 25px;
+    }
 `
 
 const DetailsWrapper = styled.div`

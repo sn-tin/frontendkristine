@@ -1,7 +1,6 @@
 import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
-import { motion } from "framer-motion";
 import NoContext from "./NoContext";
 import Shortly from "./Shortly";
 import ToDo from "./ToDo";

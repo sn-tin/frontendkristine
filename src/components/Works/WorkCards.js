@@ -1,5 +1,4 @@
 import { CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper } from "./Works.styles";
-import { motion } from "framer-motion";
 
 const Cards = ({data}) => {
     const { id, img, name, date } = data;
