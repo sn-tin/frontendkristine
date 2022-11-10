@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { devices, theme } from "../../styles";
+import { motion } from "framer-motion";
 
 const WorkTexts = styled.div`
     /* width: 100%;
@@ -15,12 +16,11 @@ const WorkTexts = styled.div`
     }
 `
 
-const CardFlex = styled.div`
+const CardFlex = styled(motion.div)`
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
     margin: 30px 0;
     gap: 20px;
     @media screen and (${devices.laptop}) {
@@ -33,12 +33,9 @@ const CardFlex = styled.div`
 const CardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     border: 2px solid ${theme.colors.dark};
-    @media screen and (${devices.tablet}) {
-        width: 400px;
-    }
     @media screen and (${devices.laptop}) {
         flex-direction: column;
         width: 527px;

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const Cards = ({data}) => {
     const { id, img, name, date } = data;
     const className = `work-img-${id}`
+    
     return (
         <CardsWrapper className="work-cards">
             <div id={id} className={className} style={{position: "relative", overflow: "hidden"}}>
