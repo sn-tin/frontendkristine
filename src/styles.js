@@ -67,8 +67,8 @@ p {
   font-family: ${theme.text.fontFam};
 }
 .App {
-    /* width: 100%;
-    max-width: 1246px; */
+    width: 100%;
+    max-width: 1216px;
     padding: 0 20px;
     margin: 0 auto;
     @media screen and (${devices.tablet}) and (max-width: ${sizes.laptop}) {

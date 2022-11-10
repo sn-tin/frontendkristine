@@ -4,8 +4,8 @@ import lightStar from '../../assets/light-star.svg'
 import { theme, devices } from "../../styles.js"
 
 const StyledNavbar = styled.div`
-    width: 100%;
-    max-width: 1216px;
+    /* width: 100%;
+    max-width: 1216px; */
     display: flex;
     justify-content: space-between;
     align-content: center;

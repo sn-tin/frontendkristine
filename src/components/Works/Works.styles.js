@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { devices, theme } from "../../styles";
 
 const WorkTexts = styled.div`
-    width: 100%;
-    max-width: 1216px;
+    /* width: 100%;
+    max-width: 1216px; */
     margin: 0 auto;
     h1 {
         font-size: ${theme.heading.smaller};
@@ -19,7 +19,7 @@ const CardFlex = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-x: scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
     margin: 30px 0;
     gap: 20px;
@@ -42,8 +42,6 @@ const CardsWrapper = styled.div`
     @media screen and (${devices.laptop}) {
         flex-direction: column;
         width: 527px;
-        position: relative;
-        left: 317px;
     }
 `
 

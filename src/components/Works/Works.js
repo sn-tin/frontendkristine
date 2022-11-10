@@ -1,6 +1,7 @@
 import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
+import { motion } from "framer-motion";
 import NoContext from "./NoContext";
 import Shortly from "./Shortly";
 import ToDo from "./ToDo";
@@ -19,7 +20,7 @@ const Works = () => {
                 <h1>Works</h1>
                 <p>Check out the documentations for some of the learning projects I’ve made where I was able to to use the skills I developed learning front-end tech stacks.</p>
             </WorkTexts>
-            <CardFlex className="cards-flex">
+            <CardFlex drag="x" className="cards-flex">
                 {workCards}
             </CardFlex>
         </section>
