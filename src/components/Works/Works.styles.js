@@ -17,7 +17,7 @@ const WorkTexts = styled.div`
 `
 
 const CardFlex = styled(motion.div)`
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     position: relative;
     overflow-x: hidden;
@@ -27,15 +27,20 @@ const CardFlex = styled(motion.div)`
        flex-direction: row;
        margin: 30px 0 0;
        gap: 40px;
-    }
+    } */
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+    gap: 10px;
 `
 
 const CardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 300px;
     margin: 0 auto;
     border: 2px solid ${theme.colors.dark};
+    position: relative;
     @media screen and (${devices.laptop}) {
         flex-direction: column;
         width: 527px;
