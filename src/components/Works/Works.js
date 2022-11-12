@@ -1,10 +1,6 @@
 import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
-import NoContext from "./NoContext";
-import Shortly from "./Shortly";
-import ToDo from "./ToDo";
-import RockPaperScissor from "./RockPaperScissor"
 import { useState, useRef, useEffect } from "react";
 
 const Works = () => {
