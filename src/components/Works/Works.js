@@ -2,7 +2,6 @@ import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
 import { useState, useRef, useEffect } from "react";
-import { useParams } from "react-router-dom";
 
 const Works = () => {
     const [width, setWidth] = useState(0);

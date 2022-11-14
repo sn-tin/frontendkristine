@@ -1,6 +1,5 @@
 import { CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper } from "./Works.styles";
-import NoContext from "./NoContext";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Cards = ({data}) => {
     const { img, name, date, id } = data;
@@ -14,9 +13,7 @@ const Cards = ({data}) => {
                 <div className={className} style={{position: "relative", overflow: "hidden"}}>
                     <CardImg src={img} alt={name} />
                     <Overlay className="overlay">
-                        <Link path={`/${params}`}>
-                            <ReadButton>Read More</ReadButton>                        
-                        </Link>
+                        <ReadButton>Read More</ReadButton>                        
                     </Overlay>
                 </div>
                 <DetailsWrapper className="name-date">
