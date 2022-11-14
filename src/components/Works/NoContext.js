@@ -1,9 +1,9 @@
 import worksData from "./worksData";
 import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics } from "./Works.styles";
 const NoContext = () => {
-    const { img, name, date, category } = worksData[0];
+    const { id, img, name, date, category } = worksData[0];
     return (
-        <ArticleWrapper>
+        <ArticleWrapper id={id}>
             <ArticleImage src={img} alt={name} />
             <ArticleMainText  className="main-text">
                 <span>{category} / {date}</span>
