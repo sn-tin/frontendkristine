@@ -16,7 +16,7 @@ const Article = () => {
             </ArticleMainText >
             {
                 subtopics.map(({title, description}) => (
-                    <SubTopics>
+                    <SubTopics key={title}>
                         <h2>{title}</h2>
                         <p>{description}</p>
                     </SubTopics>
