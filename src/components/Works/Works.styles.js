@@ -146,6 +146,7 @@ const BorderButton = styled.a`
     color: ${theme.colors.dark};
     font-size: clamp(0.8rem, 2.5vw, 1rem);
     font-family: ${theme.heading.fontFam};
+    text-transform: uppercase;
     text-decoration: none;
     background-color: transparent;
     border: 2px solid ${theme.colors.dark};
