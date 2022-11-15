@@ -10,6 +10,8 @@ let works = [
         name: "No Context",
         date: "October 2022",
         category: "Personal Project",
+        codeURL: "https://github.com/sn-tin/no-context-app",
+        demoURL: "https://no-context.vercel.app/",
         subtopics: [
             {
                 title: "About the project",
@@ -31,6 +33,8 @@ let works = [
         name: "Shortly",
         date: "September 2022",
         category: "Solution",
+        codeURL: "https://github.com/sn-tin/shorten-url",
+        demoURL: "https://shorten-url-delta.vercel.app/",
         subtopics: [
             {
                 title: "About the project",
@@ -52,6 +56,8 @@ let works = [
         name: "To-Do List",
         date: "August 2022",
         category: "Personal Project",
+        codeURL: "https://github.com/sn-tin/todo-list",
+        demoURL: "https://todo-list-sn-tin.vercel.app/",
         subtopics: [
             {
                 title: "About the project",
@@ -73,6 +79,8 @@ let works = [
         name: "Rock Paper Scissors",
         date: "July 2022",
         category: "Personal Project",
+        codeURL: "https://github.com/sn-tin/rock-paper-scissors",
+        demoURL: "https://odin-rock-paper-scissors-pi.vercel.app/",
         subtopics: [
             {
                 title: "About the project",
