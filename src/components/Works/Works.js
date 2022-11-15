@@ -2,6 +2,7 @@ import works from "./worksData";
 import Cards from "./WorkCards";
 import { WorkTexts, CardFlex } from "./Works.styles";
 import { useState, useRef, useEffect } from "react";
+import Article from "./Article";
 
 const Works = () => {
     const [width, setWidth] = useState(0);
@@ -28,6 +29,7 @@ const Works = () => {
                     {workCards}
                 </CardFlex>
             </div>
+            <Article />
         </section>
     )
 }
