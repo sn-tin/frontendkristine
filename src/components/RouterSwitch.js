@@ -14,7 +14,7 @@ const RouterSwitch = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/works" element={<Works />}>
-                    <Route path=":params" element={<NoContext />} />
+                    <Route path=":slug" element={<NoContext />} />
                     {/* <Route path=":params" element={<Shortly />} />
                     <Route path=":params" element={<ToDo />} />
                     <Route path=":params" element={<RockPaperScissor />} /> */}
