@@ -141,13 +141,18 @@ const FlexButtons = styled.div`
     }
 `
 
-const BorderButton = styled.button`
+const BorderButton = styled.a`
     width: 100%;
+    color: ${theme.colors.dark};
     font-size: clamp(0.8rem, 2.5vw, 1rem);
     font-family: ${theme.heading.fontFam};
+    text-decoration: none;
     background-color: transparent;
     border: 2px solid ${theme.colors.dark};
     padding: 10px 0;
+    &:active, &:visited {
+        color: ${theme.colors.dark};
+    }
     @media screen and (${devices.tablet}) {
         width: 190px;
     }
@@ -155,6 +160,9 @@ const BorderButton = styled.button`
 
 const SolidButton = styled(BorderButton)`
     color: ${theme.colors.grayishWhite};
+    &:active, &:visited {
+        color: ${theme.colors.grayishWhite};
+    }
     background-color: ${theme.colors.dark};
 `
 

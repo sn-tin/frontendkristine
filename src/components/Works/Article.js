@@ -1,7 +1,7 @@
 import worksData from "./worksData";
 import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics } from "./Works.styles";
 const Article = () => {
-    const { id, img, name, date, category, subtopics } = worksData[0];
+    const { id, img, name, date, category, subtopics, codeURL, demoURL } = worksData[0];
     return (
         <ArticleWrapper id={id}>
             <ArticleImage src={img} alt={name} />
@@ -10,8 +10,8 @@ const Article = () => {
                 <h1>{name}</h1>
                 <p>A website where users can search for, copy-paste and bookmark Filipino memes in a form of text.</p>
                 <FlexButtons>
-                    <BorderButton >Code</BorderButton >
-                    <SolidButton >Demo</SolidButton >
+                    <BorderButton href={codeURL} target="_blank">Code</BorderButton >
+                    <SolidButton href={demoURL} target="_blank">Demo</SolidButton >
                 </FlexButtons>
             </ArticleMainText >
             {
