@@ -3,8 +3,6 @@ import { devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
 const WorkTexts = styled.div`
-    /* width: 100%;
-    max-width: 1216px; */
     margin: 0 auto;
     h1 {
         font-size: ${theme.heading.smaller};
@@ -16,29 +14,22 @@ const WorkTexts = styled.div`
     }
 `
 
-const CardFlex = styled(motion.div)`
-    /* display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow-x: hidden;
-    margin: 30px 0;
-    gap: 20px;
-    @media screen and (${devices.laptop}) {
-       flex-direction: row;
-       margin: 30px 0 0;
-       gap: 40px;
-    } */
-    display: inline-flex;
+const Carousel = styled(motion.div)`
     overflow: hidden;
-    position: relative;
-    gap: 10px;
+    cursor: grab;
+` 
+
+const InnerCarousel = styled(motion.div)`
+    display: inline-flex;
+    gap: 30px;
 `
 
-const CardsWrapper = styled.div`
+const CardsWrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin: 0 auto;
+    max-width: 527px;
+    margin: 30px auto;
     border: 2px solid ${theme.colors.dark};
     position: relative;
     @media screen and (${devices.laptop}) {
@@ -179,4 +170,4 @@ const SubTopics = styled.div`
     }
 `
 
-export { WorkTexts, CardFlex, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
+export { WorkTexts, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
