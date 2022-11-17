@@ -112,8 +112,8 @@ const HeaderLine = styled.div`
     bottom: 0;
     left: 15rem;
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-image: url(${star});
     background-position: 50% 50%;
     background-size: contain;
@@ -124,7 +124,7 @@ const HeaderLine = styled.div`
 
 const HeaderLine1 = styled.div`
     position: absolute;
-    left: -3.57rem;
+    left: -3.3rem;
     bottom: 6rem;
     width: 145px;
     height: 1px;
@@ -141,18 +141,18 @@ const HeaderLine1 = styled.div`
 
 const HeaderLine2 = styled(HeaderLine1)`
     left: auto;
-    right: 1.6rem;
-    bottom: 0.9rem;
-    width: 245px;
+    right: 2.43rem;
+    bottom: 1.21rem;
+    width: 250px;
     transform: none;
 `
 
 const HeaderLine3 = styled(HeaderLine2)`
     left: auto;
     right: auto;
-    bottom: 0.9rem;
+    bottom: 1.21rem;
     /* width: 5.9rem; */
-    width: 62rem;
+    width: 55rem;
 `
 
 export { StyledNavbar, HamburgerMenu, Lines, 
