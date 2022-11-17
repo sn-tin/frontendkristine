@@ -4,10 +4,8 @@ import { devices, theme } from "../../styles";
 
 
 const StyledFooter = styled.div`
-    /* width: 100%;
-    max-width: 1216px; */
     display: flex;
-    padding: 30px 0 50px;
+    padding: 35px 0 50px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -52,14 +50,13 @@ const FooterLines = styled(HeaderLine)`
 `
 
 const FooterLine1 = styled(HeaderLine1)`
-    left: -1.55rem;
+    left: -1.25rem;
     top: 4.5rem;
     bottom: 0rem;
     width: 80px;
     transform: rotate(-90deg);
-    /* background-color: red; */
     @media screen and (${devices.laptop}) {
-        left: -3.6rem;
+        left: -3.3rem;
         top: 6rem;
         width: 145px;
     }
@@ -68,13 +65,11 @@ const FooterLine1 = styled(HeaderLine1)`
 const FooterLine2 = styled(HeaderLine2)`
     width: 65rem;
     bottom: 1.2rem;   
-    /* background-color: blue; */
 `
 
 const FooterLine3 = styled(HeaderLine3)`
     left: 1.5rem;
     bottom: 1.2rem;
-    /* background-color: yellow; */
 `
 
 export { StyledFooter, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 }
