@@ -1,6 +1,7 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Content, HomeButton } from './Home.style';
 import { useNavigate } from 'react-router-dom';
+import Works from '../Works/Works';
 
 const Home = () => {
     const date = new Date();
@@ -18,6 +19,7 @@ const Home = () => {
                     <ArrowForwardIcon sx={{width: "30px", height: "30px", marginLeft: "10px"}} />
                 </HomeButton>
             </div>
+            <Works />
         </Content>
     )
 }
