@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.9a8b1719.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/nocontext.png": "/static/media/nocontext.ab4c914395cc3ab8a828.png",
+    "static/media/shortly.png": "/static/media/shortly.1ff16ca5e4f3b89c80b3.png",
+    "static/media/todolist.png": "/static/media/todolist.8d70fdf552724aaf1c2a.png",
+    "static/media/rps.png": "/static/media/rps.7dbc6c8dce451119bbb2.png",
+    "static/media/github.svg": "/static/media/github.76052e7a53daae11c8742c6adaf951b9.svg",
+    "static/media/mail.svg": "/static/media/mail.41bbe8fa42cb2d0e1fab2d3cba6f5a71.svg",
+    "static/media/phone.svg": "/static/media/phone.7210216c24c394604ec12678ee625c14.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.9980f1fc0e5f4d481c62a2e426e56c11.svg",
+    "index.html": "/index.html",
+    "static/media/light-star.svg": "/static/media/light-star.11aba483abad1a4f0cf0e16b6665bf86.svg",
+    "static/media/star.svg": "/static/media/star.4483d9f8934dc217b88223f04d8b8a45.svg",
+    "main.9a8b1719.js.map": "/static/js/main.9a8b1719.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9a8b1719.js"
+  ]
+}
