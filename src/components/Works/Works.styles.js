@@ -21,7 +21,10 @@ const Carousel = styled(motion.div)`
 
 const InnerCarousel = styled(motion.div)`
     display: inline-flex;
-    gap: 30px;
+    gap: 20px;
+    @media screen and (${devices.laptop}) {
+        gap: 30px;
+    }
 `
 
 const CardsWrapper = styled(motion.div)`
