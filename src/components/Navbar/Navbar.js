@@ -8,18 +8,18 @@ import { StyledNavbar,
         HeaderLine3, 
         SmallScreenNav
     } from './Navbar.style.js';
-import { Link } from 'react-router-dom';
+import { NavLink, NavNavLink } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = () => {
-    const [isActive, setIsActive] = useState(true);
+    const [isActive] = useState(false);
     const [showNav, setShowNav] = useState(false);
 
     const showNavMenu = () => {
         setShowNav(!showNav)
     }
-    
-    const navLinksClick = () => {
+
+    const hideNavMenu = () => {
         setShowNav(false)
     }
 
@@ -40,19 +40,19 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
                 <LargeScreenNav>
-                    <Link to="/" className={isActive ? "active" : null}>Home</Link>
-                    <Link to="/works" className={isActive ? "active" : null} >Works</Link>
-                    <Link to="/about" className={isActive ? "active" : null} >About</Link>
-                    <Link to="/contact" className={isActive ? "active" : null} >Contact</Link>
+                    <NavLink to="/" activeClassName={isActive ? "active" : null} >Home</NavLink>
+                    <NavLink to="/works" activeClassName={isActive ? "active" : null} >Works</NavLink>
+                    <NavLink to="/about" className={isActive ? "active" : null} >About</NavLink>
+                    <NavLink to="/contact" className={isActive ? "active" : null} >Contact</NavLink>
                 </LargeScreenNav>
             </StyledNavbar>
             <SmallScreenNav style={{
                 display: showNav ? "flex" : "none",
             }}>
-                    <Link to="/" className='active' onClick={navLinksClick}>Home</Link>
-                    <Link to="/works" className={isActive ? "active" : null} onClick={navLinksClick} >Works</Link>
-                    <Link to="/about" className={isActive ? "active" : null} onClick={navLinksClick} >About</Link>
-                    <Link to="/contact" className={isActive ? "active" : null} onClick={navLinksClick} >Contact</Link>
+                    <NavLink to="/" activeClassName='active'>Home</NavLink>
+                    <NavLink to="/works" activeClassName={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
+                    <NavLink to="/about" activeClassName={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
+                    <NavLink to="/contact" activeClassName={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavLink>
             </SmallScreenNav>
         </nav>
     )
