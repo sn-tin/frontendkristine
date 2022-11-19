@@ -17,7 +17,7 @@ const StyledNavbar = styled.div`
         font-weight: ${theme.fontWeights.extraBold};
     }
     @media screen and (${devices.laptop}) {
-        padding: 100px 0 40px;
+        padding: 60px 0 40px;
     }
 `
 
