@@ -76,9 +76,9 @@ const DetailsWrapper = styled.div`
     justify-content: space-between;
     color: ${theme.colors.grayishWhite};
     font-family: ${theme.heading.fontFam};
-    font-size: clamp(0.625rem, 2.5vw, 1.25rem);
+    font-size: clamp(0.625rem, 2.5vw, 1.1rem);
     background-color: ${theme.colors.dark};
-    padding: 10px 5px;
+    padding: 15px 10px;
     position: relative;
     z-index: 1;
 `
