@@ -4,8 +4,6 @@ import lightStar from '../../assets/light-star.svg'
 import { theme, devices } from "../../styles.js"
 
 const StyledNavbar = styled.div`
-    /* width: 100%;
-    max-width: 1216px; */
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -44,26 +42,33 @@ const SmallScreenNav = styled.div`
     width: 90%;
     border: 1px solid #000000;
     text-align: center;
-    background-color: ${theme.colors.grayishWhite};
-    box-shadow: 5px 5px #000000;
+    background-color: ${theme.colors.dark};
+    margin: 20px auto 30px;
+    padding: 30px 0;
     position: absolute;
     z-index: 1;
     a, a:active, a:visited {
-        color: ${theme.colors.dark};
+        color: ${theme.colors.grayishWhite};
         font: ${theme.fontWeights.medium} 19px ${theme.heading.fontFam};
+        text-align: right;
         text-decoration: none;
-        padding: 15px 0;
+        padding: 25px 10px;
+        margin: 0 30px;
+        &:not(:last-of-type){
+        border-bottom: 1px solid #f5f5f5;
+    }
         &.active {
             color: ${theme.colors.grayishWhite};
             background-color: ${theme.colors.dark};
             font-weight: ${theme.fontWeights.extraBold};
             position: relative;
-            &:before {
+            &::before {
                 content: url(${lightStar});
-                position: absolute;
+                /* position: absolute;
                 top: 40%;
-                left: 25%;
+                right: 5rem; */
                 zoom: 20%;
+                margin-right: 30px;
             }
         }
     }
