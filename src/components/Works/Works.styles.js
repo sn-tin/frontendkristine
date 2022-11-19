@@ -28,13 +28,12 @@ const CardsWrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
     width: 300px;
-    max-width: 527px;
     margin: 30px auto;
     border: 2px solid ${theme.colors.dark};
     position: relative;
     @media screen and (${devices.laptop}) {
         flex-direction: column;
-        width: 527px;
+        width: 480px;
     }
 `
 
