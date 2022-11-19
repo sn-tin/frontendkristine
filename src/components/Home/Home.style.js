@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices, theme } from "../../styles";
 
 const Content = styled.div`
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@ const Content = styled.div`
     p {
         width: 100%;
         max-width: 800px;
-        font-size: clamp(1.438rem, 5vw, 2rem);
+        font-size: clamp(1.3rem, 5vw, 2rem);
         font-weight: ${theme.fontWeights.bold};
         margin: 0 auto;
     }
