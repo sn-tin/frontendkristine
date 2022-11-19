@@ -49,7 +49,7 @@ const Navbar = () => {
             <SmallScreenNav style={{
                 display: showNav ? "flex" : "none",
             }}>
-                    <NavLink to="/" className={isActive ? "active" : null}>Home</NavLink>
+                    <NavLink to="/" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavLink>
                     <NavLink to="/works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
                     <NavLink to="/about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
                     <NavLink to="/contact" className={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavLink>
