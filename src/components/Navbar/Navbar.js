@@ -8,7 +8,7 @@ import { StyledNavbar,
         HeaderLine3, 
         SmallScreenNav
     } from './Navbar.style.js';
-import { NavLink, NavNavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -40,8 +40,8 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
                 <LargeScreenNav>
-                    <NavLink to="/" activeClassName={isActive ? "active" : null} >Home</NavLink>
-                    <NavLink to="/works" activeClassName={isActive ? "active" : null} >Works</NavLink>
+                    <NavLink to="/" className={isActive ? "active" : null} >Home</NavLink>
+                    <NavLink to="/works" className={isActive ? "active" : null} >Works</NavLink>
                     <NavLink to="/about" className={isActive ? "active" : null} >About</NavLink>
                     <NavLink to="/contact" className={isActive ? "active" : null} >Contact</NavLink>
                 </LargeScreenNav>
@@ -49,10 +49,10 @@ const Navbar = () => {
             <SmallScreenNav style={{
                 display: showNav ? "flex" : "none",
             }}>
-                    <NavLink to="/" activeClassName='active'>Home</NavLink>
-                    <NavLink to="/works" activeClassName={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
-                    <NavLink to="/about" activeClassName={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
-                    <NavLink to="/contact" activeClassName={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavLink>
+                    <NavLink to="/" className='active'>Home</NavLink>
+                    <NavLink to="/works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
+                    <NavLink to="/about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
+                    <NavLink to="/contact" className={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavLink>
             </SmallScreenNav>
         </nav>
     )
