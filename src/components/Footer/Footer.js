@@ -1,20 +1,11 @@
-import { NavLink } from "react-router-dom";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
-import { StyledFooter, FooterMenu, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 } from "./Footer.style";
+import { StyledFooter, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 } from "./Footer.style";
 
 const Footer = () => {
     return (
         <footer>
             <StyledFooter>
-                <FooterMenu>
-                    <h1>Kristine May</h1>
-                    <div>
-                        <NavLink>Home</NavLink>
-                        <NavLink>Works</NavLink>
-                        <NavLink>About</NavLink>
-                    </div>
-                </FooterMenu>
                 <FooterLines className="footer-lines">
                     <FooterLine1 className="footer-line-1"></FooterLine1>
                     <FooterLine2 className="footer-line-2"></FooterLine2>

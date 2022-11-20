@@ -16,23 +16,10 @@ const StyledFooter = styled.div`
     }
     @media screen and (${devices.laptop}) {
         padding: 50px 0 50px;
-        margin-top: 80px;
+        margin-top: 50px;
         p {
             margin: 0 10px 0 auto;
         }
-    }
-`
-const FooterMenu = styled.div`
-    display: none;
-    @media screen and (${devices.laptop}) {
-        display: flex;
-        align-items: flex-start;
-        gap: 50px;
-        a {
-            display: block;
-            font: 1rem ${theme.text.fontFam};
-            padding-bottom: 10px;
-        }   
     }
 `
 
@@ -58,7 +45,7 @@ const FooterLines = styled(HeaderLine)`
     left: auto;
     padding: 40px 0 0;
     @media screen and (${devices.laptop}) {
-        bottom: 9rem;
+        bottom: 5.5rem;
         right: 14rem;
     }
 `
@@ -67,7 +54,7 @@ const FooterLine1 = styled(HeaderLine1)`
     left: -1.25rem;
     top: 4.5rem;
     bottom: 0rem;
-    width: 100px;
+    width: 80px;
     transform: rotate(-90deg);
     @media screen and (${devices.laptop}) {
         left: -3.3rem;
@@ -86,4 +73,4 @@ const FooterLine3 = styled(HeaderLine3)`
     bottom: 1.2rem;
 `
 
-export { StyledFooter, FooterMenu, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 }
+export { StyledFooter, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 }
