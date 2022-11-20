@@ -16,7 +16,7 @@ const StyledFooter = styled.div`
     }
     @media screen and (${devices.laptop}) {
         padding: 50px 0 50px;
-        margin-top: 50px;
+        margin-top: 10px;
         p {
             margin: 0 10px 0 auto;
         }
