@@ -16,6 +16,7 @@ const Content = styled.div`
     }
     h1 {
         font-size: clamp(2.5rem,5vw,8rem);
+        margin: 20px 0;
     }
     p {
         width: 80%;
