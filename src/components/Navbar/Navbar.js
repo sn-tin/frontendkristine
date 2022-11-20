@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav>
             <StyledNavbar>
                 <div className='nav-logo'>
-                    <h1>Kristine May</h1>
+                    <h1>KM.</h1>
                 </div>
                 <HeaderLine>
                     <HeaderLine1 className='header-line-1'></HeaderLine1>
