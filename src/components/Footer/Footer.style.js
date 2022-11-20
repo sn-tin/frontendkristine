@@ -32,6 +32,9 @@ const FooterLinks = styled.div`
         height: 20px;
     }
     @media screen and (${devices.laptop}) {
+        a {
+            margin-left: 15px;
+        }
         a img {
             width: 25px;
             height: 25px;
