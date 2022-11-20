@@ -27,6 +27,7 @@ const Works = () => {
                 <InnerCarousel drag="x" dragConstraints={{right: 0, left: -width }} className="inner-carousel">
                     {workCards}
                 </InnerCarousel>
+                <h3>Swipe Left</h3>
             </Carousel>
         </section>
     )

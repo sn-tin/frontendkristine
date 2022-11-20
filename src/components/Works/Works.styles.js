@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import swipeArrow from "../../assets/swipe-arrow.svg";
 import { devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
@@ -17,6 +18,13 @@ const WorkTexts = styled.div`
 const Carousel = styled(motion.div)`
     overflow: hidden;
     cursor: grab;
+    h3::after {
+        content: '';
+        width: 100px;
+        background: url(${swipeArrow}) no-repeat center center;
+        background-size: 100px;
+        padding: 100px;
+    }
 ` 
 
 const InnerCarousel = styled(motion.div)`
