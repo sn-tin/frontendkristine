@@ -2,12 +2,15 @@ import styled from "styled-components";
 import { devices, theme } from "../../styles";
 
 const StyleAbout = styled.div`
-    /* width: 100%;
-    max-width: 1216px; */
+    display: flex;
+    flex-direction: column;
     margin: 50px auto;
     h1 {
         font-size: ${theme.heading.smaller};
         margin-bottom: 20px;
+    }
+    @media screen and (${devices.laptop}) {
+        flex-direction: row;
     }
 `
 
@@ -23,10 +26,7 @@ const AboutContent = styled.div`
         margin-bottom: 15px;
     }
     p {
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-    }
-    @media screen and (${devices.laptop}) {
-        flex-direction: row !important;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
     }
 `
 
@@ -39,7 +39,6 @@ const AboutPersonal = styled.div`
 const AboutTools = styled.div`
     @media screen and (${devices.laptop}) {
         width: 285px;
-        text-align: right;
     }
 `
 

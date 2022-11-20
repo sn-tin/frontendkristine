@@ -17,10 +17,10 @@ const About = () => {
                 <AboutTools className='tools' >
                     <h2>Tools I use</h2>
                     <p>
-                    HTML, CSS, Bootstrap,
-                    SCSS/SASS, JavaScript,
-                    ReactJS, jQuery, Webpack,
-                    Parcel, Git, Ubuntu
+                    HTML / CSS / Bootstrap / 
+                    Sass / JavaScript / 
+                    ReactJS / jQuery / Webpack / 
+                    Parcel / Git / Ubuntu
                     </p>
                 </AboutTools>
             </AboutContent>
