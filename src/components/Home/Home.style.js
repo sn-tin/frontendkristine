@@ -18,27 +18,29 @@ const Content = styled.div`
         font-size: clamp(2.5rem,5vw,8rem);
     }
     p {
-        width: 100%;
+        width: 80%;
         max-width: 800px;
-        font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
         font-weight: ${theme.fontWeights.medium};
-        /* margin: 0 auto; */
+        text-align: right;
+        margin-left: auto;
     }
-    /* @media screen and (${devices.laptop}) {
+    @media screen and (${devices.laptop}) {
         p {
-            margin: 0 auto;
+            width: 65%;
+            
         }
-    } */
+    }
 `
 
 const HomeButton = styled.button`
     font-family: ${theme.heading.fontFam};
-    font-size: clamp(0.938rem, 2.5vw, 1.3rem);
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     display: flex;
     align-items: center;
     background-color: transparent;
     padding: 8px 15px;
-    margin: 30px 0;
+    margin: 30px 0 0 auto;
     cursor: pointer;
     @media screen and (${devices.laptop}) {
         padding: 15px 30px;
