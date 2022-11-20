@@ -6,7 +6,7 @@ const About = () => {
             <h1>About</h1>
             <AboutContent className='about-content'>
                 <AboutPersonal className='personal' >
-                    <h2>Kristine May de Jesus</h2>
+                    <h2>I'm Kristine. A developer, learner and solver.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

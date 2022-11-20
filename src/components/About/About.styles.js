@@ -4,6 +4,8 @@ import { devices, theme } from "../../styles";
 const StyleAbout = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 50px auto;
     h1 {
         font-size: ${theme.heading.smaller};
@@ -11,14 +13,14 @@ const StyleAbout = styled.div`
     }
     @media screen and (${devices.laptop}) {
         flex-direction: row;
+        gap: 50px;
     }
 `
 
 const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
+    justify-content: flex-end;
     h2 {
         font-size: ${theme.heading.sub};
         font-family: ${theme.heading.fontFam};
@@ -27,19 +29,20 @@ const AboutContent = styled.div`
     }
     p {
         font-size: clamp(1rem, 2.5vw, 1.2rem);
+        margin-bottom: 40px;
+    }
+    @media screen and (${devices.laptop}) {
+        margin-top: 15px;
     }
 `
 
 const AboutPersonal = styled.div`
-    @media screen and (${devices.laptop}) {
-        width: 767px;
-    }
+    width: 100%;
+    text-align: justify;
 `
 
-const AboutTools = styled.div`
-    @media screen and (${devices.laptop}) {
-        width: 285px;
-    }
+const AboutTools = styled(AboutPersonal)`
+    width: 100%;
 `
 
 export { StyleAbout, AboutContent, AboutPersonal, AboutTools }
