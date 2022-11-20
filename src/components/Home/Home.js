@@ -3,9 +3,6 @@ import { Content, HomeButton } from './Home.style';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-    const date = new Date();
-    const year = date.getFullYear();
-    const age = year - 2000;
     const navigate = useNavigate();
 
     return (
