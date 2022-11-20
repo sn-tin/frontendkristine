@@ -20,7 +20,7 @@ const theme = {
         fontFam: `'Orbitron', sans-serif`
     },
     text: {
-        fontFam: `'Nunito', sans-serif`
+        fontFam: `'Montserrat', sans-serif`
     }
 }
 
