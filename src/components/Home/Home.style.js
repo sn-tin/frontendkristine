@@ -8,8 +8,10 @@ const Content = styled.div`
     justify-content: center;
     text-align: left;
     span {
+        color: ${theme.colors.fadeBlack};
         font-size: clamp(1.1rem, 2vw, 1.5rem);
         font-family: ${theme.heading.fontFam};
+        font-weight: ${theme.fontWeights.semiBold};
         text-transform: uppercase;
     }
     h1 {

@@ -9,7 +9,7 @@ const Home = () => {
         <section id='home'>
             <Content>
                 <span>Kristine May de Jesus</span>
-                <h1 className='hero-tile'>A front-end developer from the Philippines</h1>
+                <h1 className='hero-tile'>A <em>front-end developer</em> from the Philippines</h1>
                 <div className='hero-text'>
                     <p>I love what I do</p>
                     <HomeButton onClick={() => navigate('/works')}>
