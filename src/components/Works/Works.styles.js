@@ -48,7 +48,7 @@ const CardsWrapper = styled(motion.div)`
     margin: 30px auto;
     border: 2px solid ${theme.colors.dark};
     position: relative;
-    @media screen and (${devices.laptop}) {
+    @media screen and (${devices.tablet}) {
         width: 480px;
     }
 `
