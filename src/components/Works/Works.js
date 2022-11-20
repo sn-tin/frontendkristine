@@ -1,6 +1,6 @@
 import works from "./worksData";
 import Cards from "./WorkCards";
-import { Carousel, WorkTexts, InnerCarousel } from "./Works.styles";
+import { Carousel, WorkTexts, InnerCarousel, StyledWorks } from "./Works.styles";
 import { useState, useRef, useEffect } from "react";
 
 const Works = () => {
@@ -18,7 +18,7 @@ const Works = () => {
     })
 
     return (
-        <section className="works">
+        <StyledWorks className="works">
             <WorkTexts className="title-description">
                 <h1>Works</h1>
                 <p>Check out the documentations for some of the learning projects I’ve made where I was able to to use the skills I developed learning front-end tech stacks.</p>
@@ -29,7 +29,7 @@ const Works = () => {
                 </InnerCarousel>
                 <h3>Swipe Left</h3>
             </Carousel>
-        </section>
+        </StyledWorks>
     )
 }
 

@@ -3,8 +3,14 @@ import swipeArrow from "../../assets/swipe-arrow.svg";
 import { devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
+const StyledWorks = styled.section`
+    margin: 30px auto 50px;
+    @media screen and (${devices.laptop}){
+        margin: 70px auto;
+    }
+`
+
 const WorkTexts = styled.div`
-    margin: 0 auto;
     h1 {
         font-size: ${theme.heading.smaller};
     }
@@ -22,7 +28,7 @@ const Carousel = styled(motion.div)`
         content: '';
         width: 100px;
         background: url(${swipeArrow}) no-repeat center center;
-        background-size: 100px;
+        background-size: 150px;
         padding: 100px;
     }
 ` 
@@ -180,4 +186,4 @@ const SubTopics = styled.div`
     }
 `
 
-export { WorkTexts, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
+export { StyledWorks, WorkTexts, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
