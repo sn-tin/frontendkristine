@@ -14,7 +14,7 @@ const Home = () => {
             x: 0,
             transition: {
                 type: 'spring',
-                duration: 1
+                duration: 0.8
             }
         }
     }
@@ -27,7 +27,7 @@ const Home = () => {
             x: 0,
             transition: {
                 type: 'spring',
-                duration: 1
+                duration: 0.8
             }
         }
     }
