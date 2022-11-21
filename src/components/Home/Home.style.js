@@ -7,6 +7,7 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    overflow: hidden;
     span {
         color: ${theme.colors.fadeBlack};
         font-size: clamp(1.1rem, 2vw, 1.5rem);
