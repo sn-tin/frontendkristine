@@ -13,6 +13,7 @@ const StyledWorks = styled.section`
 const WorkTexts = styled.div`
     h1 {
         font-size: ${theme.heading.smaller};
+        margin-bottom: 30px;
     }
     p {
         width: 100%;
