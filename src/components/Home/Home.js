@@ -27,11 +27,23 @@ const Home = () => {
             x: 0,
             transition: {
                 type: 'spring',
-                duration: 0.8
+                duration: 0.8,
+                when: 'beforeChildren'
+            },
+        },
+    }
+
+    const spanAnimate = {
+        start: {
+            fontStyle: 'normal'
+        },
+        end: {
+            fontStyle: 'italic',
+            transition: {
+                delay: 0.7
             }
         }
     }
-
 
     return (
         <section id='home'>
@@ -43,7 +55,7 @@ const Home = () => {
                     className="left-aligned"
                 >
                     <p>Kristine May de Jesus</p>
-                    <h1 className='hero-tile'>A <span>front-end developer</span> from the Philippines</h1>
+                    <h1 className='hero-tile'>A <motion.span variants={spanAnimate}>front-end developer</motion.span> from the Philippines</h1>
                 </motion.div>
                 <motion.div 
                     variants={rightAnimate}
