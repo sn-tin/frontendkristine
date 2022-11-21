@@ -7,29 +7,32 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    span {
-        color: ${theme.colors.fadeBlack};
-        font-size: clamp(1.1rem, 2vw, 1.5rem);
-        font-family: ${theme.heading.fontFam};
-        font-weight: ${theme.fontWeights.semiBold};
-        text-transform: uppercase;
-    }
-    h1 {
-        font-size: clamp(2.5rem,5vw,8rem);
-        margin: 20px 0;
-    }
-    p {
-        width: 80%;
-        max-width: 800px;
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-        font-weight: ${theme.fontWeights.medium};
-        text-align: right;
-        margin-left: auto;
-    }
-    @media screen and (${devices.laptop}) {
+    .left-aligned {
         p {
-            width: 65%;
-            
+            color: ${theme.colors.fadeBlack};
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            font-family: ${theme.heading.fontFam};
+            font-weight: ${theme.fontWeights.semiBold};
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: clamp(2.5rem,5vw,8rem);
+            margin: 20px 0;
+        }
+    }
+    .right-aligned {
+        p {
+            width: 80%;
+            max-width: 800px;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: ${theme.fontWeights.medium};
+            text-align: right;
+            margin-left: auto;
+        }
+        @media screen and (${devices.laptop}) {
+            p {
+                width: 65%;
+            }
         }
     }
 `

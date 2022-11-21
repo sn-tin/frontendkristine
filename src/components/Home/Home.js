@@ -40,15 +40,16 @@ const Home = () => {
                     variants={leftAnimate}
                     initial="start"
                     animate="end"
+                    className="left-aligned"
                 >
-                    <span>Kristine May de Jesus</span>
-                    <h1 className='hero-tile'>A <em>front-end developer</em> from the Philippines</h1>
+                    <p>Kristine May de Jesus</p>
+                    <h1 className='hero-tile'>A <span>front-end developer</span> from the Philippines</h1>
                 </motion.div>
                 <motion.div 
                     variants={rightAnimate}
                     initial="start"
                     animate="end"
-                    className='hero-text'>
+                    className="right-aligned">
                     <p>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>
                     <HomeButton onClick={() => navigate('/works')}>
                         See works 
