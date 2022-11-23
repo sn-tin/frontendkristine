@@ -16,12 +16,13 @@ const linesAnimate = {
 const menuAnimate = {
     start: {
         height: 0,
-        // opacity: 0,
+        opacity: 0,
     },
     end: {
-        // height: "auto",
-        // opacity: 1,
+        height: "auto",
+        opacity: 1,
         transition: {
+            delay: 2,
             duration: 1.5
         }
     }

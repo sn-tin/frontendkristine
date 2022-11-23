@@ -48,9 +48,9 @@ const Navbar = () => {
                 </LargeScreenNav>
             </StyledNavbar>
             <SmallScreenNav
-                variants={menuAnimate}
-                initial="start"
-                animate="end"
+                variants={ isActive && menuAnimate}
+                initial={ isActive && "start" }
+                animate={ isActive && "end" }
                 style={{
                 display: showNav ? "flex" : "none",
                 }}
