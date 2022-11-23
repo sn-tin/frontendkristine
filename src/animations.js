@@ -1,4 +1,4 @@
-/* Navbar & Footer lines animation */
+/* NAVBAR AND FOOTER LINES ANIMATION */
 const linesAnimate = {
     start: {
         transform: "translate3d(0px, 0px, 0px) scale3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
