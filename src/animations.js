@@ -8,7 +8,7 @@ const linesAnimate = {
         transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
         transformStyle: "preserve-3d",
         transition: {
-            duration: 1
+            duration: 1.2
         }
     }
 }
@@ -23,7 +23,7 @@ const leftAnimate = {
         x: 0,
         transition: {
             type: 'spring',
-            duration: 0.8
+            duration: 1.2
         }
     }
 }
@@ -36,7 +36,7 @@ const rightAnimate = {
         x: 0,
         transition: {
             type: 'spring',
-            duration: 0.8,
+            duration: 1.2,
             when: 'beforeChildren'
         },
     },
