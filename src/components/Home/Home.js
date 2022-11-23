@@ -2,48 +2,10 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Content, HomeButton } from './Home.style';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { leftAnimate, rightAnimate, spanAnimate } from '../../animations';
 
 const Home = () => {
     const navigate = useNavigate();
-
-    const leftAnimate = {
-        start: {
-            x: '20rem'
-        },
-        end: {
-            x: 0,
-            transition: {
-                type: 'spring',
-                duration: 0.8
-            }
-        }
-    }
-
-    const rightAnimate = {
-        start: {
-            x: '-20rem'
-        },
-        end: {
-            x: 0,
-            transition: {
-                type: 'spring',
-                duration: 0.8,
-                when: 'beforeChildren'
-            },
-        },
-    }
-
-    const spanAnimate = {
-        start: {
-            fontStyle: 'normal'
-        },
-        end: {
-            fontStyle: 'italic',
-            transition: {
-                delay: 0.7
-            }
-        }
-    }
 
     return (
         <section id='home'>

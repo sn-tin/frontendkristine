@@ -13,4 +13,45 @@ const linesAnimate = {
     }
 }
 
-export { linesAnimate }
+/* HOME ANIMATIONS */
+// 1. Left aligned text animation
+const leftAnimate = {
+    start: {
+        x: '20rem'
+    },
+    end: {
+        x: 0,
+        transition: {
+            type: 'spring',
+            duration: 0.8
+        }
+    }
+}
+// 2. Right aligned text animation
+const rightAnimate = {
+    start: {
+        x: '-20rem'
+    },
+    end: {
+        x: 0,
+        transition: {
+            type: 'spring',
+            duration: 0.8,
+            when: 'beforeChildren'
+        },
+    },
+}
+// 3. "Front-end Developer" italizes animation
+const spanAnimate = {
+    start: {
+        fontStyle: 'normal'
+    },
+    end: {
+        fontStyle: 'italic',
+        transition: {
+            delay: 0.7
+        }
+    }
+}
+
+export { linesAnimate, leftAnimate, rightAnimate, spanAnimate }
