@@ -2,6 +2,7 @@ import styled from "styled-components";
 import star from '../../assets/star.svg'
 import lightStar from '../../assets/light-star.svg'
 import { theme, devices } from "../../styles.js"
+import { motion } from "framer-motion";
 
 const StyledNavbar = styled.div`
     display: flex;
@@ -111,7 +112,7 @@ const LargeScreenNav = styled.div`
     }
 `
 
-const HeaderLine = styled.div`
+const HeaderLine = styled(motion.div)`
     position: absolute;
     top: auto;
     bottom: 0;
