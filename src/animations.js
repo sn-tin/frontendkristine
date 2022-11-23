@@ -12,6 +12,20 @@ const linesAnimate = {
         }
     }
 }
+// Animation for small screen's nav menu
+const menuAnimate = {
+    start: {
+        height: 0,
+        // opacity: 0,
+    },
+    end: {
+        // height: "auto",
+        // opacity: 1,
+        transition: {
+            duration: 1.5
+        }
+    }
+}
 
 /* HOME ANIMATIONS */
 // 1. Left aligned text animation
@@ -54,4 +68,4 @@ const spanAnimate = {
     }
 }
 
-export { linesAnimate, leftAnimate, rightAnimate, spanAnimate }
+export { linesAnimate, menuAnimate, leftAnimate, rightAnimate, spanAnimate }

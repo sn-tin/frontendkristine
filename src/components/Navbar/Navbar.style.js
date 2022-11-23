@@ -37,7 +37,7 @@ const Lines = styled.div`
     border: 1px solid ${theme.text.color};
 `
 
-const SmallScreenNav = styled.div`
+const SmallScreenNav = styled(motion.div)`
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -124,8 +124,6 @@ const HeaderLine = styled(motion.div)`
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d; */
 `
 
 const HeaderLine1 = styled.div`
@@ -157,7 +155,6 @@ const HeaderLine3 = styled(HeaderLine2)`
     left: auto;
     right: auto;
     bottom: 1.21rem;
-    /* width: 5.9rem; */
     width: 55rem;
 `
 

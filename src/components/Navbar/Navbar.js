@@ -10,7 +10,7 @@ import { StyledNavbar,
     } from './Navbar.style.js';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import { linesAnimate } from '../../animations.js';
+import { linesAnimate, menuAnimate } from '../../animations.js';
 
 const Navbar = () => {
     const [isActive] = useState(false);
@@ -47,9 +47,14 @@ const Navbar = () => {
                     <NavLink to="/contact" className={isActive ? "active" : null} >Contact</NavLink>
                 </LargeScreenNav>
             </StyledNavbar>
-            <SmallScreenNav style={{
+            <SmallScreenNav
+                variants={menuAnimate}
+                initial="start"
+                animate="end"
+                style={{
                 display: showNav ? "flex" : "none",
-            }}>
+                }}
+            >
                     <NavLink to="/" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavLink>
                     <NavLink to="/works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
                     <NavLink to="/about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
