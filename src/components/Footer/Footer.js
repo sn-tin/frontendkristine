@@ -1,12 +1,13 @@
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
 import { StyledFooter, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 } from "./Footer.style";
+import { linesAnimate } from "../../animations";
 
 const Footer = () => {
     return (
         <footer>
             <StyledFooter>
-                <FooterLines className="footer-lines">
+                <FooterLines variants={linesAnimate} initial="start" animate="end" className="footer-lines">
                     <FooterLine1 className="footer-line-1"></FooterLine1>
                     <FooterLine2 className="footer-line-2"></FooterLine2>
                     <FooterLine3 className="footer-line-3"></FooterLine3>
