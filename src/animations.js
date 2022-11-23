@@ -8,7 +8,7 @@ const linesAnimate = {
         transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
         transformStyle: "preserve-3d",
         transition: {
-            duration: 1.2
+            duration: 1.5,
         }
     }
 }
@@ -17,13 +17,13 @@ const linesAnimate = {
 // 1. Left aligned text animation
 const leftAnimate = {
     start: {
-        x: '20rem'
+        x: '20rem',
     },
     end: {
         x: 0,
         transition: {
             type: 'spring',
-            duration: 1.2
+            duration: 1.5,
         }
     }
 }
@@ -36,7 +36,7 @@ const rightAnimate = {
         x: 0,
         transition: {
             type: 'spring',
-            duration: 1.2,
+            duration: 1.5,
             when: 'beforeChildren'
         },
     },
@@ -49,7 +49,7 @@ const spanAnimate = {
     end: {
         fontStyle: 'italic',
         transition: {
-            delay: 0.7
+            delay: 1.4
         }
     }
 }
