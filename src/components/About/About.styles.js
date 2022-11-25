@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { devices, theme } from "../../styles";
+import { motion } from "framer-motion";
 
 const StyleAbout = styled.div`
     display: flex;
@@ -36,7 +37,7 @@ const AboutContent = styled.div`
     }
 `
 
-const AboutPersonal = styled.div`
+const AboutPersonal = styled(motion.div)`
     width: 100%;
     text-align: justify;
 `

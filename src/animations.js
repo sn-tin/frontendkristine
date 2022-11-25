@@ -28,7 +28,7 @@ const menuAnimate = {
     }
 }
 
-/* MAIN COMPONENT ANIMATIONS */
+/* COMPONENT ANIMATIONS */
 // 1. Left aligned text animation
 const leftAnimate = {
     start: {
@@ -78,4 +78,97 @@ const spanAnimate = {
     }
 }
 
-export { linesAnimate, menuAnimate, leftAnimate, rightAnimate, spanAnimate }
+/* ABOUT COMPONENT CONTENT ANIMATION */
+
+const aboutSubHeading1 = {
+    start: {
+        y: '2rem',
+        opacity: 0,
+    },
+    end: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.2,
+            duration: 0.5,
+        }
+    },
+    exit: {
+        x: '100vh',
+        opacity: 0,
+        transition: {
+            duration: 0.5,
+            delay: 0.3,
+        }
+    }
+}
+
+const aboutPara1 = {
+    start: {
+        y: '2rem',
+        opacity: 0,
+    },
+    end: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.4,
+            duration: 0.5,
+        }
+    },
+    exit: {
+        x: '100vh',
+        opacity: 0,
+        transition: {
+            duration: 0.5,
+            delay: 0.2,
+        }
+    }
+}
+
+const aboutSubHeading2 = {
+    start: {
+        y: '2rem',
+        opacity: 0,
+    },
+    end: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.6,
+            duration: 0.5,
+        }
+    },
+    exit: {
+        x: '100vh',
+        opacity: 0,
+        transition: {
+            duration: 0.5,
+            delay: 0.1,
+        }
+    }
+}
+
+const aboutPara2 = {
+    start: {
+        y: '2rem',
+        opacity: 0,
+    },
+    end: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.8,
+            duration: 0.5,
+        }
+    },
+    exit: {
+        x: '100vh',
+        opacity: 0,
+        transition: {
+            duration: 0.5,
+        }
+    }
+}
+
+export { linesAnimate, menuAnimate, leftAnimate, rightAnimate, spanAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2 }
