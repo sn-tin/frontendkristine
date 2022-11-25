@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import star from '../../assets/star.svg'
-import lightStar from '../../assets/light-star.svg'
-import { theme, devices } from "../../styles.js"
+import star from '../../assets/star.svg';
+import lightStar from '../../assets/light-star.svg';
+import { theme, devices } from "../../styles.js";
 import { motion } from "framer-motion";
 
 const StyledNavbar = styled.div`
@@ -77,9 +77,6 @@ const NavInner = styled(motion.div)`
             position: relative;
             &::before {
                 content: url(${lightStar});
-                /* position: absolute;
-                top: 40%;
-                right: 5rem; */
                 zoom: 20%;
                 margin-right: 30px;
             }

@@ -12,13 +12,18 @@ import { AnimatePresence } from 'framer-motion';
 import HeaderLines from './HeaderLInes.js';
 
 const Navbar = () => {
+    // Show star when nav link is active
     const [isActive] = useState(false);
-    const [showNav, setShowNav] = useState(false);
 
+    // Change text and lines color
+    const [theme, setTheme] = useState("light");
+
+    // Show and hide nav when clicked
+    const [showNav, setShowNav] = useState(false);
     const showNavMenu = () => {
         setShowNav(!showNav)
+        theme === "light" ? setTheme("dark") : setTheme("light")
     }
-
     const hideNavMenu = () => {
         setShowNav(false)
     }
@@ -45,14 +50,14 @@ const Navbar = () => {
             <AnimatePresence exitBeforeEnter>
                 {
                     showNav && (
-                    <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
-                        <NavInner>
-                            <NavLink to="/" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavLink>
-                            <NavLink to="/works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
-                            <NavLink to="/about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
-                            <NavLink to="/contact" className={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavLink>
-                        </NavInner>
-                    </SmallScreenNav>
+                        <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
+                            <NavInner>
+                                <NavLink to="/" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavLink>
+                                <NavLink to="/works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavLink>
+                                <NavLink to="/about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavLink>
+                                <NavLink to="/contact" className={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavLink>
+                            </NavInner>
+                        </SmallScreenNav>
                     )
                 }
             </AnimatePresence>
