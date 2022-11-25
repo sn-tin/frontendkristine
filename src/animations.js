@@ -10,7 +10,7 @@ const linesAnimate = {
         transition: {
             duration: 1.5,
         }
-    }
+    },
 }
 // Animation for small screen's nav menu
 const menuAnimate = {
@@ -40,6 +40,9 @@ const leftAnimate = {
             type: 'spring',
             duration: 1.5,
         }
+    },
+    exit: {
+        x: '100vw'
     }
 }
 // 2. Right aligned text animation
@@ -55,6 +58,9 @@ const rightAnimate = {
             when: 'beforeChildren'
         },
     },
+    exit: {
+        x: '-100vw'
+    }
 }
 // 3. "Front-end Developer" italizes animation
 const spanAnimate = {

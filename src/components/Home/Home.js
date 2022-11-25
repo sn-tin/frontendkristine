@@ -7,6 +7,10 @@ import { leftAnimate, rightAnimate, spanAnimate } from '../../animations';
 const Home = () => {
     const navigate = useNavigate();
 
+    const seeWorksClicked = () => {
+        navigate('/works')
+    }
+
     return (
         <section id='home'>
             <Content>
@@ -25,7 +29,7 @@ const Home = () => {
                     animate="end"
                     className="right-aligned">
                     <p>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>
-                    <HomeButton onClick={() => navigate('/works')}>
+                    <HomeButton onClick={seeWorksClicked}>
                         See works 
                         <ArrowForwardIcon sx={{width: "30px", height: "30px", marginLeft: "10px"}} />
                     </HomeButton>
