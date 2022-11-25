@@ -2,6 +2,8 @@ import works from "./worksData";
 import Cards from "./WorkCards";
 import { Carousel, WorkTexts, InnerCarousel, StyledWorks } from "./Works.styles";
 import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+import { leftAnimate, rightAnimate } from "../../animations";
 
 const Works = () => {
     const [width, setWidth] = useState(0);
@@ -20,10 +22,10 @@ const Works = () => {
     return (
         <StyledWorks className="works">
             <WorkTexts className="title-description">
-                <h1>Works</h1>
-                <p>Check out the documentations for some of the learning projects I’ve made where I was able to to use the skills I developed learning front-end tech stacks.</p>
+                <motion.h1 variants={rightAnimate} initial="start" animate="end" exit="exit">Works</motion.h1>
+                <motion.p variants={rightAnimate} initial="start" animate="end" exit="exit">Check out the documentations for some of the learning projects I’ve made where I was able to to use the skills I developed learning front-end tech stacks.</motion.p>
             </WorkTexts>
-            <Carousel ref={carousel} className="carousel">
+            <Carousel ref={carousel} variants={leftAnimate} initial="start" animate="end" exit="exit" className="carousel">
                 <InnerCarousel drag="x" dragConstraints={{right: 0, left: -width }} className="inner-carousel">
                     {workCards}
                 </InnerCarousel>

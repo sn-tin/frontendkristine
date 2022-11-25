@@ -28,7 +28,7 @@ const menuAnimate = {
     }
 }
 
-/* HOME ANIMATIONS */
+/* MAIN COMPONENT ANIMATIONS */
 // 1. Left aligned text animation
 const leftAnimate = {
     start: {

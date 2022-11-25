@@ -10,7 +10,7 @@ const RouterSwitch = () => {
     const location = useLocation();
     return (
         <section className="main-content">
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
                 <Routes location={location} key={location.key}>
                     <Route path="/" element={<Home />} />
                     <Route path="/works" element={<Works />}>
