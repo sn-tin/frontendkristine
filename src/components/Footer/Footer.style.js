@@ -42,7 +42,7 @@ const FooterLinks = styled.div`
     }
 `
 
-const FooterLines = styled(HeaderLine)`
+const FooterLine = styled(HeaderLine)`
     bottom: 4.5rem;
     right: 12rem;
     left: auto;
@@ -76,4 +76,4 @@ const FooterLine3 = styled(HeaderLine3)`
     bottom: 1.2rem;
 `
 
-export { StyledFooter, FooterLinks, FooterLines, FooterLine1, FooterLine2, FooterLine3 }
+export { StyledFooter, FooterLinks, FooterLine, FooterLine1, FooterLine2, FooterLine3 }
