@@ -8,7 +8,7 @@ const linesAnimate = {
         transform: "scale3d(1, 1, 1)",
         transformStyle: "preserve-3d",
         transition: {
-            duration: 1.5,
+            duration: 1,
         }
     },
 }
@@ -30,7 +30,7 @@ const menuAnimate = {
         height: 0,
         opacity: 0,
         transition: {
-            duration: 1.5
+            duration: 1
         }
     }
 }
@@ -51,7 +51,6 @@ const leftAnimate = {
     exit: {
         x: '100vw',
         transition: {
-            duration: 1
         }
     }
 }
@@ -86,7 +85,6 @@ const spanAnimate = {
 }
 
 /* ABOUT COMPONENT CONTENT ANIMATION */
-
 const aboutSubHeading1 = {
     start: {
         y: '2rem',
