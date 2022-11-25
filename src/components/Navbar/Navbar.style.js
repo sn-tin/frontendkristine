@@ -3,7 +3,6 @@ import star from '../../assets/star.svg'
 import lightStar from '../../assets/light-star.svg'
 import { theme, devices } from "../../styles.js"
 import { motion } from "framer-motion";
-import { style } from "@mui/system";
 
 const StyledNavbar = styled.div`
     display: flex;
