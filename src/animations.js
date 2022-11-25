@@ -42,7 +42,10 @@ const leftAnimate = {
         }
     },
     exit: {
-        x: '100vw'
+        x: '100vw',
+        transition: {
+            duration: 1
+        }
     }
 }
 // 2. Right aligned text animation

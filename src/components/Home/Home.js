@@ -18,6 +18,7 @@ const Home = () => {
                     variants={leftAnimate}
                     initial="start"
                     animate="end"
+                    exit="exit"
                     className="left-aligned"
                 >
                     <p>Kristine May de Jesus</p>
@@ -27,6 +28,7 @@ const Home = () => {
                     variants={rightAnimate}
                     initial="start"
                     animate="end"
+                    exit="exit"
                     className="right-aligned">
                     <p>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>
                     <HomeButton onClick={seeWorksClicked}>
