@@ -19,10 +19,17 @@ const menuAnimate = {
         opacity: 0,
     },
     end: {
-        height: "auto",
+        height: "100vh",
         opacity: 1,
         transition: {
             delay: 2,
+            duration: 1.5
+        }
+    },
+    exit: {
+        height: 0,
+        opacity: 0,
+        transition: {
             duration: 1.5
         }
     }

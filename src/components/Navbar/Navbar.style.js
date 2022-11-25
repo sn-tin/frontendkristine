@@ -3,6 +3,7 @@ import star from '../../assets/star.svg'
 import lightStar from '../../assets/light-star.svg'
 import { theme, devices } from "../../styles.js"
 import { motion } from "framer-motion";
+import { style } from "@mui/system";
 
 const StyledNavbar = styled.div`
     display: flex;
@@ -37,17 +38,29 @@ const Lines = styled.div`
     border: 1px solid ${theme.text.color};
 `
 
-const SmallScreenNav = styled(motion.div)`
+const SmallScreenNav = styled.div`
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    background: ${theme.colors.dark};
+`
+
+const NavInner = styled(motion.div)`
     display: flex;
     flex-direction: column;
-    width: 90%;
-    border: 1px solid #000000;
     text-align: center;
     background-color: ${theme.colors.dark};
-    margin: 20px auto 30px;
-    padding: 30px 0;
+    padding: 30px 15px;
+    width: 100%;
     position: absolute;
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     a, a:active, a:visited {
         color: ${theme.colors.grayishWhite};
         font: ${theme.fontWeights.medium} 19px ${theme.heading.fontFam};
@@ -159,4 +172,4 @@ const HeaderLine3 = styled(HeaderLine2)`
 `
 
 export { StyledNavbar, HamburgerMenu, Lines, 
-    SmallScreenNav, LargeScreenNav, HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 };
+    SmallScreenNav, NavInner, LargeScreenNav, HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 };
