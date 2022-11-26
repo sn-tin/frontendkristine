@@ -38,7 +38,6 @@ const Navbar = () => {
                 <HamburgerMenu className='hamburger-menu' onClick={showNavMenu}>
                     <Lines className='line'></Lines>
                     <Lines className='line'></Lines>
-                    <Lines className='line'></Lines>
                 </HamburgerMenu>
                 <LargeScreenNav>
                     <NavLink to="/" className={isActive ? "active" : null} >Home</NavLink>

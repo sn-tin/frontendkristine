@@ -16,6 +16,7 @@ const StyledNavbar = styled.div`
         font-size: clamp(1.2rem, 2.5vw, 1.563rem);
         text-transform: uppercase;
         font-weight: ${theme.fontWeights.extraBold};
+        z-index: 3;
     }
     @media screen and (${devices.laptop}) {
         padding: 60px 0 40px;
@@ -28,6 +29,7 @@ const HamburgerMenu = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
+    z-index: 3;
     cursor: pointer;
     @media screen and (${devices.laptop}) {
         display: none;
