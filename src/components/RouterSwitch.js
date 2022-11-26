@@ -4,6 +4,7 @@ import Works from './Works/Works';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Article from "./Works/Article";
+import works from "./Works/worksData";
 import { AnimatePresence } from "framer-motion";
 
 const RouterSwitch = () => {
@@ -13,7 +14,7 @@ const RouterSwitch = () => {
             <AnimatePresence exitBeforeEnter>
                 <Routes location={location} key={location.key}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/works" element={<Works />}>
+                    <Route path="/works" element={<Works works={works} />}>
                         <Route path=":slug" element={<Article />} />
                     </Route>
                     <Route path="/about" element={<About />} />

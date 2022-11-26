@@ -1,19 +1,18 @@
 import { CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper } from "./Works.styles";
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Cards = ({data}) => {
-    const { img, name, date, id } = data;
+const Cards = ({works}) => {
+    const { img, name, date, id, slug } = works;
     const className = `work-img-${id}`
-    const { params } = useParams();
-
-    console.log(id)
 
     return (
-            <CardsWrapper id={params} className="work-cards">
+            <CardsWrapper id={id} className="work-cards">
                 <div className={className} style={{position: "relative", overflow: "hidden"}}>
                     <CardImg src={img} alt={name} />
                     <Overlay className="overlay">
-                        <ReadButton>Read More</ReadButton>                        
+                        <Link to={slug}>
+                            <ReadButton>Read More</ReadButton>  
+                        </Link>                      
                     </Overlay>
                 </div>
                 <DetailsWrapper className="name-date">

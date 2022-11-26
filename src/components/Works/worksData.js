@@ -12,6 +12,7 @@ let works = [
         category: "Personal Project",
         codeURL: "https://github.com/sn-tin/no-context-app",
         demoURL: "https://no-context.vercel.app/",
+        slug: "no-context",
         subtopics: [
             {
                 title: "About the project",
@@ -35,6 +36,7 @@ let works = [
         category: "Solution",
         codeURL: "https://github.com/sn-tin/shorten-url",
         demoURL: "https://shorten-url-delta.vercel.app/",
+        slug: "shortly",
         subtopics: [
             {
                 title: "About the project",
@@ -58,6 +60,7 @@ let works = [
         category: "Personal Project",
         codeURL: "https://github.com/sn-tin/todo-list",
         demoURL: "https://todo-list-sn-tin.vercel.app/",
+        slug: "to-do-list",
         subtopics: [
             {
                 title: "About the project",
@@ -81,6 +84,7 @@ let works = [
         category: "Personal Project",
         codeURL: "https://github.com/sn-tin/rock-paper-scissors",
         demoURL: "https://odin-rock-paper-scissors-pi.vercel.app/",
+        slug: "rock-paper-scissors",
         subtopics: [
             {
                 title: "About the project",

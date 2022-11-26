@@ -1,11 +1,10 @@
-import works from "./worksData";
 import Cards from "./WorkCards";
 import { Carousel, WorkTexts, InnerCarousel, StyledWorks } from "./Works.styles";
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { leftAnimate, rightAnimate } from "../../animations";
 
-const Works = () => {
+const Works = ({works}) => {
     const [width, setWidth] = useState(0);
     const carousel = useRef();
 
@@ -15,7 +14,7 @@ const Works = () => {
 
     const workCards = works.map((work) => {
         return (
-            <Cards key={work.id} id={work.id} data={work} left={width} />
+            <Cards key={work.id} id={work.id} works={work} left={width} />
         )
     })
 
