@@ -11,7 +11,7 @@ const RouterSwitch = () => {
     const location = useLocation();
     return (
         <section className="main-content">
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence mode="wait">
                 <Routes location={location} key={location.key}>
                     <Route path="/" element={<Home />} />
                     <Route path="/works" element={<Works works={works} />} />
