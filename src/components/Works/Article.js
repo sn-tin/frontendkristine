@@ -8,42 +8,36 @@ const Article = () => {
 
     const [article, setArticle] = useState(null);
 
-    useEffect(() => {
-        let article = worksData.find(data => data.slug === slug);
-        if(article) {
-            setArticle(article)
-        }
-    }, [])
+    let findData = worksData.find(data => data.slug === slug);
 
-    const { id, img, name, date, category, subtopics, codeURL, demoURL } = article;
+    useEffect(() => {
+        setArticle(findData)
+        if(!findData) {
+            return <h1>Loading...</h1>
+        }
+    }, [findData])
 
     return (
-        <>
-        { 
-            article && (
-                <ArticleWrapper id={id}>
-                    <ArticleImage src={img} alt={name} />
-                    <ArticleMainText  className="main-text">
-                        <span>{category} / {date}</span>
-                        <h1>{name}</h1>
-                        <p>A website where users can search for, copy-paste and bookmark Filipino memes in a form of text.</p>
-                        <FlexButtons>
-                            <BorderButton href={codeURL} target="_blank">Code</BorderButton >
-                            <SolidButton href={demoURL} target="_blank">Demo</SolidButton >
-                        </FlexButtons>
-                    </ArticleMainText >
-                    {
-                        subtopics.map(({title, description}) => (
-                            <SubTopics key={title}>
-                                <h2>{title}</h2>
-                                <p>{description}</p>
-                            </SubTopics>
-                        ))
-                    }
-                </ArticleWrapper>
-            )
-        }
-        </>
+        <ArticleWrapper id={article?.id}>
+            <ArticleImage src={article?.img} alt={article?.name} />
+            <ArticleMainText  className="main-text">
+                <span>{article?.category} / {article?.date}</span>
+                <h1>{article?.name}</h1>
+                <p>A website where users can search for, copy-paste and bookmark Filipino memes in a form of text.</p>
+                <FlexButtons>
+                    <BorderButton href={article?.codeURL} target="_blank">Code</BorderButton >
+                    <SolidButton href={article?.demoURL} target="_blank">Demo</SolidButton >
+                </FlexButtons>
+            </ArticleMainText >
+            {
+                article?.subtopics?.map(({title, description}) => (
+                    <SubTopics key={title}>
+                        <h2>{title}</h2>
+                        <p>{description}</p>
+                    </SubTopics>
+                ))
+            }
+        </ArticleWrapper>
     )
 }
 

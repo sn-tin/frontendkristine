@@ -14,9 +14,8 @@ const RouterSwitch = () => {
             <AnimatePresence exitBeforeEnter>
                 <Routes location={location} key={location.key}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/works" element={<Works works={works} />}>
-                        <Route path=":slug" element={<Article />} />
-                    </Route>
+                    <Route path="/works" element={<Works works={works} />} />
+                    <Route path="/works/:slug" element={<Article />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

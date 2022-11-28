@@ -3,6 +3,8 @@ import { Carousel, WorkTexts, InnerCarousel, StyledWorks } from "./Works.styles"
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { leftAnimate, rightAnimate } from "../../animations";
+import { Route, Routes } from "react-router-dom";
+import Article from "./Article";
 
 const Works = ({works}) => {
     const [width, setWidth] = useState(0);
@@ -30,6 +32,9 @@ const Works = ({works}) => {
                 </InnerCarousel>
                 <h3>Swipe Left</h3>
             </Carousel>
+            <Routes>
+              <Route path="/works/no-context" element={<Article />} />
+            </Routes>
         </StyledWorks>
     )
 }
