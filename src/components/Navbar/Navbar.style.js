@@ -67,7 +67,7 @@ const NavInner = styled(motion.div)`
         font: ${theme.fontWeights.medium} 19px ${theme.heading.fontFam};
         text-align: right;
         text-decoration: none;
-        padding: 25px 10px;
+        padding: 40px 10px;
         margin: 0 30px;
         &:not(:last-of-type){
         border-bottom: 1px solid #f5f5f5;
