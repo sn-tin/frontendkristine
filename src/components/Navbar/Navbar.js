@@ -46,7 +46,7 @@ const Navbar = () => {
                     <NavLink to="/contact" className={isActive ? "active" : null} >Contact</NavLink>
                 </LargeScreenNav>
             </StyledNavbar>
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence mode="wait">
                 {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
