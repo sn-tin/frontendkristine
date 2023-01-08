@@ -4,9 +4,16 @@ import { devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
 const StyledWorks = styled.section`
+    width: 100%;
+    background-color: ${theme.colors.dark};
+    padding: 80px 50px;
     margin: 30px auto 50px;
+    border-radius: 20px;
     @media screen and (${devices.laptop}){
         margin: 70px auto;
+    }
+    h3 {
+        color: ${theme.colors.grayishWhite};
     }
 `
 
@@ -14,14 +21,22 @@ const WorkTexts = styled.div`
     h1 {
         font-size: ${theme.heading.smaller};
         margin-bottom: 30px;
+        color: ${theme.colors.grayishWhite};
     }
     p {
         width: 100%;
         max-width: 700px;
         font-size: clamp(1rem, 2.5vw, 1.2rem);
+        color: ${theme.colors.grayishWhite};
     }
 `
-
+const WorksGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    @media screen and (${devices.laptop}) {
+        grid-template-columns: repeat(2, 50%);
+    }
+`
 const Carousel = styled(motion.div)`
     overflow: hidden;
     cursor: grab;
@@ -88,10 +103,10 @@ const ReadButton = styled.button`
 const DetailsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    color: ${theme.colors.grayishWhite};
+    color: ${theme.colors.fadeBlack};
     font-family: ${theme.heading.fontFam};
     font-size: clamp(0.625rem, 2.5vw, 1.1rem);
-    background-color: ${theme.colors.dark};
+    background-color: ${theme.colors.grayishWhite};
     padding: 15px 10px;
     position: relative;
     z-index: 1;
@@ -186,4 +201,4 @@ const SubTopics = styled.div`
     }
 `
 
-export { StyledWorks, WorkTexts, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
+export { StyledWorks, WorkTexts, WorksGrid, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }

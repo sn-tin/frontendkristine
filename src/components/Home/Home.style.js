@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { devices, theme } from "../../styles";
 
@@ -10,7 +11,7 @@ const StyledHome = styled.section`
     }
 `
 
-const Content = styled.div`
+const Content = styled(motion.div)`
     margin: 30px 0;
     display: flex;
     flex-direction: column;

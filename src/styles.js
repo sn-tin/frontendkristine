@@ -67,7 +67,7 @@ p {
 }
 .App {
     width: 100%;
-    max-width: 1216px;
+    max-width: 1300px;
     padding: 0 20px;
     margin: 0 auto;
     @media screen and (${devices.tablet}) and (max-width: ${sizes.laptop}) {

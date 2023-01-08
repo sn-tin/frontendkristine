@@ -14,32 +14,31 @@ const Home = ({works}) => {
 
     return (
         <StyledHome id='home'>
-            <Content>
-                <motion.div
-                    variants={leftAnimate}
-                    initial="start"
-                    animate="end"
-                    exit="exit"
-                    className="left-aligned"
-                >
+            <Content 
+                variants={leftAnimate}
+                initial="start"
+                animate="end"
+                exit="exit"
+            >
+                <div className='left-aligned'>
                     <p>Kristine May de Jesus</p>
                     <h1 className='hero-tile'>A <motion.span variants={spanAnimate}>front-end developer</motion.span> from the Philippines</h1>
-                </motion.div>
-                <motion.div 
-                    variants={rightAnimate}
-                    initial="start"
-                    animate="end"
-                    exit="exit"
-                    className="right-aligned">
+                </div>
+                <div className="right-aligned">
                     <p>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>
                     <HomeButton onClick={seeWorksClicked}>
                         See works 
                         <ArrowForwardIcon sx={{width: "30px", height: "30px", marginLeft: "10px"}} />
                     </HomeButton>
-                </motion.div>
+                </div>
             </Content>
-            <HomeImage>
-                <img src={kristineIMG} alt="Kristine's image"/>
+            <HomeImage 
+                variants={rightAnimate}
+                initial="start"
+                animate="end"
+                exit="exit"
+            >
+                <img src={kristineIMG} alt="Kristine's profile"/>
             </HomeImage>
         </StyledHome>
     )
