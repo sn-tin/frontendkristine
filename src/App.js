@@ -7,14 +7,7 @@ import RouterSwitch from './components/RouterSwitch';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App"
-        style={{
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between"
-       }}
-      >
+      <div className="App">
         <GlobalStyle />
         <Navbar />
         <RouterSwitch />

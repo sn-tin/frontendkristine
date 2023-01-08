@@ -3,8 +3,9 @@ import { Carousel, WorkTexts, InnerCarousel, StyledWorks } from "./Works.styles"
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { leftAnimate, rightAnimate } from "../../animations";
+import works from "./worksData";
 
-const Works = ({works}) => {
+const Works = () => {
     const [width, setWidth] = useState(0);
     const carousel = useRef();
 

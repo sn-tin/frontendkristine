@@ -13,7 +13,7 @@ const RouterSwitch = () => {
         <section className="main-content">
             <AnimatePresence mode="wait">
                 <Routes location={location} key={location.key}>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home works={works} />} />
                     <Route path="/works" element={<Works works={works} />} />
                     <Route path="/works/:slug" element={<Article />} />
                     <Route path="/about" element={<About />} />

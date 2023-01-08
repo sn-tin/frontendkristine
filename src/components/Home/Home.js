@@ -1,10 +1,11 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Content, HomeButton } from './Home.style';
+import { Content, HomeButton, HomeImage, StyledHome } from './Home.style';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { leftAnimate, rightAnimate, spanAnimate } from '../../animations';
+import kristineIMG from "../../assets/kristine-img.jpg"
 
-const Home = () => {
+const Home = ({works}) => {
     const navigate = useNavigate();
 
     const seeWorksClicked = () => {
@@ -12,7 +13,7 @@ const Home = () => {
     }
 
     return (
-        <section id='home'>
+        <StyledHome id='home'>
             <Content>
                 <motion.div
                     variants={leftAnimate}
@@ -37,8 +38,10 @@ const Home = () => {
                     </HomeButton>
                 </motion.div>
             </Content>
-            
-        </section>
+            <HomeImage>
+                <img src={kristineIMG} alt="Kristine's image"/>
+            </HomeImage>
+        </StyledHome>
     )
 }
 
