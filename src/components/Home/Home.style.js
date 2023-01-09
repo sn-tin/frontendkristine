@@ -5,6 +5,7 @@ import { devices, theme } from "../../styles";
 const StyledHome = styled.section`
     display: flex;
     flex-direction: column;
+    align-items: center;
     @media screen and (${devices.laptop}) {
         flex-direction: row;
         z-index: -1;
@@ -25,7 +26,7 @@ const Content = styled(motion.div)`
             text-transform: uppercase;
         }
         h1 {
-            font-size: clamp(2.5rem,5vw,6rem);
+            font-size: clamp(2.5rem,5vw,5rem);
             margin: 20px 0;
         }
     }
@@ -33,7 +34,7 @@ const Content = styled(motion.div)`
         p {
             width: 80%;
             max-width: 800px;
-            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
             font-weight: ${theme.fontWeights.medium};
         }
         @media screen and (${devices.laptop}) {
@@ -44,11 +45,12 @@ const Content = styled(motion.div)`
     }
 `
 const HomeImage = styled.div`
-    position: relative;
+    z-index: -1;
     img {
         width: 100%;
+        border-radius: 10px 100px 10px;
         @media screen and (${devices.laptop}) {
-            position: absolute;
+            width: 100%;
         }
     }
 `
