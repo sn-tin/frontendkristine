@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import star from '../../assets/star.svg';
 import lightStar from '../../assets/light-star.svg';
-import { theme, devices } from "../../styles.js";
+import { theme, devices, DefaultStyle } from "../../styles.js";
 import { motion } from "framer-motion";
 
-const StyledNavbar = styled.div`
+const StyledNavbar = styled(DefaultStyle)`
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin: 0 auto;
-    padding: 50px 0 30px;
+    padding: 50px 20px 30px;
     position: relative;
     overflow-x: hidden;
     h1 {
@@ -19,7 +19,7 @@ const StyledNavbar = styled.div`
         z-index: 3;
     }
     @media screen and (${devices.laptop}) {
-        padding: 60px 0 40px;
+        padding: 60px 20px 40px;
     }
 `
 
@@ -166,7 +166,7 @@ const HeaderLine3 = styled(HeaderLine2)`
     left: auto;
     right: auto;
     bottom: 1.21rem;
-    width: 55rem;
+    width: 80rem;
 `
 
 export { StyledNavbar, HamburgerMenu, Lines, 

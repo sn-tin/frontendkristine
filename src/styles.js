@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const theme = {
     colors: {
@@ -15,7 +15,7 @@ const theme = {
         black: 900
     },
     heading: {
-        smaller: "clamp(3.5rem, 5vw, 12rem)",
+        smaller: "clamp(3.5rem, 5vw, 4rem)",
         sub: "clamp(1.6rem, 2.5vw, 2.5rem)",
         fontFam: `'Orbitron', sans-serif`
     },
@@ -59,25 +59,37 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 h2 {
-    text-transform: capitalize !important;
+    text-transform: none !important;
 }
 p {
   color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
 }
-.App {
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: ${theme.colors.grayishWhite}; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+`
+const DefaultStyle = styled.section`
     width: 100%;
     max-width: 1300px;
-    padding: 0 20px;
     margin: 0 auto;
-    @media screen and (${devices.tablet}) and (max-width: ${sizes.laptop}) {
-        padding: 0 100px;
-    }
-    @media screen and (${devices.laptop}) {
-        padding: 0 50px;
-    }
-}
 `
 
 
-export { GlobalStyle, theme, devices };
+export { GlobalStyle, theme, devices, DefaultStyle };

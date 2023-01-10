@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { devices, theme } from "../../styles";
+import { DefaultStyle, devices, theme } from "../../styles";
 
-const StyledHome = styled.section`
+const StyledHome = styled(DefaultStyle)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (${devices.laptop}) {
+    margin: auto;
+    padding: 0 20px;
+    @media screen and (${devices.tablet}) {
         flex-direction: row;
         z-index: -1;
+        padding: 20px;
     }
 `
 
@@ -44,7 +47,7 @@ const Content = styled(motion.div)`
         }
     }
 `
-const HomeImage = styled.div`
+const HomeImage = styled(motion.div)`
     z-index: -1;
     img {
         width: 100%;

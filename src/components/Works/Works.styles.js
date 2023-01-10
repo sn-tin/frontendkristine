@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import swipeArrow from "../../assets/swipe-arrow.svg";
-import { devices, theme } from "../../styles";
+import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
-const StyledWorks = styled.section`
-    width: 100%;
+const StyledWork = styled.section`
     background-color: ${theme.colors.dark};
-    padding: 80px 50px;
+    width: 100% !important;
+`
+const WorkContainer = styled(DefaultStyle)`
+    padding: 80px 20px;
     margin: 30px auto 50px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     @media screen and (${devices.laptop}){
         margin: 70px auto;
     }
@@ -18,7 +20,7 @@ const StyledWorks = styled.section`
 `
 
 const WorkTexts = styled.div`
-    h1 {
+    h2 {
         font-size: ${theme.heading.smaller};
         margin-bottom: 30px;
         color: ${theme.colors.grayishWhite};
@@ -65,7 +67,7 @@ const CardsWrapper = styled(motion.div)`
     border: 2px solid ${theme.colors.dark};
     position: relative;
     @media screen and (${devices.tablet}) {
-        width: 480px;
+        width: 520px;
     }
 `
 
@@ -201,4 +203,4 @@ const SubTopics = styled.div`
     }
 `
 
-export { StyledWorks, WorkTexts, WorksGrid, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
+export { StyledWork, WorkContainer, WorkTexts, WorksGrid, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }

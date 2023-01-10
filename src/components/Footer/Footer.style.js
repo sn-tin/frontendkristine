@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
-import { devices, theme } from "../../styles";
+import { DefaultStyle, devices, theme } from "../../styles";
 
 
-const StyledFooter = styled.div`
+const StyledFooter = styled(DefaultStyle)`
     display: flex;
     justify-content: space-between;
     padding: 35px 0 50px;
