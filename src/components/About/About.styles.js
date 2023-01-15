@@ -7,7 +7,7 @@ const StyleAbout = styled(DefaultStyle)`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 5rem auto;
+    margin: 0 auto 5rem;
     padding: 0 20px;
     span {
         font-family: ${theme.heading.fontFam};
@@ -22,7 +22,6 @@ const StyleAbout = styled(DefaultStyle)`
     @media screen and (${devices.laptop}) {
         flex-direction: row;
         gap: 50px;
-        margin: 10rem auto;
     }
 `
 

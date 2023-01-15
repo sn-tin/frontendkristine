@@ -3,8 +3,8 @@ import { LefStraightLine, RightStraightLine, StraightLine, StyledDivider } from 
 
 const Divider = () => {
     return (
-        <StyledDivider variants={linesAnimate} initial="start" animate="end">
-            <StraightLine>
+        <StyledDivider>
+            <StraightLine variants={linesAnimate} initial="start" animate="end">
                 <LefStraightLine></LefStraightLine>
                 <RightStraightLine></RightStraightLine>
             </StraightLine>
