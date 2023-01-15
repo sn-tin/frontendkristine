@@ -4,8 +4,11 @@ import { DefaultStyle, devices, theme } from "../../styles";
 
 
 const StyledFooter = styled(DefaultStyle)`
-   padding: 50px 0;
+   padding: 50px 20px;
    overflow: hidden;
+   h3 {
+    font-size: clamp(2rem, 2.5vw, 2.2rem);
+   }
 `
 const FooterWrapper = styled.div`
     display: grid;
@@ -13,13 +16,22 @@ const FooterWrapper = styled.div`
     border: 1px solid black;
     padding: 40px;
     position: relative;
+    .navigate, .contact, .mail {
+        margin: 15px 0;
+    }
     @media screen and (${devices.laptop}) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 20rem 20rem 1fr;
     }
 `
 const FooterLinks = styled.div`
     display: flex;
     flex-direction: column;
+    a {
+        font-family: ${theme.text.fontFam};
+        color: ${theme.colors.fadeBlack};
+        text-decoration: none;
+        margin-top: 15px;
+    }
 `
 
 const FooterLine = styled(HeaderLine)`

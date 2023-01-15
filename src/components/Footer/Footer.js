@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
 import { StyledFooter, FooterLinks, FooterWrapper, FooterLine, FooterLine1, FooterLine2, FooterLine3 } from "./Footer.style";
@@ -10,7 +11,7 @@ const Footer = () => {
         <footer>
             <StyledFooter>
                 <FooterWrapper>
-                    <div>
+                    <div className="navigate">
                         <h3>KM.</h3>
                         <FooterLinks>
                             <NavLink to="/" className={isActive ? "active" : null} >Home</NavLink>
@@ -19,12 +20,15 @@ const Footer = () => {
                             <NavLink to="/contact" className={isActive ? "active" : null} >Contact</NavLink>
                         </FooterLinks>
                     </div>
-                    <FooterLine>
+                    <FooterLine variants={linesAnimate} initial="start" animate="end">
                         <FooterLine1></FooterLine1>
                         <FooterLine2></FooterLine2>
                         <FooterLine3></FooterLine3>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </FooterLine>
-                    <div>
+                    <div className="contact">
                         <div>
                             <h4>Phone</h4>
                             <p>(+63) 915 945 4515</p>
@@ -43,8 +47,8 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div>
-                        <h3>Let's work together</h3>
+                    <div className="mail">
+                        <h4>Let's work together</h4>
                         <p>Please don’t hesistate to reach out if you're interested in working together or just wanted to say hi. I’d be glad to talk with you!</p>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
                     </div>
