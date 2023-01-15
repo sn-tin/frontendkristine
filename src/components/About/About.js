@@ -3,6 +3,48 @@ import { motion } from 'framer-motion';
 import { aboutPara1, aboutPara2, rightAnimate } from '../../animations';
 
 const About = () => {
+    const tech = [
+        {
+            name: "HTML",
+            imgSrc: "fa-brands fa-html5",
+        },
+        {
+            name: "CSS",
+            imgSrc: "fa-brands fa-css3-alt",
+        },
+        {
+            name: "Bootstrap",
+            imgSrc: "fa-brands fa-bootstrap",
+        },
+        {
+            name: "Sass",
+            imgSrc: "fa-brands fa-sass",
+        },
+        {
+            name: "JavaScript",
+            imgSrc: "fa-brands fa-square-js",
+        },
+        {
+            name: "ReactJS",
+            imgSrc: "fa-brands fa-react",
+        },
+        {
+            name: "Styled Components",
+            imgSrc: undefined,
+        },
+        {
+            name: "Framer Motion",
+            imgSrc: undefined,
+        },
+        {
+            name: "Webpack",
+            imgSrc: undefined,
+        },
+        {
+            name: "Parcel",
+            imgSrc: undefined,
+        },
+    ]
     return (
         <StyleAbout>
             <motion.span variants={rightAnimate} initial="start" animate="end" exit="exit">Hello, I'm <h2>Kristine May de Jesus</h2></motion.span>
@@ -18,12 +60,11 @@ const About = () => {
                     <motion.p variants={aboutPara1} initial="start" animate="end"  exit="exit">
                     As of today, these are the the technologies I’ve been working with:
                     </motion.p>
-                    <motion.p variants={aboutPara2} initial="start" animate="end"  exit="exit">
-                    HTML / CSS / Bootstrap / 
-                    Sass / JavaScript / 
-                    ReactJS / jQuery / Webpack / 
-                    Parcel / Git / Ubuntu
-                    </motion.p>
+                    <motion.ul variants={aboutPara2} initial="start" animate="end"  exit="exit">
+                        {
+                            tech.map(({name, imgSrc}) => <li><i class={`${imgSrc} fa-xs`}></i>{name}</li>)
+                        }
+                    </motion.ul>
                 </AboutTools>
             </AboutContent>
         </StyleAbout>
