@@ -4,10 +4,9 @@ import { GlobalStyle } from './styles.js'
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import RouterSwitch from './components/RouterSwitch';
 import Home from './components/Home/Home';
-import Works from './components/Works/Works';
+import Works, { Article } from './components/Works/Works';
 import About from './components/About/About';
-import { Article } from '@mui/icons-material';
-import { Divider } from '@mui/material';
+import Divider from './components/Divider/Divider';
 
 function App() {
   return (

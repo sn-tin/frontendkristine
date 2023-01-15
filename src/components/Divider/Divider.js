@@ -1,9 +1,14 @@
+import { linesAnimate } from "../../animations";
+import { LefStraightLine, RightStraightLine, StraightLine, StyledDivider } from "./Divider.styles";
+
 const Divider = () => {
     return (
-        <div>
-            <div></div>
-            <div></div>
-        </div>
+        <StyledDivider variants={linesAnimate} initial="start" animate="end">
+            <StraightLine>
+                <LefStraightLine></LefStraightLine>
+                <RightStraightLine></RightStraightLine>
+            </StraightLine>
+        </StyledDivider>
     )
 }
 
