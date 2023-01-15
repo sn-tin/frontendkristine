@@ -4,7 +4,8 @@ const theme = {
     colors: {
         grayishWhite: "#eee7e1", 
         dark: "#343434", 
-        fadeBlack: "#3F3F3F"
+        fadeBlack: "#3F3F3F",
+        purple: "#BAABDA"
     },
     fontWeights: {
         regular: 400,
@@ -44,6 +45,7 @@ const devices = {
     desktopL: `(min-width: ${sizes.desktop})`
 }
 
+
 const GlobalStyle = createGlobalStyle`
 * {
     box-sizing: border-box;
@@ -65,24 +67,25 @@ p {
   color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
 }
+.low-highlight {
+  background: linear-gradient(120deg, ${theme.colors.purple} 0%, ${theme.colors.purple} 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 90%;
+}
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: ${theme.colors.grayishWhite}; 
+  background: transparent; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: ${theme.colors.purple}; 
 }
 `
 const DefaultStyle = styled.section`

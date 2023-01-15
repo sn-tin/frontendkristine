@@ -3,68 +3,25 @@ import { motion } from 'framer-motion';
 import { aboutPara1, aboutPara2, rightAnimate } from '../../animations';
 
 const About = () => {
-    const tech = [
-        {
-            name: "HTML",
-            imgSrc: "fa-brands fa-html5",
-        },
-        {
-            name: "CSS",
-            imgSrc: "fa-brands fa-css3-alt",
-        },
-        {
-            name: "Bootstrap",
-            imgSrc: "fa-brands fa-bootstrap",
-        },
-        {
-            name: "Sass",
-            imgSrc: "fa-brands fa-sass",
-        },
-        {
-            name: "JavaScript",
-            imgSrc: "fa-brands fa-square-js",
-        },
-        {
-            name: "ReactJS",
-            imgSrc: "fa-brands fa-react",
-        },
-        {
-            name: "Styled Components",
-            imgSrc: undefined,
-        },
-        {
-            name: "Framer Motion",
-            imgSrc: undefined,
-        },
-        {
-            name: "Webpack",
-            imgSrc: undefined,
-        },
-        {
-            name: "Parcel",
-            imgSrc: undefined,
-        },
-    ]
+    const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "Framer Motion", "Webpack", "Parcel" ]
     return (
         <StyleAbout>
             <motion.span variants={rightAnimate} initial="start" animate="end" exit="exit">Hello, I'm <h2>Kristine May de Jesus</h2></motion.span>
             <AboutContent className='about-content'>
-                <AboutPersonal className='personal'>
-                    <motion.p variants={aboutPara1} initial="start" animate="end"  exit="exit">
+                <AboutPersonal variants={aboutPara1} initial="start" animate="end"  exit="exit" className='personal'>
+                    <p>
                     I’m Kristine de Jesus, a 22-year-old front-end developer based in the Philippines. 
                     My interest in frontend development began during my last semester in my 1st year of college when we were asked to create a bio data using HTML & CSS. 
                     Since then, I've been expanding my knowledge about frontend development. 
-                    </motion.p>
+                    </p>
                 </AboutPersonal>
-                <AboutTools className='tools' >
-                    <motion.p variants={aboutPara1} initial="start" animate="end"  exit="exit">
-                    As of today, these are the the technologies I’ve been working with:
-                    </motion.p>
-                    <motion.ul variants={aboutPara2} initial="start" animate="end"  exit="exit">
+                <AboutTools variants={aboutPara2} initial="start" animate="end"  exit="exit" className='tools' >
+                    <p>As of today, these are the the technologies I’ve been working with:</p>
+                    <div>
                         {
-                            tech.map(({name, imgSrc}) => <li><i class={`${imgSrc} fa-xs`}></i>{name}</li>)
+                            technologies.map((tech) => <p>{tech}</p>)
                         }
-                    </motion.ul>
+                    </div>
                 </AboutTools>
             </AboutContent>
         </StyleAbout>

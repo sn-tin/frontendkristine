@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Works from './components/Works/Works';
 import About from './components/About/About';
 import { Article } from '@mui/icons-material';
+import { Divider } from '@mui/material';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
         <GlobalStyle />
         <Navbar />
         <Home />
-        <Works />
+        <Divider />
         <About />
+        <Works />
         <Footer />
       </div>
     </BrowserRouter>

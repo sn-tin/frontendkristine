@@ -22,7 +22,7 @@ const Home = ({works}) => {
             >
                 <div className='left-aligned'>
                     <p>Kristine May de Jesus</p>
-                    <h1 className='hero-tile'>A <motion.span variants={spanAnimate}>front-end developer</motion.span> from the Philippines</h1>
+                    <h1 className='hero-tile'>A <motion.span className="low-highlight" variants={spanAnimate}>front-end developer</motion.span> from the Philippines</h1>
                 </div>
                 <div className="right-aligned">
                     <p>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>

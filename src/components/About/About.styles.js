@@ -7,7 +7,7 @@ const StyleAbout = styled(DefaultStyle)`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 50px auto;
+    margin: 5rem auto;
     padding: 0 20px;
     span {
         font-family: ${theme.heading.fontFam};
@@ -22,6 +22,7 @@ const StyleAbout = styled(DefaultStyle)`
     @media screen and (${devices.laptop}) {
         flex-direction: row;
         gap: 50px;
+        margin: 10rem auto;
     }
 `
 
@@ -45,6 +46,28 @@ const AboutPersonal = styled(motion.div)`
 
 const AboutTools = styled(AboutPersonal)`
     width: 100%;
+    p {
+        margin-bottom: 30px;
+    }
+    div {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        p {
+            font-size: 0.8rem;
+            font-weight: ${theme.fontWeights.semiBold};
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (${devices.laptop}) {
+        div {
+            grid-template-columns: repeat(4, auto);
+        }
+    }
 `
 
 export { StyleAbout, AboutContent, AboutPersonal, AboutTools }
