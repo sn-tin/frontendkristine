@@ -4,48 +4,27 @@ import { DefaultStyle, devices, theme } from "../../styles";
 
 
 const StyledFooter = styled(DefaultStyle)`
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 0 50px;
-    margin: 0 auto;
+   padding: 50px 0;
+   overflow: hidden;
+`
+const FooterWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto);
+    border: 1px solid black;
+    padding: 40px;
     position: relative;
-    overflow: hidden;
-    p {
-        font: clamp(1rem,2.5vw,1.1rem) ${theme.heading.fontFam};
-        margin: 0 10px 0 auto;
-    }
     @media screen and (${devices.laptop}) {
-        padding: 50px 0 50px;
-        margin-top: 10px;
-        p {
-            margin: 0 10px 0 auto;
-        }
+        grid-template-columns: repeat(3, 1fr);
     }
 `
-
 const FooterLinks = styled.div`
-    a {
-        margin-left: 8px;
-    }
-    a img {
-        width: 20px;
-        height: 20px;
-    }
-    @media screen and (${devices.laptop}) {
-        a {
-            margin-left: 15px;
-        }
-        a img {
-            width: 25px;
-            height: 25px;
-        }
-    }
+    display: flex;
+    flex-direction: column;
 `
 
 const FooterLine = styled(HeaderLine)`
-    bottom: 4.5rem;
-    right: 12rem;
-    left: auto;
+    top: -1.3rem;
+    left: 8;
     padding: 40px 0 0;
     @media screen and (${devices.laptop}) {
         bottom: 5.5rem;
@@ -54,15 +33,11 @@ const FooterLine = styled(HeaderLine)`
 `
 
 const FooterLine1 = styled(HeaderLine1)`
-    left: -1.25rem;
-    top: 4.5rem;
-    bottom: 0rem;
-    width: 80px;
-    transform: rotate(-90deg);
+    width: 0;
     @media screen and (${devices.laptop}) {
-        left: -3.3rem;
-        top: 6rem;
-        width: 145px;
+        width: 30vh;
+        left: -6.5rem;
+        top: 9rem;
     }
 `
 
@@ -76,4 +51,4 @@ const FooterLine3 = styled(HeaderLine3)`
     bottom: 1.2rem;
 `
 
-export { StyledFooter, FooterLinks, FooterLine, FooterLine1, FooterLine2, FooterLine3 }
+export { StyledFooter, FooterWrapper, FooterLinks, FooterLine, FooterLine1, FooterLine2, FooterLine3 }
