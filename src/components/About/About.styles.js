@@ -30,7 +30,7 @@ const AboutContent = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     p {
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
         margin-bottom: 40px;
     }
     @media screen and (${devices.laptop}) {

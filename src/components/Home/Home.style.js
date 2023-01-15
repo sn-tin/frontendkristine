@@ -6,7 +6,7 @@ const StyledHome = styled(DefaultStyle)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: 40px auto;
     padding: 0 20px;
     @media screen and (${devices.tablet}) {
         flex-direction: row;
