@@ -5,19 +5,30 @@ import { DefaultStyle, devices, theme } from "../../styles";
 
 const StyledFooter = styled(DefaultStyle)`
    padding: 50px 20px;
-   overflow: hidden;
    h3 {
-    font-size: clamp(2rem, 2.5vw, 2.2rem);
-   }
-`
+       font-size: clamp(2rem, 2.5vw, 2.2rem);
+    }
+    `
 const FooterWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto);
-    border: 1px solid black;
     padding: 40px;
     position: relative;
+    overflow: hidden;
     .navigate, .contact, .mail {
         margin: 15px 0;
+    }
+    .phone, .address, .socials, .mail {
+        margin-bottom: 10px;
+        h4 {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            margin-bottom: 8px;
+        }
+    }
+    .socials {
+        a {
+            margin-right: 10px;
+        }
     }
     @media screen and (${devices.laptop}) {
         grid-template-columns: 20rem 20rem 1fr;
@@ -47,9 +58,9 @@ const FooterLine = styled(HeaderLine)`
 const FooterLine1 = styled(HeaderLine1)`
     width: 0;
     @media screen and (${devices.laptop}) {
-        width: 30vh;
-        left: -6.5rem;
-        top: 9rem;
+        width: 320px;
+        left: -8.75rem;
+        top: 11rem;
     }
 `
 
@@ -62,5 +73,22 @@ const FooterLine3 = styled(HeaderLine3)`
     left: 1.5rem;
     bottom: 1.2rem;
 `
+const FooterLine4 = styled.div`
+    background-color: ${theme.colors.dark};
+    width: 100rem;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+`
+const FooterLine5 = styled(FooterLine4)`
+    width: 1px;
+    height: 50rem;
+    position: absolute;
+    left: 0;
+`
+const FooterLine6 = styled(FooterLine5)`
+    left: auto;
+    right: 0;
+`
 
-export { StyledFooter, FooterWrapper, FooterLinks, FooterLine, FooterLine1, FooterLine2, FooterLine3 }
+export { StyledFooter, FooterWrapper, FooterLinks, FooterLine, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, FooterLine6 }

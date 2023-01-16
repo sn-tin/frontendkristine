@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
-import { StyledFooter, FooterLinks, FooterWrapper, FooterLine, FooterLine1, FooterLine2, FooterLine3 } from "./Footer.style";
+import { StyledFooter, FooterLinks, FooterWrapper, FooterLine, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, FooterLine6 } from "./Footer.style";
 
 const Footer = () => {
     const [isActive] = useState(false);
@@ -24,20 +24,20 @@ const Footer = () => {
                         <FooterLine1></FooterLine1>
                         <FooterLine2></FooterLine2>
                         <FooterLine3></FooterLine3>
-                        <div></div>
-                        <div></div>
-                        <div></div>
                     </FooterLine>
+                    <FooterLine4></FooterLine4>
+                    <FooterLine5></FooterLine5>
+                    <FooterLine6></FooterLine6>
                     <div className="contact">
-                        <div>
+                        <div className="phone">
                             <h4>Phone</h4>
                             <p>(+63) 915 945 4515</p>
                         </div>
-                        <div>
+                        <div className="address">
                             <h4>Address</h4>
                             <p>Molino II, Bacoor City, Cavite</p>
                         </div>
-                        <div>
+                        <div className="socials">
                             <h4>Socials</h4>
                             <a className="footer-link" href="https://github.com/sn-tin" target="_blank" rel="noreferrer">
                                 <img className="github" src={github} alt="Github Icon" />
