@@ -30,6 +30,19 @@ const FooterWrapper = styled.div`
             margin-right: 10px;
         }
     }
+    .mail {
+        p {
+            margin-bottom: 25px;
+        }
+        a {
+            color: ${theme.colors.dark};
+            font-family: ${theme.text.fontFam};
+            font-weight: ${theme.fontWeights.semiBold};
+            text-decoration: none;
+            border: 1px solid ${theme.colors.dark};
+            padding: 10px 20px;
+        }
+    }
     @media screen and (${devices.laptop}) {
         grid-template-columns: 20rem 20rem 1fr;
     }
