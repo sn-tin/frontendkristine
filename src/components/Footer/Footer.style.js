@@ -19,7 +19,7 @@ const FooterWrapper = styled.div`
         margin: 15px 0;
     }
     .phone, .address, .socials, .mail {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         h4 {
             font-size: clamp(1.1rem, 2.5vw, 1.3rem);
             margin-bottom: 8px;
@@ -45,6 +45,12 @@ const FooterWrapper = styled.div`
     }
     @media screen and (${devices.laptop}) {
         grid-template-columns: 20rem 20rem auto;
+        .phone, .address, .socials, .mail {
+            margin-bottom: 30px;
+        }
+        .socials, .mail {
+            margin-bottom: 0;
+        }
     }
 `
 const FooterLinks = styled.div`
