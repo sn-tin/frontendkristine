@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
@@ -8,16 +8,16 @@ import { StyledFooter, FooterLinks, FooterWrapper, FooterLine, FooterLine1, Foot
 const Footer = () => {
     const [isActive] = useState(false);
     return (
-        <footer>
+        <footer id="footer">
             <StyledFooter>
                 <FooterWrapper>
                     <div className="navigate">
                         <h3>KM.</h3>
                         <FooterLinks>
-                            <NavLink to="/" className={isActive ? "active" : null} >Home</NavLink>
-                            <NavLink to="/works" className={isActive ? "active" : null} >Works</NavLink>
-                            <NavLink to="/about" className={isActive ? "active" : null} >About</NavLink>
-                            <NavLink to="/contact" className={isActive ? "active" : null} >Contact</NavLink>
+                            <NavHashLink smooth to="#" className={isActive ? "active" : null} >Home</NavHashLink>
+                            <NavHashLink smooth to="#works" className={isActive ? "active" : null} >Works</NavHashLink>
+                            <NavHashLink smooth to="#about" className={isActive ? "active" : null} >About</NavHashLink>
+                            <NavHashLink smooth to="#contact" className={isActive ? "active" : null} >Contact</NavHashLink>
                         </FooterLinks>
                     </div>
                     <FooterLine variants={linesAnimate} initial="start" animate="end">

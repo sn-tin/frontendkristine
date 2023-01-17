@@ -5,7 +5,7 @@ import { aboutPara1, aboutPara2, rightAnimate } from '../../animations';
 const About = () => {
     const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "Framer Motion", "Webpack", "Parcel" ]
     return (
-        <StyleAbout>
+        <StyleAbout id="about">
             <motion.span variants={rightAnimate} initial="start" animate="end" exit="exit">Hello, I'm <h2>Kristine May de Jesus</h2></motion.span>
             <AboutContent className='about-content'>
                 <AboutPersonal variants={aboutPara1} initial="start" animate="end"  exit="exit" className='personal'>

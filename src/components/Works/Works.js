@@ -20,7 +20,7 @@ const Works = () => {
     })
 
     return (
-        <StyledWork>
+        <StyledWork id="works">
             <WorkContainer className="works">
                 <WorkTexts className="title-description">
                     <motion.h2 variants={rightAnimate} initial="start" animate="end" exit="exit">Explore my works</motion.h2>
