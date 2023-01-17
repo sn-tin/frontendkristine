@@ -21,8 +21,8 @@ const Footer = () => {
                         </FooterLinks>
                     </div>
                     <FooterStar variants={linesAnimate} initial="start" animate="end"></FooterStar>
-                    <FooterLine2 variants={linesAnimate} initial="start" animate="end"></FooterLine2>
                     <FooterLine1 variants={linesAnimate} initial="start" animate="end"></FooterLine1>
+                    <FooterLine2 variants={linesAnimate} initial="start" animate="end"></FooterLine2>
                     <FooterLine3 variants={linesAnimate} initial="start" animate="end"></FooterLine3>
                     <FooterLine4 variants={linesAnimate} initial="start" animate="end"></FooterLine4>
                     <FooterLine5 variants={linesAnimate} initial="start" animate="end"></FooterLine5>

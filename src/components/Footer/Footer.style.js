@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 
 const StyledFooter = styled(DefaultStyle)`
-   padding: 50px 20px;
+   padding: 120px 20px;
    h3 {
        font-size: clamp(2rem, 2.5vw, 2.2rem);
     }
