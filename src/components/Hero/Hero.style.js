@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { DefaultStyle, devices, theme } from "../../styles";
 
-const StyledHome = styled(DefaultStyle)`
+const StyledHero = styled(DefaultStyle)`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,4 +71,4 @@ const HomeButton = styled.button`
     }
 `
 
-export { StyledHome, Content, HomeImage, HomeButton };
+export { StyledHero, Content, HomeImage, HomeButton };

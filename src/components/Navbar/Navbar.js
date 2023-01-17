@@ -40,7 +40,7 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
                 <LargeScreenNav>
-                    <NavHashLink smooth to="#home" className={isActive ? "active" : null} >Home</NavHashLink>
+                    <NavHashLink smooth to="#hero" className={isActive ? "active" : null} >Home</NavHashLink>
                     <NavHashLink smooth to="#works" className={isActive ? "active" : null} >Works</NavHashLink>
                     <NavHashLink smooth to="#about" className={isActive ? "active" : null} >About</NavHashLink>
                     <NavHashLink smooth to="#footer" className={isActive ? "active" : null} >Contact</NavHashLink>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
                             <NavInner>
-                                <NavHashLink to="#home" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavHashLink>
+                                <NavHashLink to="#hero" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavHashLink>
                                 <NavHashLink to="#works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavHashLink>
                                 <NavHashLink to="#about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavHashLink>
                                 <NavHashLink to="#footer" className={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavHashLink>

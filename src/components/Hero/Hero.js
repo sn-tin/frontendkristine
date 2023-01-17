@@ -1,5 +1,5 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Content, HomeButton, HomeImage, StyledHome } from './Home.style';
+import { Content, HomeButton, HomeImage, StyledHero } from './Hero.style';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { leftAnimate, rightAnimate, spanAnimate } from '../../animations';
@@ -13,7 +13,7 @@ const Home = ({works}) => {
     }
 
     return (
-        <StyledHome id='home'>
+        <StyledHero id='hero'>
             <Content 
                 variants={leftAnimate}
                 initial="start"
@@ -40,7 +40,7 @@ const Home = ({works}) => {
             >
                 <img src={kristineIMG} alt="Kristine's profile"/>
             </HomeImage>
-        </StyledHome>
+        </StyledHero>
     )
 }
 
