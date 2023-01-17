@@ -44,7 +44,7 @@ const FooterWrapper = styled.div`
         }
     }
     @media screen and (${devices.laptop}) {
-        grid-template-columns: 20rem 20rem 1fr;
+        grid-template-columns: 20rem 20rem auto;
     }
 `
 const FooterLinks = styled.div`
