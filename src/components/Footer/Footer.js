@@ -22,12 +22,12 @@ const Footer = () => {
                     </div>
                     <FooterLine variants={linesAnimate} initial="start" animate="end">
                         <FooterLine1></FooterLine1>
-                        <FooterLine2></FooterLine2>
+                        {/* <FooterLine2></FooterLine2> */}
                         <FooterLine3></FooterLine3>
                     </FooterLine>
-                    <FooterLine4></FooterLine4>
-                    <FooterLine5></FooterLine5>
-                    <FooterLine6></FooterLine6>
+                    <FooterLine4 variants={linesAnimate} initial="start" animate="end"></FooterLine4>
+                    <FooterLine5 variants={linesAnimate} initial="start" animate="end"></FooterLine5>
+                    <FooterLine6 variants={linesAnimate} initial="start" animate="end"></FooterLine6>
                     <div className="contact">
                         <div className="phone">
                             <h4>Phone</h4>

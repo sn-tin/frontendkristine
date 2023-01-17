@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
 import { DefaultStyle, devices, theme } from "../../styles";
+import { motion } from "framer-motion";
 
 
 const StyledFooter = styled(DefaultStyle)`
@@ -14,7 +15,6 @@ const FooterWrapper = styled.div`
     grid-template-columns: repeat(auto);
     padding: 40px;
     position: relative;
-    overflow: hidden;
     .navigate, .contact, .mail {
         margin: 15px 0;
     }
@@ -78,24 +78,25 @@ const FooterLine1 = styled(HeaderLine1)`
 `
 
 const FooterLine2 = styled(HeaderLine2)`
-    width: 65rem;
+    width: 100%;
     bottom: 1.2rem;   
 `
 
 const FooterLine3 = styled(HeaderLine3)`
-    left: 1.5rem;
+    width: 78.8rem;
+    left: -15rem;
     bottom: 1.2rem;
 `
-const FooterLine4 = styled.div`
+const FooterLine4 = styled(motion.div)`
     background-color: ${theme.colors.dark};
-    width: 100rem;
+    width: 100%;
     height: 1px;
     position: absolute;
     bottom: 0;
 `
 const FooterLine5 = styled(FooterLine4)`
     width: 1px;
-    height: 50rem;
+    height: 100%;
     position: absolute;
     left: 0;
 `
