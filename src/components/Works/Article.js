@@ -5,6 +5,7 @@ import worksData from "./worksData";
 
 const Article = () => {
     const { slug } = useParams();
+    console.log(slug)
 
     const [article, setArticle] = useState(null);
 

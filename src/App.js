@@ -1,12 +1,8 @@
-import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import { GlobalStyle } from './styles.js'
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import RouterSwitch from './components/RouterSwitch';
-import Hero from './components/Hero/Hero';
-import Works, { Article } from './components/Works/Works';
-import About from './components/About/About';
-import Divider from './components/Divider/Divider';
+import Article from './components/Works/Article';
+import LandingPage from './components/Landing/LandingPage';
 
 function App() {
   return (
@@ -21,11 +17,11 @@ function App() {
       >
         <GlobalStyle />
         <Navbar />
-        <Hero />
-        <Divider />
-        <About />
-        <Works />
-        <Footer />
+        <LandingPage />
+        <Routes>
+          <Route path="/#" element={<LandingPage />}/>
+          <Route path="/#works/:slug" element={<Article />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
