@@ -26,9 +26,6 @@ const Works = () => {
                     <motion.h2 variants={rightAnimate} initial="start" animate="end" exit="exit">Explore my works</motion.h2>
                     <motion.p variants={rightAnimate} initial="start" animate="end" exit="exit">Check out the documentations for some of the learning projects I’ve made where I was able to to use the skills I developed learning front-end tech stacks.</motion.p>
                 </WorkTexts>
-                {/* <WorksGrid>
-                    { works.map((work) => <Cards key={work.id} id={work.id} works={work} /> ) }
-                </WorksGrid> */}
                 <Carousel ref={carousel} variants={leftAnimate} initial="start" animate="end" exit="exit" className="carousel">
                     <InnerCarousel drag="x" dragConstraints={{right: 0, left: -width }} className="inner-carousel">
                     {workCards}
