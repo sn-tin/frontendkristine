@@ -48,7 +48,9 @@ const Footer = () => {
                     <div className="mail">
                         <h4>Let's work together</h4>
                         <p>Please don’t hesistate to reach out if you're interested in working together or just wanted to say hi. I’d be glad to talk with you!</p>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
+                        <div>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
+                        </div>
                     </div>
                 </FooterWrapper>
             </StyledFooter>

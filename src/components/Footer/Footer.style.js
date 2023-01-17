@@ -32,15 +32,17 @@ const FooterWrapper = styled.div`
     }
     .mail {
         p {
-            margin-bottom: 25px;
+            margin: 25px 0;
         }
-        a {
-            color: ${theme.colors.dark};
-            font-family: ${theme.text.fontFam};
-            font-weight: ${theme.fontWeights.semiBold};
-            text-decoration: none;
+        div {
+            padding: 10px;
             border: 1px solid ${theme.colors.dark};
-            padding: 10px 20px;
+            a {
+                color: ${theme.colors.dark};
+                font-family: ${theme.text.fontFam};
+                font-weight: ${theme.fontWeights.semiBold};
+                text-decoration: none;
+            }
         }
     }
     @media screen and (${devices.laptop}) {
