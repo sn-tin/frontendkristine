@@ -2,6 +2,7 @@ import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButto
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import worksData from "./worksData";
+import Footer from "../Footer/Footer";
 
 const Article = () => {
     const { slug } = useParams();
@@ -13,12 +14,11 @@ const Article = () => {
 
     useEffect(() => {
         setArticle(findData)
-        if(!findData) {
-            return <h1>Loading...</h1>
-        }
+        console.log(findData)
     }, [findData])
 
     return (
+        <>
         <ArticleWrapper id={article?.id}>
             <ArticleImage src={article?.img} alt={article?.name} />
             <ArticleMainText  className="main-text">
@@ -39,6 +39,8 @@ const Article = () => {
                 ))
             }
         </ArticleWrapper>
+        <Footer />
+        </>
     )
 }
 

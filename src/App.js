@@ -17,10 +17,9 @@ function App() {
       >
         <GlobalStyle />
         <Navbar />
-        <LandingPage />
         <Routes>
-          <Route path="/#" element={<LandingPage />}/>
-          <Route path="/#works/:slug" element={<Article />} />
+          <Route exact path="/" element={<LandingPage />}></Route>
+          <Route path="/works/:slug" element={<Article />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

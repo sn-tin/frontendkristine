@@ -40,10 +40,10 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
                 <LargeScreenNav>
-                    <NavHashLink smooth to="#hero" className={isActive ? "active" : null} >Home</NavHashLink>
-                    <NavHashLink smooth to="#works" className={isActive ? "active" : null} >Works</NavHashLink>
-                    <NavHashLink smooth to="#about" className={isActive ? "active" : null} >About</NavHashLink>
-                    <NavHashLink smooth to="#footer" className={isActive ? "active" : null} >Contact</NavHashLink>
+                    <NavHashLink smooth to="/" className={isActive ? "active" : null} >Home</NavHashLink>
+                    <NavHashLink smooth to="/#works" className={isActive ? "active" : null} >Works</NavHashLink>
+                    <NavHashLink smooth to="/#about" className={isActive ? "active" : null} >About</NavHashLink>
+                    <NavHashLink smooth to="/#footer" className={isActive ? "active" : null} >Contact</NavHashLink>
                 </LargeScreenNav>
             </StyledNavbar>
             <AnimatePresence mode="wait">

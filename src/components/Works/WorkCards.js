@@ -10,7 +10,7 @@ const Cards = ({works}) => {
                 <div className={className} style={{position: "relative", overflow: "hidden"}}>
                     <CardImg src={img} alt={name} />
                     <Overlay className="overlay">
-                        <Link to={`/#works/${slug}`}>
+                        <Link to={`/works/${slug}`}>
                             <ReadButton>Read More</ReadButton>  
                         </Link>                      
                     </Overlay>
