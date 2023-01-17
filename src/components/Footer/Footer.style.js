@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
+import { HeaderLine } from "../Navbar/Navbar.style";
 import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
@@ -58,8 +58,8 @@ const FooterLinks = styled.div`
     }
 `
 
-const FooterLine = styled(HeaderLine)`
-    top: -1.3rem;
+const FooterStar = styled(HeaderLine)`
+    top: -1.2rem;
     left: 8;
     padding: 40px 0 0;
     @media screen and (${devices.laptop}) {
@@ -68,41 +68,41 @@ const FooterLine = styled(HeaderLine)`
     }
 `
 
-const FooterLine1 = styled(HeaderLine1)`
+const FooterLine1 = styled(motion.div)`
     width: 0;
+    position: absolute;
     @media screen and (${devices.laptop}) {
-        width: 320px;
-        left: -8.75rem;
-        top: 11rem;
+        background-color: ${theme.colors.dark};
+        transform: rotate(180deg);
+        width: 1px;
+        height: 100%;
+        left: 16.2rem;
     }
 `
 
-const FooterLine2 = styled(HeaderLine2)`
+const FooterLine2 = styled(motion.div)`
     width: 100%;
-    bottom: 1.2rem;   
+    height: 1px;
+    background-color: ${theme.colors.dark};
+    position: absolute;
+    top: 0;
 `
-
-const FooterLine3 = styled(HeaderLine3)`
-    width: 78.8rem;
-    left: -15rem;
-    bottom: 1.2rem;
-`
-const FooterLine4 = styled(motion.div)`
+const FooterLine3 = styled(motion.div)`
     background-color: ${theme.colors.dark};
     width: 100%;
     height: 1px;
     position: absolute;
     bottom: 0;
 `
-const FooterLine5 = styled(FooterLine4)`
+const FooterLine4 = styled(FooterLine3)`
     width: 1px;
     height: 100%;
     position: absolute;
     left: 0;
 `
-const FooterLine6 = styled(FooterLine5)`
+const FooterLine5 = styled(FooterLine4)`
     left: auto;
     right: 0;
 `
 
-export { StyledFooter, FooterWrapper, FooterLinks, FooterLine, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, FooterLine6 }
+export { StyledFooter, FooterWrapper, FooterLinks, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5 }

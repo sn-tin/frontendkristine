@@ -3,7 +3,7 @@ import { NavHashLink } from "react-router-hash-link";
 import { linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
-import { StyledFooter, FooterLinks, FooterWrapper, FooterLine, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, FooterLine6 } from "./Footer.style";
+import { StyledFooter, FooterLinks, FooterWrapper, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5 } from "./Footer.style";
 
 const Footer = () => {
     const [isActive] = useState(false);
@@ -20,14 +20,12 @@ const Footer = () => {
                             <NavHashLink smooth to="#contact" className={isActive ? "active" : null} >Contact</NavHashLink>
                         </FooterLinks>
                     </div>
-                    <FooterLine variants={linesAnimate} initial="start" animate="end">
-                        <FooterLine1></FooterLine1>
-                        {/* <FooterLine2></FooterLine2> */}
-                        <FooterLine3></FooterLine3>
-                    </FooterLine>
+                    <FooterStar variants={linesAnimate} initial="start" animate="end"></FooterStar>
+                    <FooterLine2 variants={linesAnimate} initial="start" animate="end"></FooterLine2>
+                    <FooterLine1 variants={linesAnimate} initial="start" animate="end"></FooterLine1>
+                    <FooterLine3 variants={linesAnimate} initial="start" animate="end"></FooterLine3>
                     <FooterLine4 variants={linesAnimate} initial="start" animate="end"></FooterLine4>
                     <FooterLine5 variants={linesAnimate} initial="start" animate="end"></FooterLine5>
-                    <FooterLine6 variants={linesAnimate} initial="start" animate="end"></FooterLine6>
                     <div className="contact">
                         <div className="phone">
                             <h4>Phone</h4>
