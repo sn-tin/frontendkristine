@@ -39,7 +39,6 @@ const Article = () => {
                 ))
             }
         </ArticleWrapper>
-        <Footer />
         </>
     )
 }

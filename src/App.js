@@ -3,6 +3,7 @@ import { GlobalStyle } from './styles.js'
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Article from './components/Works/Article';
 import LandingPage from './components/Landing/LandingPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<LandingPage />}></Route>
           <Route path="/works/:slug" element={<Article />}></Route>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

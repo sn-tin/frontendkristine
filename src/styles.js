@@ -2,10 +2,10 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const theme = {
     colors: {
-        grayishWhite: "#eee7e1", 
+        grayishWhite: "#F5F5F5", 
         dark: "#343434", 
         fadeBlack: "#3F3F3F",
-        purple: "#BAABDA"
+        // purple: "#BAABDA"
     },
     fontWeights: {
         regular: 400,
@@ -67,21 +67,21 @@ p {
   color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
 }
-.low-highlight {
+/* .low-highlight {
   background: linear-gradient(120deg, ${theme.colors.purple} 0%, ${theme.colors.purple} 100%);
   background-repeat: no-repeat;
   background-size: 100% 40%;
   background-position: 0 90%;
-}
+} */
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
-}
+} */
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: transparent; 
-}
+} */
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
