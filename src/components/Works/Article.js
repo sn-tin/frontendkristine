@@ -2,7 +2,6 @@ import { ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButto
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import worksData from "./worksData";
-import Footer from "../Footer/Footer";
 
 const Article = () => {
     const { slug } = useParams();
