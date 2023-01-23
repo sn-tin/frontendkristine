@@ -1,5 +1,4 @@
-import { CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, CardImgWrapper } from "./Works.styles";
-import { Link } from "react-router-dom";
+import { CardsWrapper, CardImg, DetailsWrapper } from "./Works.styles";
 
 const Cards = ({works}) => {
     const { img, name, date, id, codeURL, demoURL, description } = works;
