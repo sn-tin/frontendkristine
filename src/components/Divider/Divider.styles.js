@@ -5,6 +5,7 @@ import { HeaderLine, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
 const StyledDivider = styled(DefaultStyle)`
     position: relative;
     margin: 5rem auto;
+    overflow-x: clip;
 `
 const StraightLine = styled(HeaderLine)`
     left: auto;
