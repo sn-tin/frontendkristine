@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import swipeArrow from "../../assets/swipe-arrow.svg";
 import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
 const StyledWork = styled.section`
-    background-color: ${theme.colors.dark};
+    background-image: linear-gradient(180.57deg, #FFFFFF 1.22%, #F5F5F5 99.51%);
     width: 100% !important;
 `
 const WorkContainer = styled(DefaultStyle)`
-    padding: 80px 20px;
+    padding: 50px 20px;
     margin: 30px auto 50px;
     /* border-radius: 20px; */
     @media screen and (${devices.laptop}){
-        margin: 70px auto;
+        padding: 150px 20px;
+        margin: auto;
     }
     h3 {
-        color: ${theme.colors.grayishWhite};
+        color: ${theme.colors.fadeBlack};
     }
 `
 
@@ -23,13 +23,13 @@ const WorkTexts = styled.div`
     h2 {
         font-size: ${theme.heading.smaller};
         margin-bottom: 30px;
-        color: ${theme.colors.grayishWhite};
+        color: ${theme.colors.fadeBlack};
     }
     p {
         width: 100%;
         max-width: 700px;
         font-size: clamp(1rem, 2.5vw, 1.2rem);
-        color: ${theme.colors.grayishWhite};
+        color: ${theme.colors.fadeBlack};
     }
 `
 const WorksGrid = styled.div`
@@ -39,102 +39,76 @@ const WorksGrid = styled.div`
         grid-template-columns: repeat(2, 50%);
     }
 `
-const Carousel = styled(motion.div)`
-    overflow: hidden;
-    cursor: grab;
-    h3::after {
-        content: '';
-        width: 100px;
-        background: url(${swipeArrow}) no-repeat center center;
-        background-size: 150px;
-        padding: 100px;
-    }
-` 
-
-const InnerCarousel = styled(motion.div)`
-    display: inline-flex;
-    gap: 20px;
-    @media screen and (${devices.laptop}) {
-        gap: 30px;
-    }
-`
-
 const CardsWrapper = styled(motion.div)`
-    display: flex;
-    flex-direction: column;
     width: 300px;
     margin: 30px auto;
-    border: 2px solid ${theme.colors.dark};
-    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
+    -webkit-box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
+    -moz-box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
+    /* border: 2px solid ${theme.colors.dark}; */
+    /* position: relative; */
     @media screen and (${devices.tablet}) {
         width: 520px;
     }
 `
-
 const CardImg = styled.img`
     width: 100%;
-    transform: scale(1.1);
+    object-fit: scale-down;
 `
-
-const Overlay = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(52, 52, 52, 0.21);
-`
-
-const ReadButton = styled.button`
-    text-transform: uppercase;
-    color: ${theme.colors.grayishWhite};
-    font-size: clamp(0.5rem, 2.5vw, 1.125rem);
-    font-weight: ${theme.fontWeights.bold};
-    padding: 10px 15px;
-    border: none;
-    background-color: ${theme.colors.dark};
-    @media screen and (${devices.laptop}) {
-        padding: 15px 25px;
-    }
-`
-
 const DetailsWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
     color: ${theme.colors.fadeBlack};
-    font-family: ${theme.heading.fontFam};
-    font-size: clamp(0.625rem, 2.5vw, 1.1rem);
-    background-color: ${theme.colors.grayishWhite};
-    padding: 15px 10px;
-    position: relative;
-    z-index: 1;
+    background-color: #FFFFFF;
+    padding: 20px 10px;
+    .name-date {
+        font-family: ${theme.heading.fontFam};
+        font-weight: ${theme.fontWeights.semiBold};
+        font-size: clamp(0.8rem, 2.5vw, 1.3rem);
+        display: flex;
+        justify-content: space-between;
+    }
+    p {
+        margin: 10px 0;
+    }
+    .buttons { 
+        margin: 20px 0;
+        a {
+            color: ${theme.colors.fadeBlack};
+            font-family: ${theme.text.fontFam};
+            font-weight: ${theme.fontWeights.semiBold};
+            margin-right: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+    @media screen and (${devices.laptop}) {
+        padding: 30px 20px 20px;
+    }
 `
 
 const ArticleWrapper = styled.article`
     width: 100%;
     max-width: 1216px;
     margin: 80px auto;
+    padding: 0 20px;
 `
 
 const ArticleImage = styled.img`
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     object-fit: cover;
     object-position: center 17%;
     border: 2px solid ${theme.colors.dark};
     @media screen and (${devices.laptop}) {
-        height: 230px;
+        /* height: 230px; */
     }
 `
 
 const ArticleMainText = styled.div`
     font-family: ${theme.heading.fontFam};
     text-align: center;
-    margin: 30px auto;
+    margin: 80px auto;
     span {
         color: ${theme.colors.fadeBlack};
         font-size: clamp(1rem, 2.5vw, 1.3rem);
@@ -203,4 +177,4 @@ const SubTopics = styled.div`
     }
 `
 
-export { StyledWork, WorkContainer, WorkTexts, WorksGrid, Carousel, InnerCarousel, CardsWrapper, CardImg, Overlay, ReadButton, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }
+export { StyledWork, WorkContainer, WorkTexts, WorksGrid, CardsWrapper, CardImg, DetailsWrapper, ArticleWrapper, ArticleImage, ArticleMainText, FlexButtons, BorderButton, SolidButton, SubTopics }

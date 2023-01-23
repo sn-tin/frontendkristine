@@ -30,10 +30,10 @@ const Article = () => {
                 </FlexButtons>
             </ArticleMainText >
             {
-                article?.subtopics?.map(({title, description}) => (
-                    <SubTopics key={title}>
-                        <h2>{title}</h2>
-                        <p>{description}</p>
+                article?.description.map((desc) => (
+                    <SubTopics key={desc}>
+                        {/* <h2>{title}</h2> */}
+                        <p>{desc}</p>
                     </SubTopics>
                 ))
             }

@@ -20,8 +20,9 @@ const Content = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     .left-aligned {
-        p {
+        .name {
             color: ${theme.colors.fadeBlack};
             font-size: clamp(1.1rem, 2vw, 1.5rem);
             font-family: ${theme.heading.fontFam};
@@ -32,17 +33,21 @@ const Content = styled(motion.div)`
             font-size: clamp(2.5rem,5vw,5rem);
             margin: 20px 0;
         }
+        .description {
+            width: 65%;
+            font-family: ${theme.text.fontFam};
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: ${theme.fontWeights.medium};
+            text-transform: none;
+        }
     }
     .right-aligned {
         p {
-            width: 80%;
-            max-width: 800px;
-            font-size: clamp(1rem, 2.5vw, 1.3rem);
-            font-weight: ${theme.fontWeights.medium};
+            
         }
         @media screen and (${devices.laptop}) {
             p {
-                width: 65%;
+                
             }
         }
     }
@@ -51,7 +56,8 @@ const HomeImage = styled(motion.div)`
     z-index: -1;
     img {
         width: 100%;
-        border-radius: 10px 100px 10px;
+        /* border-radius: 10px 100px 10px; */
+        position: relative;
         @media screen and (${devices.laptop}) {
             width: 100%;
         }

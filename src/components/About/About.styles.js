@@ -7,8 +7,8 @@ const StyleAbout = styled(DefaultStyle)`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 auto 5rem;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 100px 20px;
     span {
         font-family: ${theme.heading.fontFam};
         font-size: clamp(1.1rem, 2.5vw, 1.3rem);

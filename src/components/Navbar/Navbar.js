@@ -40,10 +40,10 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
                 <LargeScreenNav>
-                    <NavHashLink smooth to="/" className={isActive ? "active" : null} >Home</NavHashLink>
-                    <NavHashLink smooth to="/#works" className={isActive ? "active" : null} >Works</NavHashLink>
-                    <NavHashLink smooth to="/#about" className={isActive ? "active" : null} >About</NavHashLink>
-                    <NavHashLink smooth to="/#footer" className={isActive ? "active" : null} >Contact</NavHashLink>
+                    <NavHashLink smooth to="/" activeClassName="selected">Home</NavHashLink>
+                    <NavHashLink smooth to="/#works" activeClassName="selected">Works</NavHashLink>
+                    <NavHashLink smooth to="/#about" activeClassName="selected">About</NavHashLink>
+                    <NavHashLink smooth to="/#footer" activeClassName="selected">Contact</NavHashLink>
                 </LargeScreenNav>
             </StyledNavbar>
             <AnimatePresence mode="wait">
@@ -51,10 +51,10 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
                             <NavInner>
-                                <NavHashLink to="#hero" className={isActive ? "active" : null} onClick={hideNavMenu}>Home</NavHashLink>
-                                <NavHashLink to="#works" className={isActive ? "active" : null} onClick={hideNavMenu}>Works</NavHashLink>
-                                <NavHashLink to="#about" className={isActive ? "active" : null} onClick={hideNavMenu}>About</NavHashLink>
-                                <NavHashLink to="#footer" className={isActive ? "active" : null} onClick={hideNavMenu}>Contact</NavHashLink>
+                                <NavHashLink to="#hero" activeClassName="selected" onClick={hideNavMenu}>Home</NavHashLink>
+                                <NavHashLink to="#works" activeClassName="selected" onClick={hideNavMenu}>Works</NavHashLink>
+                                <NavHashLink to="#about" activeClassName="selected" onClick={hideNavMenu}>About</NavHashLink>
+                                <NavHashLink to="#footer" activeClassName="selected" onClick={hideNavMenu}>Contact</NavHashLink>
                             </NavInner>
                         </SmallScreenNav>
                     )

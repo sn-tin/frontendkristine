@@ -52,9 +52,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 }
-body {
-  background-color: ${theme.colors.grayishWhite};
-}
 h1, h2, h3, h4, h5, h6 {
   color: ${theme.colors.dark};
   font-family: ${theme.heading.fontFam};
@@ -66,26 +63,6 @@ h2 {
 p {
   color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
-}
-/* .low-highlight {
-  background: linear-gradient(120deg, ${theme.colors.purple} 0%, ${theme.colors.purple} 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 40%;
-  background-position: 0 90%;
-} */
-/* width */
-/* ::-webkit-scrollbar {
-  width: 10px;
-} */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-  background: transparent; 
-} */
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: ${theme.colors.purple}; 
 }
 `
 const DefaultStyle = styled.section`

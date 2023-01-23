@@ -8,7 +8,7 @@ import { StyledFooter, FooterLinks, FooterWrapper, FooterStar, FooterLine1, Foot
 const Footer = () => {
     const [isActive] = useState(false);
     return (
-        <footer id="footer">
+        <footer id="footer" style={{backgroundColor: "#F5F5F5"}}>
             <StyledFooter>
                 <FooterWrapper>
                     <div className="navigate">
@@ -48,9 +48,7 @@ const Footer = () => {
                     <div className="mail">
                         <h4>Let's work together</h4>
                         <p>Please don’t hesistate to reach out if you're interested in working together or just wanted to say hi. I’d be glad to talk with you!</p>
-                        <div>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
-                        </div>
                     </div>
                 </FooterWrapper>
             </StyledFooter>

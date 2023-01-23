@@ -13,7 +13,7 @@ const StyledFooter = styled(DefaultStyle)`
 const FooterWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto);
-    padding: 40px;
+    padding: 40px 20px;
     position: relative;
     .navigate, .contact, .mail {
         margin: 15px 0;
@@ -23,6 +23,8 @@ const FooterWrapper = styled.div`
         h4 {
             font-size: clamp(1.1rem, 2.5vw, 1.3rem);
             margin-bottom: 8px;
+        } p {
+            font-size: clamp(0.8rem,2.5vw,1rem);
         }
     }
     .socials {
@@ -32,21 +34,21 @@ const FooterWrapper = styled.div`
     }
     .mail {
         p {
-            margin: 25px 0;
+            padding: 10px 0 40px;
         }
-        div {
+        a {
+            color: ${theme.colors.dark};
+            font-family: ${theme.text.fontFam};
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+            font-weight: ${theme.fontWeights.semiBold};
+            border: 1px solid black;
             padding: 10px;
-            border: 1px solid ${theme.colors.dark};
-            a {
-                color: ${theme.colors.dark};
-                font-family: ${theme.text.fontFam};
-                font-weight: ${theme.fontWeights.semiBold};
-                text-decoration: none;
-            }
+            text-decoration: none;
         }
     }
     @media screen and (${devices.laptop}) {
         grid-template-columns: 20rem 20rem auto;
+        padding: 80px 40px;
         .phone, .address, .socials, .mail {
             margin-bottom: 30px;
         }
@@ -60,6 +62,7 @@ const FooterLinks = styled.div`
     flex-direction: column;
     a {
         font-family: ${theme.text.fontFam};
+        font-size: clamp(0.8rem,2.5vw,1rem);
         color: ${theme.colors.fadeBlack};
         text-decoration: none;
         margin-top: 15px;

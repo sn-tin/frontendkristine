@@ -21,11 +21,9 @@ const Home = ({works}) => {
                 exit="exit"
             >
                 <div className='left-aligned'>
-                    <p>Kristine May de Jesus</p>
+                    <p className='name'>Kristine May de Jesus</p>
                     <h1 className='hero-tile'>A <motion.span className="low-highlight" variants={spanAnimate}>front-end developer</motion.span> from the Philippines</h1>
-                </div>
-                <div className="right-aligned">
-                    <p>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>
+                    <p className='description'>Turning ideas and designs into something useful is something that I love and enjoy to do!</p>
                     <HomeButton onClick={seeWorksClicked}>
                         See works 
                         <ArrowForwardIcon sx={{width: "30px", height: "30px", marginLeft: "10px"}} />
