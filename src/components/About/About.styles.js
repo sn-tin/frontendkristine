@@ -54,12 +54,17 @@ const AboutTools = styled(AboutPersonal)`
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         p {
-            font-size: 0.8rem;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
             font-weight: ${theme.fontWeights.semiBold};
-            text-align: center;
-            border: 1px solid black;
-            padding: 8px;
+            /* text-align: center; */
+            /* border: 1px solid black; */
+            padding: 5px;
             margin-bottom: 0;
+            img {
+                width: 10px;
+                height: 10px;
+                margin-right: 5px;
+            }
         }
     }
     @media screen and (${devices.laptop}) {

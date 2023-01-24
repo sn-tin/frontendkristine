@@ -1,9 +1,10 @@
 import { StyleAbout, AboutContent, AboutPersonal, AboutTools } from '../About/About.styles';
 import { motion } from 'framer-motion';
 import { aboutPara1, aboutPara2, rightAnimate } from '../../animations';
+import star from '../../assets/star.svg'
 
 const About = () => {
-    const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "Framer Motion", "Webpack", "Parcel" ]
+    const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "npmjs", "Framer Motion", "Webpack", "Parcel" ]
     return (
         <StyleAbout id="about">
             <motion.span variants={rightAnimate} initial="start" animate="end" exit="exit">Hello, I'm <h2>Kristine May de Jesus</h2></motion.span>
@@ -19,7 +20,7 @@ const About = () => {
                     <p>As of today, these are the the technologies I’ve been working with:</p>
                     <div>
                         {
-                            technologies.map((tech) => <p>{tech}</p>)
+                            technologies.map((tech) => <p><img src={star} alt="Star icon"/>{tech}</p>)
                         }
                     </div>
                 </AboutTools>
