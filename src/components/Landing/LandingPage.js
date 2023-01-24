@@ -9,6 +9,7 @@ const LandingPage = () => {
             <Hero />
             <Divider />
             <Works />
+            <Divider />
             <About />
         </section>
     )

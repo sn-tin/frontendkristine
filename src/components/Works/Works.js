@@ -2,13 +2,11 @@ import Cards from "./WorkCards";
 import { WorkTexts, WorkContainer, WorksGrid, StyledWork } from "./Works.styles";
 import { motion } from "framer-motion";
 import { rightAnimate } from "../../animations";
-import Divider from "../Divider/Divider";
 import works from "./worksData";
 
 const Works = () => {
     return (
         <>
-        <Divider />
         <StyledWork id="works">
             <WorkContainer className="works">
                 <WorkTexts className="title-description">
