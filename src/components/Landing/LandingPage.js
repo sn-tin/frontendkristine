@@ -8,8 +8,8 @@ const LandingPage = () => {
         <section className="main-content">
             <Hero />
             <Divider />
-            <About />
             <Works />
+            <About />
         </section>
     )
 }

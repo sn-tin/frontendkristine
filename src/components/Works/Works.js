@@ -16,7 +16,7 @@ const Works = () => {
                     <motion.p variants={rightAnimate} initial="start" animate="end" exit="exit">Check out the documentations for some of the learning projects I’ve made where I was able to to use the skills I developed learning front-end tech stacks.</motion.p>
                 </WorkTexts>
                 <WorksGrid> 
-                    { works.map((work) => <Cards key={work.id} id={work.id} works={work} />) } 
+                    { works.map((work) => <Cards key={work.id} id={work.id} works={work} />).reverse() } 
                 </WorksGrid>
             </WorkContainer>
         </StyledWork>
