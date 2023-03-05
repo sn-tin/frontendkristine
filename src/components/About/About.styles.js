@@ -3,21 +3,19 @@ import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
 const StyleAbout = styled(DefaultStyle)`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
+    max-width: 1300px;
+    display: block;
+    align-items: center;
     margin: 0 auto;
     padding: 100px 20px;
-    span {
+    h2 {
         font-family: ${theme.heading.fontFam};
-        font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+        font-size: clamp(2rem, 3vw, 4rem);
+        text-align: center;
         text-transform: uppercase;
         margin-bottom: 20px;
         line-height: 1.5;
-        h2 {
-            font-size: ${theme.heading.sub};
-        }
     }
     @media screen and (${devices.laptop}) {
         flex-direction: row;
@@ -28,23 +26,36 @@ const StyleAbout = styled(DefaultStyle)`
 const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
     p {
         font-size: clamp(0.8rem, 2.5vw, 1rem);
         margin-bottom: 40px;
+        line-height: 2.1;
     }
     @media screen and (${devices.laptop}) {
-        width: 50%;
+        flex-direction: row;
     }
 `
-
-const AboutPersonal = styled(motion.div)`
+const AboutImage = styled.div`
     width: 100%;
-    text-align: justify;
+    margin: auto;
+    img {
+        width: 100%;
+        max-width: 400px;
+        border: 2px solid #000000;
+        box-shadow: -20px 20px 0px #E3DFFD;
+    }
+`
+const AboutPersonal = styled(motion.div)`
+    p {
+        text-align: justify;
+    }
 `
 
 const AboutTools = styled(AboutPersonal)`
-    width: 100%;
     p {
         margin-bottom: 30px;
     }
@@ -56,8 +67,6 @@ const AboutTools = styled(AboutPersonal)`
         p {
             font-size: clamp(0.8rem, 2.5vw, 0.9rem);
             font-weight: ${theme.fontWeights.semiBold};
-            /* text-align: center; */
-            /* border: 1px solid black; */
             padding: 5px;
             margin-bottom: 0;
             img {
@@ -74,4 +83,4 @@ const AboutTools = styled(AboutPersonal)`
     }
 `
 
-export { StyleAbout, AboutContent, AboutPersonal, AboutTools }
+export { StyleAbout, AboutContent, AboutImage, AboutPersonal, AboutTools }

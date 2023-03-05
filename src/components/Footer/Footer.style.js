@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { HeaderLine } from "../Navbar/Navbar.style";
+import star from '../../assets/star.svg';
 import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
@@ -7,7 +8,7 @@ import { motion } from "framer-motion";
 const StyledFooter = styled(DefaultStyle)`
    padding: 120px 20px;
    h3 {
-       font-size: clamp(2rem, 2.5vw, 2.2rem);
+       font-size: clamp(2.5rem, 2.5vw, 3rem);
     }
     `
 const FooterWrapper = styled.div`
@@ -21,10 +22,10 @@ const FooterWrapper = styled.div`
     .phone, .address, .socials, .mail {
         margin-bottom: 20px;
         h4 {
-            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            font-size: clamp(1.5rem, 2.5vw, 1.8rem);
             margin-bottom: 8px;
         } p {
-            font-size: clamp(0.8rem,2.5vw,1rem);
+            font-size: clamp(0.9rem,2.5vw,1rem);
         }
     }
     .socials {
@@ -34,6 +35,7 @@ const FooterWrapper = styled.div`
     }
     .mail {
         p {
+            line-height: 2;
             padding: 10px 0 40px;
         }
         a {
@@ -70,9 +72,9 @@ const FooterLinks = styled.div`
 `
 
 const FooterStar = styled(HeaderLine)`
+    position: absolute;
     top: -1.2rem;
-    left: 8;
-    padding: 40px 0 0;
+    left: 240px;
     @media screen and (${devices.laptop}) {
         bottom: 5.5rem;
         right: 14rem;
@@ -115,5 +117,13 @@ const FooterLine5 = styled(FooterLine4)`
     left: auto;
     right: 0;
 `
+const CreditFooter = styled.div`
+    width: 100%;
+    font-size: clamp(0.8rem,2.5vw,1rem);
+    color: #FFFFFF !important;
+    text-align: center;
+    background-color: #000000;
+    padding: 20px 0;
+`
 
-export { StyledFooter, FooterWrapper, FooterLinks, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5 }
+export { StyledFooter, FooterWrapper, FooterLinks, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, CreditFooter }

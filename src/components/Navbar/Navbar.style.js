@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import star from '../../assets/star.svg';
-import lightStar from '../../assets/light-star.svg';
 import { theme, devices, DefaultStyle } from "../../styles.js";
 import { motion } from "framer-motion";
 
@@ -13,7 +12,7 @@ const StyledNavbar = styled(DefaultStyle)`
     position: relative;
     overflow-x: hidden;
     h1 {
-        font-size: clamp(1.2rem, 2.5vw, 1.563rem);
+        font-size: clamp(2.5rem, 2.5vw, 3rem);
         text-transform: uppercase;
         font-weight: ${theme.fontWeights.extraBold};
         z-index: 3;
@@ -25,14 +24,15 @@ const StyledNavbar = styled(DefaultStyle)`
 
 const HamburgerMenu = styled.div`
     width: 25px;
-    height: 25px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     z-index: 3;
     cursor: pointer;
     @media screen and (${devices.laptop}) {
-        display: none;
+        width: 50px;
+        gap: 12px;
     }
 `
 const Lines = styled.div`
@@ -43,7 +43,6 @@ const SmallScreenNav = styled.div`
     width: 100vw;
     height: 100vh;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     position: fixed;
@@ -52,6 +51,8 @@ const SmallScreenNav = styled.div`
 `
 
 const NavInner = styled(motion.div)`
+    width: 100%;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -64,70 +65,18 @@ const NavInner = styled(motion.div)`
     transform: translate(-50%, -50%);
     a, a:active, a:visited {
         color: ${theme.colors.grayishWhite};
-        font: ${theme.fontWeights.medium} 19px ${theme.heading.fontFam};
-        text-align: right;
+        font: ${theme.fontWeights.medium} clamp(3.5rem, 6vw, 10rem) ${theme.heading.fontFam};
+        text-align: left;
         text-decoration: none;
-        padding: 40px 10px;
         margin: 0 30px;
-        &:not(:last-of-type){
-        border-bottom: 1px solid #f5f5f5;
-    }
-        &.active {
-            color: ${theme.colors.grayishWhite};
-            background-color: ${theme.colors.dark};
-            font-weight: ${theme.fontWeights.extraBold};
-            position: relative;
-            &::before {
-                content: url(${lightStar});
-                zoom: 20%;
-                margin-right: 30px;
-            }
-        }
-    }
-    @media screen and (${devices.laptop}) {
-        display: none !important;
+        text-transform: uppercase;
     }
 `
-
-const LargeScreenNav = styled.div`
-    display: none;
-    a {
-        width: 150px;
-        color: ${theme.colors.fadeBlack};
-        font-family: ${theme.heading.fontFam};
-        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-        font-weight: ${theme.fontWeights.medium};
-        list-style: none;
-        text-align: right;
-        text-decoration: none;
-        cursor: pointer;
-        &:hover::before {
-            content: url(${star});
-            width: 26px;
-            height: 26px;
-            zoom: 20%;
-            margin-right: 22px;
-        }
-        &.active::before {
-            content: url(${star});
-            width: 26px;
-            height: 26px;
-            zoom: 20%;
-            margin-right: 22px;
-        }
-    }
-    @media screen and (${devices.laptop}) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-`
-
 const HeaderLine = styled(motion.div)`
     position: absolute;
     top: auto;
     bottom: 0;
-    left: 15rem;
+    right: 60px;
     display: flex;
     width: 40px;
     height: 40px;
@@ -135,6 +84,9 @@ const HeaderLine = styled(motion.div)`
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
+    @media screen and (${devices.laptop}) {
+        right: 150px;
+    }
 `
 
 const HeaderLine1 = styled.div`
@@ -158,7 +110,7 @@ const HeaderLine2 = styled(HeaderLine1)`
     left: auto;
     right: 2.43rem;
     bottom: 1.21rem;
-    width: 250px;
+    width: 80rem;
     transform: none;
 `
 
@@ -166,8 +118,8 @@ const HeaderLine3 = styled(HeaderLine2)`
     left: auto;
     right: auto;
     bottom: 1.21rem;
-    width: 80rem;
+    width: 300px;
 `
 
 export { StyledNavbar, HamburgerMenu, Lines, 
-    SmallScreenNav, NavInner, LargeScreenNav, HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 };
+    SmallScreenNav, NavInner, HeaderLine, HeaderLine1, HeaderLine2, HeaderLine3 };

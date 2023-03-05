@@ -3,12 +3,12 @@ import { NavHashLink } from "react-router-hash-link";
 import { linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
-import { StyledFooter, FooterLinks, FooterWrapper, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5 } from "./Footer.style";
+import { StyledFooter, FooterLinks, FooterWrapper, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, CreditFooter } from "./Footer.style";
 
 const Footer = () => {
     const [isActive] = useState(false);
     return (
-        <footer id="footer" style={{backgroundColor: "#F5F5F5"}}>
+        <footer id="footer">
             <StyledFooter>
                 <FooterWrapper>
                     <div className="navigate">
@@ -17,7 +17,6 @@ const Footer = () => {
                             <NavHashLink smooth to="#" className={isActive ? "active" : null} >Home</NavHashLink>
                             <NavHashLink smooth to="#works" className={isActive ? "active" : null} >Works</NavHashLink>
                             <NavHashLink smooth to="#about" className={isActive ? "active" : null} >About</NavHashLink>
-                            <NavHashLink smooth to="#contact" className={isActive ? "active" : null} >Contact</NavHashLink>
                         </FooterLinks>
                     </div>
                     <FooterStar variants={linesAnimate} initial="start" animate="end"></FooterStar>
@@ -52,6 +51,9 @@ const Footer = () => {
                     </div>
                 </FooterWrapper>
             </StyledFooter>
+            <CreditFooter>
+                <p>Design & Develop by Kristine de Jesus ✨</p>
+            </CreditFooter>
         </footer>
     )
 }

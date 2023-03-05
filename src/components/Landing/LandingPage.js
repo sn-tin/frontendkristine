@@ -7,7 +7,6 @@ const LandingPage = () => {
     return (
         <section className="main-content">
             <Hero />
-            <Divider />
             <Works />
             <Divider />
             <About />

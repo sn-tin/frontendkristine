@@ -10,6 +10,7 @@ import { menuAnimate } from '../../animations.js';
 import { AnimatePresence } from 'framer-motion';
 import HeaderLines from './HeaderLInes.js';
 import { NavHashLink } from 'react-router-hash-link';
+import star from "../../assets/star.svg"
 
 const Navbar = () => {
     // Show star when nav link is active
@@ -27,39 +28,42 @@ const Navbar = () => {
     const hideNavMenu = () => {
         setShowNav(false)
     }
-
+    const linkAnimate = {
+        hover: {
+            x: "10px",
+            transition: { duration: 0.5 },
+        }
+    }
     return (
         <nav>
             <StyledNavbar>
-                <div className='nav-logo'>
-                    <h1>KM.</h1>
-                </div>
+                <h1>KM.</h1>
                 <HeaderLines />
                 <HamburgerMenu className='hamburger-menu' onClick={showNavMenu}>
                     <Lines className='line'></Lines>
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
-                <LargeScreenNav>
-                    <NavHashLink smooth to="/" activeClassName="selected">Home</NavHashLink>
-                    <NavHashLink smooth to="/#works" activeClassName="selected">Works</NavHashLink>
-                    <NavHashLink smooth to="/#about" activeClassName="selected">About</NavHashLink>
-                    <NavHashLink smooth to="/#footer" activeClassName="selected">Contact</NavHashLink>
-                </LargeScreenNav>
-            </StyledNavbar>
+                {/* <LargeScreenNav>
+                    <NavHashLink smooth to="/" activeClassName="active">Home</NavHashLink>
+                    <NavHashLink smooth to="/#works" activeClassName="active">Works</NavHashLink>
+                    <NavHashLink smooth to="/#about" activeClassName="active">About</NavHashLink>
+                    <NavHashLink smooth to="/#footer" activeClassName="active">Contact</NavHashLink>
+                </LargeScreenNav> */}
             <AnimatePresence mode="wait">
                 {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
                             <NavInner>
-                                <NavHashLink to="#hero" activeClassName="selected" onClick={hideNavMenu}>Home</NavHashLink>
-                                <NavHashLink to="#works" activeClassName="selected" onClick={hideNavMenu}>Works</NavHashLink>
-                                <NavHashLink to="#about" activeClassName="selected" onClick={hideNavMenu}>About</NavHashLink>
-                                <NavHashLink to="#footer" activeClassName="selected" onClick={hideNavMenu}>Contact</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#about" activeClassName="active" onClick={hideNavMenu}>About</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#footer" activeClassName="active" onClick={hideNavMenu}>Contact</NavHashLink>
                             </NavInner>
                         </SmallScreenNav>
                     )
                 }
             </AnimatePresence>
+            </StyledNavbar>
         </nav>
     )
 }

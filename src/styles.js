@@ -2,10 +2,9 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const theme = {
     colors: {
-        grayishWhite: "#F5F5F5", 
+        grayishWhite: "#FFFBF5", 
         dark: "#343434", 
         fadeBlack: "#3F3F3F",
-        // purple: "#BAABDA"
     },
     fontWeights: {
         regular: 400,
@@ -18,7 +17,7 @@ const theme = {
     heading: {
         smaller: "clamp(3.5rem, 5vw, 4rem)",
         sub: "clamp(1.6rem, 2.5vw, 2.5rem)",
-        fontFam: `'Orbitron', sans-serif`
+        fontFam: `'Cormorant Infant', serif`,
     },
     text: {
         fontFam: `'Montserrat', sans-serif`
@@ -52,18 +51,23 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: ${theme.colors.grayishWhite};
+}
 h1, h2, h3, h4, h5, h6 {
   color: ${theme.colors.dark};
   font-family: ${theme.heading.fontFam};
-  text-transform: uppercase;
 }
 h2 {
     text-transform: none !important;
 }
 p {
-  color: ${theme.colors.fadeBlack};
   font-family: ${theme.text.fontFam};
 }
+::selection {
+    background: #E3DFFD;
+}
+
 `
 const DefaultStyle = styled.section`
     width: 100%;

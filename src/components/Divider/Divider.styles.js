@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import { DefaultStyle } from "../../styles";
+import { DefaultStyle, devices } from "../../styles";
 import { HeaderLine, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
 
 const StyledDivider = styled(DefaultStyle)`
     position: relative;
-    margin: 5rem auto;
+    margin: 10rem auto 0;
     overflow-x: clip;
+    @media screen and (${devices.laptop}) {
+        margin: 20rem auto 0;
+    }
 `
 const StraightLine = styled(HeaderLine)`
     left: auto;

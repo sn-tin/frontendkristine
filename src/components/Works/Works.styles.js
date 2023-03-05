@@ -3,14 +3,13 @@ import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
 const StyledWork = styled.section`
-    background-image: linear-gradient(180.57deg, #FFFFFF 1.22%, #F5F5F5 99.51%);
     width: 100% !important;
 `
 const WorkContainer = styled(DefaultStyle)`
-    padding: 50px 20px;
+    padding: 0 20px;
     margin: 30px auto 50px;
     @media screen and (${devices.laptop}){
-        padding: 150px 20px;
+        padding: 0 20px;
         margin: auto;
     }
     h3 {
@@ -31,21 +30,25 @@ const WorkTexts = styled.div`
         color: ${theme.colors.fadeBlack};
     }
 `
-const WorksGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    @media screen and (${devices.laptop}) {
-        grid-template-columns: repeat(2, 50%);
-    }
-`
 const CardsWrapper = styled(motion.div)`
     width: 100%;
-    max-width: 450px;
-    margin: 30px auto;
+    margin: 30px auto 0;
     background-color: #FFFFFF;
     box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
     -webkit-box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
     -moz-box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
+    position: relative;
+    .status {
+        font-weight: ${theme.fontWeights.bold};
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        position: absolute;
+        background-color: #FFFFFF;
+        top: 20px;
+        right: 30px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
+    }
 `
 const CardImg = styled.img`
     width: 100%;
@@ -54,16 +57,23 @@ const DetailsWrapper = styled.div`
     width: 100%;
     color: ${theme.colors.fadeBlack};
     background-color: #FFFFFF;
-    padding: 20px 10px;
+    padding: 35px 25px;
     .name-date {
-        font-family: ${theme.heading.fontFam};
+        font-family: ${theme.text.fontFam};
         font-weight: ${theme.fontWeights.semiBold};
-        font-size: clamp(0.8rem, 2.5vw, 1.3rem);
+        font-size: clamp(1.2rem, 2.5vw, 1.4rem);
         display: flex;
         justify-content: space-between;
     }
     p {
         margin: 10px 0;
+        &:last-of-type {
+            margin: 25px 0;
+        }
+    }
+    .role {
+        font-weight: ${theme.fontWeights.bold};
+        opacity: 0.8;
     }
     .buttons { 
         margin: 20px 0;
@@ -81,4 +91,4 @@ const DetailsWrapper = styled.div`
     }
 `
 
-export { StyledWork, WorkContainer, WorkTexts, WorksGrid, CardsWrapper, CardImg, DetailsWrapper }
+export { StyledWork, WorkContainer, WorkTexts, CardsWrapper, CardImg, DetailsWrapper }

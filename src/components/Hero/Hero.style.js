@@ -6,7 +6,7 @@ const StyledHero = styled(DefaultStyle)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto;
+    margin: 40px auto 100px;
     padding: 0 20px;
     @media screen and (${devices.tablet}) {
         flex-direction: row;
@@ -27,28 +27,24 @@ const Content = styled(motion.div)`
             font-size: clamp(1.1rem, 2vw, 1.5rem);
             font-family: ${theme.heading.fontFam};
             font-weight: ${theme.fontWeights.semiBold};
-            text-transform: uppercase;
         }
         h1 {
-            font-size: clamp(2.5rem,5vw,5rem);
+            font-size: clamp(2.5rem,10vw,6rem);
             margin: 20px 0;
+            span {
+                background: linear-gradient(120deg, #E3DFFD 0%, #E3DFFD 100%);
+                background-repeat: no-repeat;
+                background-size: 100% 40%;
+                background-position: 0 110%;
+            }
         }
         .description {
-            width: 65%;
+            width: 70%;
             font-family: ${theme.text.fontFam};
             font-size: clamp(1rem, 2.5vw, 1.3rem);
             font-weight: ${theme.fontWeights.medium};
-            text-transform: none;
-        }
-    }
-    .right-aligned {
-        p {
-            
-        }
-        @media screen and (${devices.laptop}) {
-            p {
-                
-            }
+            margin-top: 50px;
+            line-height: 1.5;
         }
     }
 `
@@ -56,8 +52,8 @@ const HomeImage = styled(motion.div)`
     z-index: -1;
     img {
         width: 100%;
-        /* border-radius: 10px 100px 10px; */
-        position: relative;
+        max-width: 70rem;
+        border: 3px solid ${theme.colors.dark};
         @media screen and (${devices.laptop}) {
             width: 100%;
         }
