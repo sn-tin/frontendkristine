@@ -26,7 +26,7 @@ const About = () => {
                         <p>As of today, these are the the technologies I’ve been working with:</p>
                         <Grid container spacing={2}>
                             {
-                                technologies.map((tech) => <Grid item xs={4}><img src={star} alt="star icon" /> {tech}</Grid>)
+                                technologies.map((tech) => <Grid item xs={4} lg={3}><img src={star} alt="star icon" /> {tech}</Grid>)
                             }
                         </Grid>
                     </AboutTools>

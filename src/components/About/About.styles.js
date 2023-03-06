@@ -61,8 +61,6 @@ const AboutTools = styled(AboutPersonal)`
         margin-bottom: 30px;
     }
     div {
-        width: 100%;
-        max-width: 600px;
         display: flex;
         align-items: center;
         font-family: ${theme.text.fontFam};
