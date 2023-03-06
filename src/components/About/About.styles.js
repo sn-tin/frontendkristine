@@ -42,11 +42,11 @@ const AboutContent = styled.div`
 const AboutImage = styled.div`
     width: 100%;
     margin: auto;
+    padding: 30px;
     img {
         width: 100%;
         max-width: 400px;
         border: 2px solid #000000;
-        box-shadow: -20px 20px 0px #E3DFFD;
     }
 `
 const AboutPersonal = styled(motion.div)`
