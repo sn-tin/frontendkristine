@@ -8,7 +8,7 @@ const About = () => {
     const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "npmjs", "Framer Motion", "Webpack", "Parcel" ]
     return (
         <StyleAbout id="about">
-            <motion.h2 variants={rightAnimate} initial="start" animate="end" exit="exit">I am passionate on creating websites that is pleasing to the eyes of the user.</motion.h2>
+            <motion.h2 variants={rightAnimate} initial="start" animate="end" exit="exit">I am <span className='low-highlight'>passionate on creating websites</span> that is pleasing to the eyes of the user.</motion.h2>
             <AboutContent className='about-content'>
                 <AboutImage>
                     <img src={kristineIMG} alt="Kristine" />

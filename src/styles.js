@@ -67,7 +67,12 @@ p {
 ::selection {
     background: #E3DFFD;
 }
-
+.low-highlight {
+    background: linear-gradient(120deg, #E3DFFD 0%, #E3DFFD 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 110%;
+}
 `
 const DefaultStyle = styled.section`
     width: 100%;

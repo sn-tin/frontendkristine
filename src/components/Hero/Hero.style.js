@@ -31,12 +31,6 @@ const Content = styled(motion.div)`
         h1 {
             font-size: clamp(2.5rem,10vw,6rem);
             margin: 20px 0;
-            span {
-                background: linear-gradient(120deg, #E3DFFD 0%, #E3DFFD 100%);
-                background-repeat: no-repeat;
-                background-size: 100% 40%;
-                background-position: 0 110%;
-            }
         }
         .description {
             width: 70%;
