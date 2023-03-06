@@ -2,6 +2,7 @@ import noContext from '../../assets/nocontext.png';
 import shortly from '../../assets/shortly.png';
 import todo from '../../assets/todo.png';
 import restCountries from '../../assets/restcountries.jpg';
+import cakeShop from '../../assets/cakeshop.jpg'
 
 let works = [
     {
@@ -51,6 +52,18 @@ let works = [
         demoURL: "https://rest-countries-sn-tin.vercel.app/",
         description: "REST countries web app allows you to search for countries and filter the selection of countries by region.",
         role: "Develop",
+    },
+    {
+        id: 5,
+        img: cakeShop,
+        name: "Cake Shop",
+        date: "--",
+        status: "Work In Progress",
+        category: "Personal Project",
+        codeURL: "https://github.com/sn-tin/cake-shop",
+        demoURL: "https://github.com/sn-tin/cake-shop",
+        description: "An e-commerce shop for cakes and desserts. This is a work in progress project.",
+        role: "Design & Develop",
     },
 ]
 
