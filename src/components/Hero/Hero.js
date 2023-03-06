@@ -1,17 +1,7 @@
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Content, HomeButton, HomeImage, StyledHero } from './Hero.style';
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { leftAnimate, rightAnimate, spanAnimate } from '../../animations';
-import kristineIMG from "../../assets/kristine-img.jpg"
+import { Content, StyledHero } from './Hero.style';
+import { leftAnimate } from '../../animations';
 
 const Home = ({works}) => {
-    const navigate = useNavigate();
-
-    const seeWorksClicked = () => {
-        navigate('/works')
-    }
-
     return (
         <StyledHero id='hero'>
             <Content 
