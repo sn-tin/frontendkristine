@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
+import star from "../../assets/star.svg";
 
 const StyleAbout = styled(DefaultStyle)`
     width: 100%;
@@ -60,20 +61,17 @@ const AboutTools = styled(AboutPersonal)`
         margin-bottom: 30px;
     }
     div {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        p {
-            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-            font-weight: ${theme.fontWeights.semiBold};
-            padding: 5px;
-            margin-bottom: 0;
-            img {
-                width: 10px;
-                height: 10px;
-                margin-right: 5px;
-            }
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        font-family: ${theme.text.fontFam};
+        font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+        font-weight: ${theme.fontWeights.semiBold};
+        img {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
         }
     }
     @media screen and (${devices.laptop}) {

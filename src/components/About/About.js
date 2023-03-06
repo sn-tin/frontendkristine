@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { aboutPara1, aboutPara2, rightAnimate } from '../../animations';
 import star from '../../assets/star.svg';
 import kristineIMG from '../../assets/kristine-img.jpg'
+import { Grid } from '@mui/material';
 
 const About = () => {
     const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "npmjs", "Framer Motion", "Webpack", "Parcel" ]
@@ -23,11 +24,11 @@ const About = () => {
                     </AboutPersonal>
                     <AboutTools variants={aboutPara2} initial="start" animate="end"  exit="exit" className='tools' >
                         <p>As of today, these are the the technologies I’ve been working with:</p>
-                        <div>
+                        <Grid container spacing={2}>
                             {
-                                technologies.map((tech) => <p><img src={star} alt="Star icon"/>{tech}</p>)
+                                technologies.map((tech) => <Grid item xs={4}><img src={star} alt="star icon" /> {tech}</Grid>)
                             }
-                        </div>
+                        </Grid>
                     </AboutTools>
                 </div>
             </AboutContent>
