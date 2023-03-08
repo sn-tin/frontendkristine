@@ -29,6 +29,9 @@ const Navbar = () => {
         setShowNav(false)
     }
     const linkAnimate = {
+        initial: {
+            x: 0
+        },
         hover: {
             x: "-10px",
             borderBottom: "1px solid #FFFFFF",
@@ -49,10 +52,10 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
                             <NavInner>
-                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</NavHashLink>
-                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</NavHashLink>
-                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#about" activeClassName="active" onClick={hideNavMenu}>About</NavHashLink>
-                                <NavHashLink  variants={linkAnimate} whileHover="hover" to="#footer" activeClassName="active" onClick={hideNavMenu}>Contact</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#about" activeClassName="active" onClick={hideNavMenu}>About</NavHashLink>
+                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#footer" activeClassName="active" onClick={hideNavMenu}>Contact</NavHashLink>
                             </NavInner>
                         </SmallScreenNav>
                     )

@@ -98,12 +98,19 @@ const OtherWorkLink = styled.div`
     margin: 50px auto 0;
     text-decoration: none;
     a {
+        display: inline-flex;
+        align-items: center;
         color: #000000;
+        text-decoration: none;
+        border-bottom: 2px solid #000000;
         &:visited, a:active {
             color: #000000;
         }
         &:hover {
             color: #00000085;
+        }
+        svg {
+            margin-left: 10px;
         }
     }
 `

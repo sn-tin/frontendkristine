@@ -2,6 +2,7 @@ import Cards from "./WorkCards";
 import { WorkContainer, StyledWork, OtherWorkLink } from "./Works.styles";
 import works from "./worksData";
 import { Grid } from "@mui/material";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 const Works = () => {
     const gridMdValue = (id) => {
@@ -23,7 +24,7 @@ const Works = () => {
                     }
                 </Grid>
                 <OtherWorkLink>
-                    <a href="https://github.com/sn-tin/" target="_blank" rel="noopener noreferrer">See More Works</a>
+                    <a href="https://github.com/sn-tin/" target="_blank" rel="noopener noreferrer">See More Works <ArrowOutwardIcon /></a>
                 </OtherWorkLink>
             </WorkContainer>
         </StyledWork>
