@@ -43,29 +43,5 @@ const Content = styled(motion.div)`
         }
     }
 `
-const HomeImage = styled(motion.div)`
-    z-index: -1;
-    img {
-        width: 100%;
-        max-width: 70rem;
-        border: 3px solid ${theme.colors.dark};
-        @media screen and (${devices.laptop}) {
-            width: 100%;
-        }
-    }
-`
-const HomeButton = styled.button`
-    font-family: ${theme.heading.fontFam};
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    padding: 8px 15px;
-    margin: 30px 0;
-    cursor: pointer;
-    @media screen and (${devices.laptop}) {
-        padding: 15px 30px;
-    }
-`
 
-export { StyledHero, Content, HomeImage, HomeButton };
+export { StyledHero, Content };

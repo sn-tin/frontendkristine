@@ -67,6 +67,7 @@ const DetailsWrapper = styled.div`
     }
     p {
         margin: 10px 0;
+        line-height: 2;
         &:last-of-type {
             margin: 25px 0;
         }
