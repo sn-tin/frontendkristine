@@ -44,12 +44,6 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
-                {/* <LargeScreenNav>
-                    <NavHashLink smooth to="/" activeClassName="active">Home</NavHashLink>
-                    <NavHashLink smooth to="/#works" activeClassName="active">Works</NavHashLink>
-                    <NavHashLink smooth to="/#about" activeClassName="active">About</NavHashLink>
-                    <NavHashLink smooth to="/#footer" activeClassName="active">Contact</NavHashLink>
-                </LargeScreenNav> */}
             <AnimatePresence mode="wait">
                 {
                     showNav && (
