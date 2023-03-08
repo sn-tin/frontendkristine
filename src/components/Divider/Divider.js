@@ -4,7 +4,7 @@ import { LefStraightLine, RightStraightLine, StraightLine, StyledDivider } from 
 const Divider = () => {
     return (
         <StyledDivider>
-            <StraightLine variants={linesAnimate} initial="start" animate="end">
+            <StraightLine variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                 <LefStraightLine></LefStraightLine>
                 <RightStraightLine></RightStraightLine>
             </StraightLine>

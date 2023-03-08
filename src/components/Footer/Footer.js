@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { NavHashLink } from "react-router-hash-link";
-import { linesAnimate } from "../../animations";
+import { aboutPara1, linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
 import { StyledFooter, FooterLinks, FooterWrapper, FooterStar, FooterLine1, FooterLine2, FooterLine3, FooterLine4, FooterLine5, CreditFooter } from "./Footer.style";
+import { motion } from "framer-motion";
 
 const Footer = () => {
     const [isActive] = useState(false);
@@ -11,21 +12,21 @@ const Footer = () => {
         <footer id="footer">
             <StyledFooter>
                 <FooterWrapper>
-                    <div className="navigate">
+                    <motion.div className="navigate" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                         <h3>KM.</h3>
                         <FooterLinks>
                             <NavHashLink smooth to="#" className={isActive ? "active" : null} >Home</NavHashLink>
                             <NavHashLink smooth to="#works" className={isActive ? "active" : null} >Works</NavHashLink>
                             <NavHashLink smooth to="#about" className={isActive ? "active" : null} >About</NavHashLink>
                         </FooterLinks>
-                    </div>
-                    <FooterStar variants={linesAnimate} initial="start" animate="end"></FooterStar>
-                    <FooterLine1 variants={linesAnimate} initial="start" animate="end"></FooterLine1>
-                    <FooterLine2 variants={linesAnimate} initial="start" animate="end"></FooterLine2>
-                    <FooterLine3 variants={linesAnimate} initial="start" animate="end"></FooterLine3>
-                    <FooterLine4 variants={linesAnimate} initial="start" animate="end"></FooterLine4>
-                    <FooterLine5 variants={linesAnimate} initial="start" animate="end"></FooterLine5>
-                    <div className="contact">
+                    </motion.div>
+                    <FooterStar variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterStar>
+                    <FooterLine1 variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterLine1>
+                    <FooterLine2 variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterLine2>
+                    <FooterLine3 variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterLine3>
+                    <FooterLine4 variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterLine4>
+                    <FooterLine5 variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterLine5>
+                    <motion.div className="contact" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                         <div className="phone">
                             <h4>Phone</h4>
                             <p>(+63) 915 945 4515</p>
@@ -43,12 +44,12 @@ const Footer = () => {
                                 <img className="linkedin" src={linkedin} alt="LinkedIn Icon" />
                             </a>
                         </div>
-                    </div>
-                    <div className="mail">
+                    </motion.div>
+                    <motion.div className="mail" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                         <h4>Let's work together</h4>
                         <p>Please don’t hesistate to reach out if you're interested in working together or just wanted to say hi. I’d be glad to talk with you!</p>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
-                    </div>
+                    </motion.div>
                 </FooterWrapper>
             </StyledFooter>
             <CreditFooter>

@@ -36,7 +36,7 @@ const Navbar = () => {
             <AnimatePresence mode="wait">
                 {
                     showNav && (
-                        <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
+                        <SmallScreenNav variants={menuAnimate} initial="start" whileInView="end" exit="exit">
                             <NavInner>
                                 <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</motion.a>
                                 <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</motion.a>

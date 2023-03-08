@@ -3,6 +3,7 @@ import { WorkContainer, StyledWork, OtherWorkLink } from "./Works.styles";
 import works from "./worksData";
 import { Grid } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import { aboutPara1 } from "../../animations";
 
 const Works = () => {
     const gridMdValue = (id) => {
@@ -18,7 +19,7 @@ const Works = () => {
             <WorkContainer className="works">
                 <Grid container spacing={5}>
                     { works.map((work) => 
-                        <Grid item xs={12} md={gridMdValue(work.id)}>
+                        <Grid item xs={12} md={gridMdValue(work.id)} variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                             <Cards key={work.id} id={work.id} works={work} />
                         </Grid>).reverse()
                     }
