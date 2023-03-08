@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 
 const StyledFooter = styled(DefaultStyle)`
-   padding: 120px 20px;
+   padding: 0 20px;
    h3 {
        font-size: clamp(2.5rem, 2.5vw, 3rem);
    }
    @media screen and (${devices.tablet}) {
-        padding: 100px 50px;
+        padding: 0 50px 100px; 
    }
 `
 const FooterWrapper = styled.div`
