@@ -37,12 +37,14 @@ const menuAnimate = {
 
 /* COMPONENT ANIMATIONS */
 // 1. Left aligned text animation
-const leftAnimate = {
+const heroAnimate = {
     start: {
-        x: '20rem',
+        y: '20rem',
+        opacity: 0,
     },
     end: {
-        x: 0,
+        y: 0,
+        opacity: 1,
         transition: {
             type: 'spring',
             duration: 1.5,
@@ -187,4 +189,4 @@ const linkAnimate = {
     }
 }
 
-export { linesAnimate, menuAnimate, leftAnimate, rightAnimate, spanAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2, linkAnimate }
+export { linesAnimate, menuAnimate, heroAnimate, rightAnimate, spanAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2, linkAnimate }

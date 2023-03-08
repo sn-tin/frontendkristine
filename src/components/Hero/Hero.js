@@ -1,11 +1,11 @@
 import { Content, StyledHero } from './Hero.style';
-import { leftAnimate } from '../../animations';
+import { heroAnimate } from '../../animations';
 
 const Home = ({works}) => {
     return (
         <StyledHero id='hero'>
             <Content 
-                variants={leftAnimate}
+                variants={heroAnimate}
                 initial="start"
                 animate="end"
                 exit="exit"
