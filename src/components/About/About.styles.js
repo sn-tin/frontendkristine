@@ -11,7 +11,7 @@ const StyleAbout = styled(DefaultStyle)`
     padding: 100px 20px;
     h2 {
         font-family: ${theme.heading.fontFam};
-        font-size: clamp(2rem, 3vw, 4rem);
+        font-size: clamp(2rem, 5vw, 4rem);
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 20px;
