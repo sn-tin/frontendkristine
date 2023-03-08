@@ -43,7 +43,7 @@ const CardsWrapper = styled(motion.div)`
         font-size: clamp(0.8rem, 2.5vw, 1rem);
         position: absolute;
         background-color: #FFFFFF;
-        top: 20px;
+        top: 25px;
         right: 30px;
         padding: 8px 15px;
         border-radius: 20px;
