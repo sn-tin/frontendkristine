@@ -1,5 +1,5 @@
 import Cards from "./WorkCards";
-import { WorkContainer, StyledWork } from "./Works.styles";
+import { WorkContainer, StyledWork, OtherWorkLink } from "./Works.styles";
 import works from "./worksData";
 import { Grid } from "@mui/material";
 
@@ -22,6 +22,9 @@ const Works = () => {
                         </Grid>).reverse()
                     }
                 </Grid>
+                <OtherWorkLink>
+                    <a href="https://github.com/sn-tin/" target="_blank" rel="noopener noreferrer">See More Works</a>
+                </OtherWorkLink>
             </WorkContainer>
         </StyledWork>
         </>

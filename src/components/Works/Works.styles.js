@@ -91,5 +91,20 @@ const DetailsWrapper = styled.div`
         padding: 30px 20px 20px;
     }
 `
-
-export { StyledWork, WorkContainer, WorkTexts, CardsWrapper, CardImg, DetailsWrapper }
+const OtherWorkLink = styled.div`
+    text-align: center;
+    font-family: ${theme.heading.fontFam};
+    font-size: clamp(1.5rem, 3vw, 1.5vw);
+    margin: 50px auto 0;
+    text-decoration: none;
+    a {
+        color: #000000;
+        &:visited, a:active {
+            color: #000000;
+        }
+        &:hover {
+            color: #00000085;
+        }
+    }
+`
+export { StyledWork, WorkContainer, WorkTexts, CardsWrapper, CardImg, DetailsWrapper, OtherWorkLink }
