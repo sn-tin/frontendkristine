@@ -1,6 +1,6 @@
-import noContext from '../../assets/nocontext.png';
-import shortly from '../../assets/shortly.png';
-import todo from '../../assets/todo.png';
+import noContext from '../../assets/nocontext.jpg';
+import shortly from '../../assets/shortly.jpg';
+import todo from '../../assets/todo.jpg';
 import restCountries from '../../assets/restcountries.jpg';
 import cakeShop from '../../assets/cakeshop.jpg'
 
