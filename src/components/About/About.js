@@ -12,7 +12,7 @@ const About = () => {
             <motion.h2 variants={rightAnimate} initial="start" animate="end" exit="exit">I am <span className='low-highlight'>passionate on creating websites</span> that is pleasing to the eyes of the user.</motion.h2>
             <AboutContent className='about-content'>
                 <AboutImage>
-                    <img src={kristineIMG} alt="Kristine" />
+                    <motion.img variants={aboutPara1} initial="start" animate="end" src={kristineIMG} alt="Kristine" />
                 </AboutImage>
                 <div>
                     <AboutPersonal variants={aboutPara1} initial="start" animate="end"  exit="exit" className='personal'>

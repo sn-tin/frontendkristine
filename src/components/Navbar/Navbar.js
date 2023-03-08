@@ -5,10 +5,10 @@ import { StyledNavbar,
         NavInner
     } from './Navbar.style.js';
 import { useState } from 'react';
-import { menuAnimate } from '../../animations.js';
+import { linkAnimate, menuAnimate } from '../../animations.js';
 import { AnimatePresence } from 'framer-motion';
 import HeaderLines from './HeaderLInes.js';
-import { NavHashLink } from 'react-router-hash-link';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 
@@ -24,16 +24,6 @@ const Navbar = () => {
     const hideNavMenu = () => {
         setShowNav(false)
     }
-    const linkAnimate = {
-        initial: {
-            x: 0
-        },
-        hover: {
-            x: "-10px",
-            borderBottom: "1px solid #FFFFFF",
-            transition: { duration: 0.5 },
-        }
-    }
     return (
         <nav>
             <StyledNavbar>
@@ -48,10 +38,10 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end">
                             <NavInner>
-                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</NavHashLink>
-                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</NavHashLink>
-                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#about" activeClassName="active" onClick={hideNavMenu}>About</NavHashLink>
-                                <NavHashLink  variants={linkAnimate} initial="initial" whileHover="hover" to="#footer" activeClassName="active" onClick={hideNavMenu}>Contact</NavHashLink>
+                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</motion.a>
+                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</motion.a>
+                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#about" activeClassName="active" onClick={hideNavMenu}>About</motion.a>
+                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#footer" activeClassName="active" onClick={hideNavMenu}>Contact</motion.a>
                             </NavInner>
                         </SmallScreenNav>
                     )

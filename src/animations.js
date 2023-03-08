@@ -175,5 +175,16 @@ const aboutPara2 = {
         }
     }
 }
+const linkAnimate = {
+    initial: {
+        x: 0,
+        fontStyle: "normal",
+    },
+    hover: {
+        x: "20px",
+        fontStyle: "italic",
+        transition: { duration: 0.5 },
+    }
+}
 
-export { linesAnimate, menuAnimate, leftAnimate, rightAnimate, spanAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2 }
+export { linesAnimate, menuAnimate, leftAnimate, rightAnimate, spanAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2, linkAnimate }
