@@ -18,7 +18,7 @@ const StyledNavbar = styled(DefaultStyle)`
         z-index: 3;
     }
     @media screen and (${devices.laptop}) {
-        padding: 60px 20px 40px;
+        padding: 60px 50px 40px;
     }
 `
 

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { HeaderLine } from "../Navbar/Navbar.style";
-import star from '../../assets/star.svg';
 import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
 
@@ -9,8 +8,11 @@ const StyledFooter = styled(DefaultStyle)`
    padding: 120px 20px;
    h3 {
        font-size: clamp(2.5rem, 2.5vw, 3rem);
-    }
-    `
+   }
+   @media screen and (${devices.laptop}) {
+        padding: 50px 50px 120px;
+   }
+`
 const FooterWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto);

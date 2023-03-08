@@ -20,6 +20,7 @@ const StyleAbout = styled(DefaultStyle)`
     @media screen and (${devices.laptop}) {
         flex-direction: row;
         gap: 50px;
+        padding: 100px 50px;
     }
 `
 

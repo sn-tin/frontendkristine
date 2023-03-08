@@ -11,7 +11,7 @@ const StyledHero = styled(DefaultStyle)`
     @media screen and (${devices.tablet}) {
         flex-direction: row;
         z-index: -1;
-        padding: 20px;
+        padding: 50px;
     }
 `
 

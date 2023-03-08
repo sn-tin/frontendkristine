@@ -9,7 +9,7 @@ const WorkContainer = styled(DefaultStyle)`
     padding: 0 20px;
     margin: 30px auto 50px;
     @media screen and (${devices.laptop}){
-        padding: 0 20px;
+        padding: 0 50px;
         margin: auto;
     }
     h3 {
