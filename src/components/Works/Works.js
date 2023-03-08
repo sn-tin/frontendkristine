@@ -17,7 +17,7 @@ const Works = () => {
             <WorkContainer className="works">
                 <Grid container spacing={5}>
                     { works.map((work) => 
-                        <Grid item xs="12" lg={lgValue(work.id)}>
+                        <Grid item xs="12" md={lgValue(work.id)}>
                             <Cards key={work.id} id={work.id} works={work} />
                         </Grid>).reverse()
                     }
