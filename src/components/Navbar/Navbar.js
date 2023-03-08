@@ -30,7 +30,8 @@ const Navbar = () => {
     }
     const linkAnimate = {
         hover: {
-            x: "10px",
+            x: "-10px",
+            borderBottom: "1px solid #FFFFFF",
             transition: { duration: 0.5 },
         }
     }

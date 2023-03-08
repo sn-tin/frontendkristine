@@ -29,13 +29,14 @@ const Content = styled(motion.div)`
             font-weight: ${theme.fontWeights.semiBold};
         }
         h1 {
-            font-size: clamp(2.5rem,10vw,6rem);
+            font-size: clamp(2.7rem,10vw,6rem);
             margin: 20px 0;
         }
         .description {
-            width: 70%;
+            width: 100%;
+            max-width: 900px;
             font-family: ${theme.text.fontFam};
-            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-size: clamp(0.9rem, 2.5vw, 1.3rem);
             font-weight: ${theme.fontWeights.medium};
             margin-top: 50px;
             line-height: 1.5;
