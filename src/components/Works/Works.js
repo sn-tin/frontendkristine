@@ -1,7 +1,5 @@
 import Cards from "./WorkCards";
 import { WorkContainer, StyledWork } from "./Works.styles";
-import { motion } from "framer-motion";
-import { rightAnimate } from "../../animations";
 import works from "./worksData";
 import { Grid } from "@mui/material";
 
