@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { DefaultStyle, devices, theme } from "../../styles";
 import { motion } from "framer-motion";
-import star from "../../assets/star.svg";
 
 const StyleAbout = styled(DefaultStyle)`
     width: 100%;
