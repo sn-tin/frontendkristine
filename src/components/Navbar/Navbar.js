@@ -1,7 +1,6 @@
 import { StyledNavbar, 
         HamburgerMenu, 
         Lines, 
-        LargeScreenNav, 
         SmallScreenNav,
         NavInner
     } from './Navbar.style.js';
@@ -10,11 +9,8 @@ import { menuAnimate } from '../../animations.js';
 import { AnimatePresence } from 'framer-motion';
 import HeaderLines from './HeaderLInes.js';
 import { NavHashLink } from 'react-router-hash-link';
-import star from "../../assets/star.svg"
 
 const Navbar = () => {
-    // Show star when nav link is active
-    const [isActive] = useState(false);
 
     // Change text and lines color
     const [theme, setTheme] = useState("light");
