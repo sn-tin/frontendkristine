@@ -28,7 +28,6 @@ const AboutContent = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
     margin: 50px auto;
     p {
         font-size: clamp(0.8rem, 2.5vw, 1rem);
@@ -45,7 +44,7 @@ const AboutImage = styled.div`
     padding: 30px;
     img {
         width: 100%;
-        max-width: 400px;
+        max-width: 320px;
         border: 2px solid #000000;
     }
 `
