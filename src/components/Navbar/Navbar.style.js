@@ -55,7 +55,6 @@ const NavInner = styled(motion.div)`
     max-width: 1300px;
     display: flex;
     flex-direction: column;
-    text-align: center;
     background-color: ${theme.colors.dark};
     padding: 30px 15px;
     width: 100%;
@@ -65,8 +64,10 @@ const NavInner = styled(motion.div)`
     transform: translate(-50%, -50%);
     a, a:active, a:visited {
         color: ${theme.colors.grayishWhite};
-        font: ${theme.fontWeights.medium} clamp(3.5rem, 6vw, 10rem) ${theme.heading.fontFam};
+        font: ${theme.fontWeights.medium} clamp(3.5rem, 10vw, 8rem) ${theme.heading.fontFam};
+        line-height: 1.2;
         text-align: left;
+        text-align: center;
         text-decoration: none;
         margin: 0 30px;
         text-transform: uppercase;
