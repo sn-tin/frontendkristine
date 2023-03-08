@@ -9,8 +9,8 @@ const StyledFooter = styled(DefaultStyle)`
    h3 {
        font-size: clamp(2.5rem, 2.5vw, 3rem);
    }
-   @media screen and (${devices.laptop}) {
-        padding: 50px 50px 120px;
+   @media screen and (${devices.tablet}) {
+        padding: 100px 50px;
    }
 `
 const FooterWrapper = styled.div`
@@ -51,7 +51,7 @@ const FooterWrapper = styled.div`
         }
     }
     @media screen and (${devices.laptop}) {
-        grid-template-columns: 20rem 20rem auto;
+        grid-template-columns: 18rem 18rem auto;
         padding: 80px 40px;
         .phone, .address, .socials, .mail {
             margin-bottom: 30px;
