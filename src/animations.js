@@ -1,3 +1,5 @@
+import { theme } from "./styles"
+
 /* NAVBAR AND FOOTER LINES ANIMATION */
 const linesAnimate = {
     start: {
@@ -28,10 +30,70 @@ const menuAnimate = {
     exit: {
         opacity:0,
         height:0,
-        transition:{
-          ease:"easeInOut",
-          duration:0.3,
+        transition: {
+            ease:"easeInOut",
+            delay: 0.2,
+            duration: 0.3,
         }
+    }
+}
+const navButtonAnimate1 = {
+    close: {
+        border: `1px solid ${theme.colors.dark}`,
+        transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+        transformStyle: "preserve-3d",
+        transition: {
+            duration: 0.5,
+        }
+    },
+    open: {
+        border: `1px solid ${theme.colors.grayishWhite}`,
+        transform: "translate3d(0px, 3px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg)",
+        transformStyle: "preserve-3d",
+        gap: 0,
+        transition: {
+            duration: 0.5,
+        }
+    },
+}
+const navButtonAnimate2 = {
+    close: {
+        border: `1px solid ${theme.colors.dark}`,
+        transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+        transformStyle: "preserve-3d",
+        transition: {
+            duration: 0.5,
+        }
+    },
+    open: {
+        border: `1px solid ${theme.colors.grayishWhite}`,
+        transform: "translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg)",
+        transition: {
+            duration: 0.5,
+        }
+    }
+}
+/* Nav links animation */ 
+const linkAnimate = {
+    start: {
+        opacity: 0,
+        fontStyle: "normal",
+    },
+    animate: {
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+            duration: 0.5,
+        }
+    },
+    hover: {
+        x: "20px",
+        fontStyle: "italic",
+        transition: { duration: 0.5 },
+    },
+    exit: {
+        opacity: 0,
+        fontStyle: "normal",
     }
 }
 
@@ -66,18 +128,6 @@ const rightAnimate = {
             when: 'beforeChildren'
         },
     },
-}
-// 3. "Front-end Developer" italizes animation
-const spanAnimate = {
-    start: {
-        fontStyle: 'normal'
-    },
-    end: {
-        fontStyle: 'italic',
-        transition: {
-            delay: 1.4
-        }
-    }
 }
 
 /* ABOUT COMPONENT CONTENT ANIMATION */
@@ -140,16 +190,5 @@ const aboutPara2 = {
         }
     },
 }
-const linkAnimate = {
-    initial: {
-        x: 0,
-        fontStyle: "normal",
-    },
-    hover: {
-        x: "20px",
-        fontStyle: "italic",
-        transition: { duration: 0.5 },
-    }
-}
 
-export { linesAnimate, menuAnimate, heroAnimate, rightAnimate, spanAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2, linkAnimate }
+export { linesAnimate, menuAnimate, heroAnimate, rightAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2, linkAnimate, navButtonAnimate1, navButtonAnimate2 }

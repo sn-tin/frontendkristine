@@ -23,20 +23,28 @@ const StyledNavbar = styled(DefaultStyle)`
 `
 
 const HamburgerMenu = styled.div`
-    width: 25px;
-    height: 40px;
     display: flex;
+    width: 50px;
+    height: 50px;
     flex-direction: column;
-    gap: 8px;
-    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    gap: 12px;
     cursor: pointer;
+`
+const Lines = styled(motion.div)`
+    position: relative;
+    width: 35px;
+    &:nth-child(1) {
+        top: -3px
+    }
+    &:nth-child(2) {
+        top: -3px
+    }
     @media screen and (${devices.laptop}) {
         width: 50px;
-        gap: 12px;
     }
-`
-const Lines = styled.div`
-    border: 1px solid ${theme.text.color};
 `
 
 const SmallScreenNav = styled(motion.div)`

@@ -5,27 +5,29 @@ import { StyledNavbar,
         NavInner
     } from './Navbar.style.js';
 import { useState } from 'react';
-import { linkAnimate, menuAnimate } from '../../animations.js';
+import { linkAnimate, menuAnimate, navButtonAnimate1, navButtonAnimate2 } from '../../animations.js';
 import { AnimatePresence } from 'framer-motion';
 import HeaderLines from './HeaderLInes.js';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
 const Navbar = () => {
-
-    // Change text and lines color
-    const [theme, setTheme] = useState("light");
-
     // Show and hide nav when clicked
     const [showNav, setShowNav] = useState(false);
     const showNavMenu = () => {
         setShowNav(!showNav)
-        theme === "light" ? setTheme("dark") : setTheme("light")
     }
-    const hideNavMenu = () => {
-        setShowNav(false)
+    const handleClick = (anchor) => {
+        const id = `${anchor}`;
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        };
+        showNavMenu()
     }
-
     useEffect(() => {
         document.querySelector("body").style.overflowY = showNav ? "hidden" : "visible";
     }, [showNav])
@@ -35,19 +37,19 @@ const Navbar = () => {
             <StyledNavbar>
                 <h1>KM.</h1>
                 <HeaderLines />
-                <HamburgerMenu className='hamburger-menu' onClick={showNavMenu}>
-                    <Lines className='line'></Lines>
-                    <Lines className='line'></Lines>
+                <HamburgerMenu onClick={showNavMenu}>
+                    <Lines variants={navButtonAnimate1} animate={showNav ? "open" : "close" }></Lines>
+                    <Lines variants={navButtonAnimate2} animate={showNav ? "open" : "close" }></Lines>
                 </HamburgerMenu>
             <AnimatePresence>
                 {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end" exit="exit">
                             <NavInner>
-                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</motion.a>
-                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</motion.a>
-                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#about" activeClassName="active" onClick={hideNavMenu}>About</motion.a>
-                                <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#footer" activeClassName="active" onClick={hideNavMenu}>Contact</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#hero" onClick={handleClick("home")}>Home</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#works" onClick={handleClick("works")}>Works</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#about" onClick={handleClick("about")}>About</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#footer" onClick={handleClick("contact")}>Contact</motion.a>
                             </NavInner>
                         </SmallScreenNav>
                     )
