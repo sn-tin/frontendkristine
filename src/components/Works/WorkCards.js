@@ -1,10 +1,11 @@
+import { aboutPara1 } from "../../animations";
 import { CardsWrapper, CardImg, DetailsWrapper } from "./Works.styles";
 
 const Cards = ({works}) => {
     const { img, name, date, id, codeURL, demoURL, description, role, status } = works;
 
     return (
-            <CardsWrapper id={id} className="work-cards">
+            <CardsWrapper id={id} className="work-cards" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                 <div className="status">
                     <p>{status}</p>
                 </div>

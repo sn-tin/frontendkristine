@@ -119,7 +119,7 @@ const aboutPara1 = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 0.4,
+            delay: 0.1,
             duration: 0.5,
         }
     },
