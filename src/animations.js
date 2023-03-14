@@ -8,7 +8,7 @@ const linesAnimate = {
         transform: "scale3d(1, 1, 1)",
         transformStyle: "preserve-3d",
         transition: {
-            duration: 1,
+            duration: 1.1,
         }
     },
 }
