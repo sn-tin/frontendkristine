@@ -26,13 +26,6 @@ const menuAnimate = {
             duration: 1.5
         }
     },
-    exit: {
-        height: 0,
-        opacity: 0,
-        transition: {
-            duration: 1
-        }
-    }
 }
 
 /* COMPONENT ANIMATIONS */
@@ -50,11 +43,6 @@ const heroAnimate = {
             duration: 1.5,
         }
     },
-    exit: {
-        x: '100vw',
-        transition: {
-        }
-    }
 }
 // 2. Right aligned text animation
 const rightAnimate = {
@@ -69,9 +57,6 @@ const rightAnimate = {
             when: 'beforeChildren'
         },
     },
-    exit: {
-        x: '-100vw'
-    }
 }
 // 3. "Front-end Developer" italizes animation
 const spanAnimate = {
@@ -89,7 +74,7 @@ const spanAnimate = {
 /* ABOUT COMPONENT CONTENT ANIMATION */
 const aboutSubHeading1 = {
     start: {
-        y: '2rem',
+        y: '100rem',
         opacity: 0,
     },
     end: {
@@ -100,14 +85,6 @@ const aboutSubHeading1 = {
             duration: 0.5,
         }
     },
-    exit: {
-        x: '100vh',
-        opacity: 0,
-        transition: {
-            duration: 0.5,
-            delay: 0.3,
-        }
-    }
 }
 
 const aboutPara1 = {
@@ -123,14 +100,6 @@ const aboutPara1 = {
             duration: 0.5,
         }
     },
-    exit: {
-        x: '100vh',
-        opacity: 0,
-        transition: {
-            duration: 0.5,
-            delay: 0.2,
-        }
-    }
 }
 
 const aboutSubHeading2 = {
@@ -146,14 +115,6 @@ const aboutSubHeading2 = {
             duration: 0.5,
         }
     },
-    exit: {
-        x: '100vh',
-        opacity: 0,
-        transition: {
-            duration: 0.5,
-            delay: 0.1,
-        }
-    }
 }
 
 const aboutPara2 = {
@@ -169,13 +130,6 @@ const aboutPara2 = {
             duration: 0.5,
         }
     },
-    exit: {
-        x: '100vh',
-        opacity: 0,
-        transition: {
-            duration: 0.5,
-        }
-    }
 }
 const linkAnimate = {
     initial: {
