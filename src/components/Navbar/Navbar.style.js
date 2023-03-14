@@ -39,7 +39,7 @@ const Lines = styled.div`
     border: 1px solid ${theme.text.color};
 `
 
-const SmallScreenNav = styled.div`
+const SmallScreenNav = styled(motion.div)`
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -55,13 +55,13 @@ const NavInner = styled(motion.div)`
     max-width: 1300px;
     display: flex;
     flex-direction: column;
-    background-color: ${theme.colors.dark};
     padding: 30px 15px;
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
     a, a:active, a:visited {
         color: ${theme.colors.grayishWhite};
         font: ${theme.fontWeights.medium} clamp(3.5rem, 10vw, 8rem) ${theme.heading.fontFam};

@@ -22,10 +22,17 @@ const menuAnimate = {
         height: "100vh",
         opacity: 1,
         transition: {
-            delay: 2,
-            duration: 1.5
+            duration: .5
         }
     },
+    exit: {
+        opacity:0,
+        height:0,
+        transition:{
+          ease:"easeInOut",
+          duration:0.3,
+        }
+    }
 }
 
 /* COMPONENT ANIMATIONS */
@@ -47,10 +54,12 @@ const heroAnimate = {
 // 2. Right aligned text animation
 const rightAnimate = {
     start: {
-        x: '-20rem'
+        x: '-20rem',
+        opacity: 0,
     },
     end: {
         x: 0,
+        opacity: 1,
         transition: {
             type: 'spring',
             duration: 1.5,

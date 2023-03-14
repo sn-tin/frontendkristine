@@ -9,6 +9,7 @@ import { linkAnimate, menuAnimate } from '../../animations.js';
 import { AnimatePresence } from 'framer-motion';
 import HeaderLines from './HeaderLInes.js';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 const Navbar = () => {
 
@@ -24,6 +25,11 @@ const Navbar = () => {
     const hideNavMenu = () => {
         setShowNav(false)
     }
+
+    useEffect(() => {
+        document.querySelector("body").style.overflowY = showNav ? "hidden" : "visible";
+    }, [showNav])
+
     return (
         <nav>
             <StyledNavbar>
@@ -33,10 +39,10 @@ const Navbar = () => {
                     <Lines className='line'></Lines>
                     <Lines className='line'></Lines>
                 </HamburgerMenu>
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
                 {
                     showNav && (
-                        <SmallScreenNav variants={menuAnimate} initial="start" whileInView="end" exit="exit">
+                        <SmallScreenNav variants={menuAnimate} initial="start" animate="end" exit="exit">
                             <NavInner>
                                 <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#hero" activeClassName="active" onClick={hideNavMenu}>Home</motion.a>
                                 <motion.a variants={linkAnimate} initial="initial" whileHover="hover" to="#works" activeClassName="active" onClick={hideNavMenu}>Works</motion.a>
