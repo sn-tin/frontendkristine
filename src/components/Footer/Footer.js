@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { NavHashLink } from "react-router-hash-link";
 import { aboutPara1, linesAnimate } from "../../animations";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
@@ -7,7 +5,6 @@ import { StyledFooter, FooterLinks, FooterWrapper, FooterStar, FooterLine1, Foot
 import { motion } from "framer-motion";
 
 const Footer = () => {
-    const [isActive] = useState(false);
     return (
         <footer id="footer">
             <StyledFooter>
@@ -15,9 +12,9 @@ const Footer = () => {
                     <motion.div className="navigate" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                         <h3>KM.</h3>
                         <FooterLinks>
-                            <NavHashLink smooth to="#" className={isActive ? "active" : null} >Home</NavHashLink>
-                            <NavHashLink smooth to="#works" className={isActive ? "active" : null} >Works</NavHashLink>
-                            <NavHashLink smooth to="#about" className={isActive ? "active" : null} >About</NavHashLink>
+                            <a href="hero">Home</a>
+                            <a href="#works">Works</a>
+                            <a href="#about">About</a>
                         </FooterLinks>
                     </motion.div>
                     <FooterStar variants={linesAnimate} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}></FooterStar>
@@ -48,7 +45,7 @@ const Footer = () => {
                     <motion.div className="mail" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                         <h4>Let's work together</h4>
                         <p>Please don’t hesistate to reach out if you're interested in working together or just wanted to say hi. I’d be glad to talk with you!</p>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&href=kristinemaydj.work@gmail.com" target="_blank" rel="noreferrer">kristinemaydj.work@gmail.com</a>
                     </motion.div>
                 </FooterWrapper>
             </StyledFooter>

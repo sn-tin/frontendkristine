@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import { GlobalStyle } from './styles.js'
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import LandingPage from './components/Landing/LandingPage';
 import Footer from './components/Footer/Footer';
 
@@ -17,9 +17,7 @@ function App() {
       >
         <GlobalStyle />
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<LandingPage />}></Route>
-        </Routes>
+        <LandingPage />
         <Footer />
       </div>
     </BrowserRouter>
