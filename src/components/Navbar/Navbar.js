@@ -17,17 +17,6 @@ const Navbar = () => {
     const showNavMenu = () => {
         setShowNav(!showNav)
     }
-    const handleClick = (anchor) => {
-        const id = `${anchor}`;
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        };
-        showNavMenu()
-    }
     useEffect(() => {
         document.querySelector("body").style.overflowY = showNav ? "hidden" : "visible";
     }, [showNav])
@@ -46,10 +35,10 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end" exit="exit">
                             <NavInner>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#hero" onClick={showNavMenu}>Home</motion.a>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#works" onClick={showNavMenu}>Works</motion.a>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#about" onClick={showNavMenu}>About</motion.a>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#footer" onClick={showNavMenu}>Contact</motion.a>
+                                <motion.a variants={linkAnimate} href="#hero" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Home</motion.a>
+                                <motion.a variants={linkAnimate} href="#works" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Works</motion.a>
+                                <motion.a variants={linkAnimate} href="#about" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>About</motion.a>
+                                <motion.a variants={linkAnimate} href="#footer" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Contact</motion.a>
                             </NavInner>
                         </SmallScreenNav>
                     )
