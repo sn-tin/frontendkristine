@@ -7,10 +7,8 @@ const StyledWork = styled.section`
 `
 const WorkContainer = styled(DefaultStyle)`
     padding: 0 20px;
-    margin: 30px auto 50px;
     @media screen and (${devices.tablet}){
         padding: 0 50px;
-        margin: auto;
     }
     h3 {
         color: ${theme.colors.fadeBlack};
@@ -32,7 +30,7 @@ const WorkTexts = styled.div`
 `
 const CardsWrapper = styled(motion.div)`
     width: 100%;
-    margin: 30px auto 0;
+    margin: 0 auto;
     background-color: #FFFFFF;
     box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
     -webkit-box-shadow: 1px 0px 16px -3px rgba(64,64,64,0.75);
@@ -82,9 +80,15 @@ const DetailsWrapper = styled.div`
             color: ${theme.colors.fadeBlack};
             font-family: ${theme.text.fontFam};
             font-weight: ${theme.fontWeights.semiBold};
-            margin-right: 20px;
+            background-color: #F7F7F7;
+            padding: 8px;
+            border-radius: 5px;
+            margin-right: 10px;
             text-transform: uppercase;
             text-decoration: none;
+            &:hover {
+                background-color: #EAEAEA;
+            }
         }
     }
     @media screen and (${devices.laptop}) {

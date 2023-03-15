@@ -8,7 +8,7 @@ const StyleAbout = styled(DefaultStyle)`
     display: block;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 50px 20px;
     h2 {
         font-family: ${theme.heading.fontFam};
         font-size: clamp(2rem, 5vw, 4rem);
@@ -19,7 +19,7 @@ const StyleAbout = styled(DefaultStyle)`
     @media screen and (${devices.laptop}) {
         flex-direction: row;
         gap: 30px;
-        padding: 100px 50px;
+        padding: 100px 50px 200px;
     }
 `
 

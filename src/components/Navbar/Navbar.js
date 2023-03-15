@@ -46,10 +46,10 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end" exit="exit">
                             <NavInner>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#hero" onClick={handleClick("home")}>Home</motion.a>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#works" onClick={handleClick("works")}>Works</motion.a>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#about" onClick={handleClick("about")}>About</motion.a>
-                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#footer" onClick={handleClick("contact")}>Contact</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#hero" onClick={showNavMenu}>Home</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#works" onClick={showNavMenu}>Works</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#about" onClick={showNavMenu}>About</motion.a>
+                                <motion.a variants={linkAnimate} initial="start" animate="animate" exit="exit" whileHover="hover" to="#footer" onClick={showNavMenu}>Contact</motion.a>
                             </NavInner>
                         </SmallScreenNav>
                     )

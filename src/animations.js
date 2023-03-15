@@ -96,9 +96,7 @@ const linkAnimate = {
         fontStyle: "normal",
     }
 }
-
 /* COMPONENT ANIMATIONS */
-// 1. Left aligned text animation
 const heroAnimate = {
     start: {
         y: '20rem',
@@ -113,39 +111,7 @@ const heroAnimate = {
         }
     },
 }
-// 2. Right aligned text animation
-const rightAnimate = {
-    start: {
-        x: '-20rem',
-        opacity: 0,
-    },
-    end: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            type: 'spring',
-            duration: 1.5,
-            when: 'beforeChildren'
-        },
-    },
-}
-
 /* ABOUT COMPONENT CONTENT ANIMATION */
-const aboutSubHeading1 = {
-    start: {
-        y: '100rem',
-        opacity: 0,
-    },
-    end: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.2,
-            duration: 0.5,
-        }
-    },
-}
-
 const aboutPara1 = {
     start: {
         y: '2rem',
@@ -156,26 +122,10 @@ const aboutPara1 = {
         opacity: 1,
         transition: {
             delay: 0.1,
-            duration: 0.5,
+            duration: 0.2,
         }
     },
 }
-
-const aboutSubHeading2 = {
-    start: {
-        y: '2rem',
-        opacity: 0,
-    },
-    end: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.6,
-            duration: 0.5,
-        }
-    },
-}
-
 const aboutPara2 = {
     start: {
         y: '2rem',
@@ -185,10 +135,10 @@ const aboutPara2 = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 0.8,
-            duration: 0.5,
+            delay: 0.2,
+            duration: 0.2,
         }
     },
 }
 
-export { linesAnimate, menuAnimate, heroAnimate, rightAnimate, aboutSubHeading1, aboutPara1, aboutSubHeading2, aboutPara2, linkAnimate, navButtonAnimate1, navButtonAnimate2 }
+export { linesAnimate, menuAnimate, heroAnimate, aboutPara1, aboutPara2, linkAnimate, navButtonAnimate1, navButtonAnimate2 }

@@ -6,7 +6,7 @@ const StyledHero = styled(DefaultStyle)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto 100px;
+    margin: 40px auto 50px;
     padding: 0 20px;
     @media screen and (${devices.tablet}) {
         flex-direction: row;
@@ -41,6 +41,11 @@ const Content = styled(motion.div)`
             margin-top: 50px;
             line-height: 1.5;
         }
+    }
+    .links {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
     }
 `
 
