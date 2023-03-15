@@ -59,11 +59,11 @@ let works = [
         img: portfolio,
         name: "Portfolio",
         date: "January 2023",
-        status: "COmpleted",
+        status: "Completed",
         category: "Personal Project",
         codeURL: "https://github.com/sn-tin/frontendkristine",
         demoURL: "https://frontendkristine.vercel.app/",
-        description: "My personal portfolio to showcase the projects that I've completed and yet complete.",
+        description: "My personal portfolio to showcase the projects that I've completed and yet to complete.",
         role: "Design & Develop",
     },
     {
