@@ -12,7 +12,7 @@ const Footer = () => {
                     <motion.div className="navigate" variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                         <h3>KM.</h3>
                         <FooterLinks>
-                            <a href="hero">Home</a>
+                            <a href="#">Home</a>
                             <a href="#works">Works</a>
                             <a href="#about">About</a>
                         </FooterLinks>

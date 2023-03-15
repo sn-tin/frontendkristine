@@ -35,7 +35,7 @@ const Navbar = () => {
                     showNav && (
                         <SmallScreenNav variants={menuAnimate} initial="start" animate="end" exit="exit">
                             <NavInner>
-                                <motion.a variants={linkAnimate} href="#hero" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Home</motion.a>
+                                <motion.a variants={linkAnimate} href="#" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Home</motion.a>
                                 <motion.a variants={linkAnimate} href="#works" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Works</motion.a>
                                 <motion.a variants={linkAnimate} href="#about" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>About</motion.a>
                                 <motion.a variants={linkAnimate} href="#footer" initial="start" animate="animate" exit="exit" whileHover="hover" onClick={showNavMenu}>Contact</motion.a>
