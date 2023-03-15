@@ -1,4 +1,4 @@
-import { aboutPara1, aboutPara2 } from "../../animations";
+import { aboutPara2 } from "../../animations";
 import { CardsWrapper, CardImg, DetailsWrapper } from "./Works.styles";
 
 const Cards = ({works}) => {
