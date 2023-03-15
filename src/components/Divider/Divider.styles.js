@@ -5,7 +5,6 @@ import { HeaderLine, HeaderLine2, HeaderLine3 } from "../Navbar/Navbar.style";
 const StyledDivider = styled(DefaultStyle)`
     position: relative;
     margin: 10rem auto 0;
-    overflow-x: clip;
     @media screen and (${devices.laptop}) {
         margin: 20rem auto 0;
     }
@@ -18,7 +17,10 @@ const LefStraightLine = styled(HeaderLine2)`
     width: 65rem;
 `
 const RightStraightLine = styled(HeaderLine3)`
-    width: 20rem;
+    width: 17.5rem;
+    @media screen and (${devices.laptop}) {
+        width: 18rem;
+    }
 `
 
 export { StyledDivider, StraightLine, LefStraightLine, RightStraightLine }
