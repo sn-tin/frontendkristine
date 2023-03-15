@@ -18,8 +18,8 @@ const Works = () => {
         <StyledWork id="works">
             <WorkContainer className="works">
                 <Grid container spacing={5}>
-                    { works.map((work) => 
-                        <Grid item xs={12} md={gridMdValue(work.id)} variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
+                    { works.map((work, index) => 
+                        <Grid key={index} item xs={12} md={gridMdValue(work.id)} variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>
                             <Cards key={work.id} id={work.id} works={work} />
                         </Grid>).reverse()
                     }
