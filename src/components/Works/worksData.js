@@ -2,7 +2,8 @@ import noContext from '../../assets/nocontext.jpg';
 import shortly from '../../assets/shortly.jpg';
 import todo from '../../assets/todo.jpg';
 import restCountries from '../../assets/restcountries.jpg';
-import cakeShop from '../../assets/cakeshop.jpg'
+import cakeShop from '../../assets/cakeshop.jpg';
+import portfolio from '../../assets/portfolio.jpg';
 
 let works = [
     {
@@ -55,6 +56,18 @@ let works = [
     },
     {
         id: 5,
+        img: portfolio,
+        name: "Portfolio",
+        date: "January 2023",
+        status: "COmpleted",
+        category: "Personal Project",
+        codeURL: "https://github.com/sn-tin/frontendkristine",
+        demoURL: "https://frontendkristine.vercel.app/",
+        description: "My personal portfolio to showcase the projects that I've completed and yet complete.",
+        role: "Design & Develop",
+    },
+    {
+        id: 6,
         img: cakeShop,
         name: "Cake Shop",
         date: "--",

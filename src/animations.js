@@ -89,6 +89,7 @@ const linkAnimate = {
     hover: {
         x: "20px",
         fontStyle: "italic",
+        textDecoration: "line-through",
         transition: { duration: 0.5 },
     },
     exit: {
