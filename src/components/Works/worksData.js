@@ -9,14 +9,14 @@ let works = [
     {
         id: 1,
         img: todo,
-        name: "To-Do List",
+        name: "ToDo List",
         date: "August 2022",
         status: "Completed",
         category: "Personal Project",
         codeURL: "https://github.com/sn-tin/todo-list",
         demoURL: "https://todo-list-sn-tin.vercel.app/",
-        description: "A to-do list app to keep track of your tasks.",
-        role: "Design & Develop",
+        description: "An all-pink todo app to keep track of tasks and stay productive.",
+        role: "Designed & Developed",
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ let works = [
         codeURL: "https://github.com/sn-tin/shorten-url",
         demoURL: "https://shorten-url-delta.vercel.app/",
         description: "Shortly URL shortening API returns a shorten link of a URL from the user.",
-        role: "Develop",
+        role: "Developed",
     },
     {
         id: 3,
@@ -39,8 +39,8 @@ let works = [
         category: "Personal Project",
         codeURL: "https://github.com/sn-tin/no-context-app",
         demoURL: "https://no-context.vercel.app/",
-        description: "A website where users can search for, copy-paste and bookmark Filipino memes in a form of text.",
-        role: "Design & Develop",
+        description: "A CRUD web app where users can search for, copy-paste and bookmark Filipino memes in a form of text.",
+        role: "Designed & Developed",
     },
     {
         id: 4,
@@ -52,7 +52,7 @@ let works = [
         codeURL: "https://github.com/sn-tin/rest-countries",
         demoURL: "https://rest-countries-sn-tin.vercel.app/",
         description: "REST countries web app allows you to search for countries and filter the selection of countries by region.",
-        role: "Develop",
+        role: "Developed",
     },
     {
         id: 5,
@@ -64,7 +64,7 @@ let works = [
         codeURL: "https://github.com/sn-tin/frontendkristine",
         demoURL: "https://frontendkristine.vercel.app/",
         description: "My personal portfolio to showcase the projects that I've completed and yet to complete.",
-        role: "Design & Develop",
+        role: "Designed & Developed",
     },
     {
         id: 6,
@@ -76,7 +76,7 @@ let works = [
         codeURL: "https://github.com/sn-tin/cake-shop",
         demoURL: "https://github.com/sn-tin/cake-shop",
         description: "An e-commerce shop for cakes and desserts. This is a work in progress project.",
-        role: "Design & Develop",
+        role: "Designed & Developed",
     },
 ]
 

@@ -50,7 +50,7 @@ const Footer = () => {
                 </FooterWrapper>
             </StyledFooter>
             <CreditFooter>
-                <p>Design & Develop by Kristine de Jesus ✨</p>
+                <p>Kristine de Jesus © 2023 ✨</p>
             </CreditFooter>
         </footer>
     )

@@ -67,9 +67,6 @@ h2 {
 p {
   font-family: ${theme.text.fontFam};
 }
-::selection {
-    background: #E3DFFD;
-}
 .low-highlight {
     background: linear-gradient(120deg, #E3DFFD 0%, #E3DFFD 100%);
     background-repeat: no-repeat;

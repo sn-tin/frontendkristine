@@ -6,10 +6,10 @@ import kristineIMG from '../../assets/kristine-img.jpg'
 import { Grid } from '@mui/material';
 
 const About = () => {
-    const technologies = [ "HTML", "CSS", "Bootstrap", "Sass", "JavaScript", "ReactJS", "Styled Components", "npmjs", "Framer Motion", "Webpack", "Parcel" ]
+    const technologies = [ "HTML", "CSS", "Sass", "Bootstrap", "JavaScript", "ReactJS", "Styled Components", "npmjs", "Framer Motion", "Webpack", "Parcel" ]
     return (
         <StyleAbout id="about">
-            <motion.h2 variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>I am <span className='low-highlight'>passionate on creating websites</span> that is pleasing to the eyes of the user.</motion.h2>
+            <motion.h2 variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }}>I am passionate on creating websites that is <span className='low-highlight'>functional and visually appealing</span> to the eyes of the user.</motion.h2>
             <AboutContent className='about-content'>
                 <AboutImage>
                     <motion.img variants={aboutPara1} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }} src={kristineIMG} alt="Kristine" />
@@ -17,9 +17,10 @@ const About = () => {
                 <div>
                     <AboutPersonal variants={aboutPara2} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }} className='personal'>
                         <p>
-                        I’m Kristine de Jesus, a 22-year-old front-end developer based in the Philippines. 
-                        My interest in frontend development began during my last semester in my 1st year of college when we were asked to create a bio data using HTML & CSS. 
-                        Since then, I've been expanding my knowledge about frontend development. 
+                        I’m Kristine de Jesus, a front-end developer based in the Philippines. 
+                        I'm looking for a new opportunity to further my career in front-end development 
+                        at a company that is looking for someone who is passionate about their work and 
+                        where I can expose myself to new challenges and keep growing professionally. 
                         </p>
                     </AboutPersonal>
                     <AboutTools variants={aboutPara2} initial="start" whileInView="end" viewport={{ once: true, amount: 0.8 }} className='tools' >

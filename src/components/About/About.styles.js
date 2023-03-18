@@ -11,14 +11,14 @@ const StyleAbout = styled(DefaultStyle)`
     padding: 50px 20px;
     h2 {
         font-family: ${theme.heading.fontFam};
-        font-size: clamp(2rem, 5vw, 4rem);
+        font-size: clamp(1.8rem, 5vw, 4rem);
         text-align: center;
         text-transform: uppercase;
         line-height: 1.5;
     }
     @media screen and (${devices.laptop}) {
         flex-direction: row;
-        gap: 30px;
+        gap: 50px;
         padding: 100px 50px 200px;
     }
 `
@@ -27,7 +27,7 @@ const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px auto;
+    margin: auto;
     p {
         font-size: clamp(0.8rem, 2.5vw, 1rem);
         margin-bottom: 40px;
@@ -35,17 +35,22 @@ const AboutContent = styled.div`
     }
     @media screen and (${devices.laptop}) {
         flex-direction: row;
+        gap: 40px;
     }
 `
 const AboutImage = styled.div`
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 80px;
+    margin: auto;
     img {
         width: 100%;
-        max-width: 320px;
+        max-width: 300px;
         border: 2px solid #000000;
     }
     @media screen and (${devices.laptop}) {
         width: 100%;
+        padding: 50px 0;
     }
 `
 const AboutPersonal = styled(motion.div)`
