@@ -12,9 +12,10 @@ const StyledNavbar = styled(DefaultStyle)`
     position: relative;
     overflow-x: hidden;
     h1 {
-        font-size: clamp(2.5rem, 2.5vw, 3rem);
+        font-size: clamp(1.8rem, 2.5vw, 3rem);
         text-transform: uppercase;
         font-weight: ${theme.fontWeights.extraBold};
+        margin: auto 0;
         z-index: 3;
     }
     @media screen and (${devices.laptop}) {
